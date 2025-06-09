@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+  
+<!-- Mirrored from studyglance.in/labprograms/nlplabprograms.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 28 May 2025 03:42:05 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>Study Glance | Natural Language Processing Lab Manual(Programs)</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" href="../images/logo1.png" type="image/x-icon"/>
+    <link rel="bookmark" href="../images/logo1.png"/>
+    <!-- site css -->
+     <link rel="stylesheet" href="../dist/css/style.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700,400italic,600italic,700italic,800italic,300italic" rel="stylesheet" type="text/css">
+    <!-- <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'> -->
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="../dist/js/site.min.js"></script>
+	<script>
+		function myFunction() {
+		var x = document.getElementById("myTopnav");
+		if (x.className === "topnav") {
+			x.className += " responsive";
+		} else {
+			x.className = "topnav";
+		}
+		}
+	</script>
+	<style type="text/css">
+	th, td {
+  border:1px solid;
+  border-color: #96D4D4;
+  padding:10px;
+  height:50px;
+  color:black;
+}
+</style>
+  </head>
+<body>
+<!--nav-->
+<link rel="stylesheet" href="../dist/css/site.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700,400italic,600italic,700italic,800italic,300italic" rel="stylesheet" type="text/css">
+    <!-- <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'> -->
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="../dist/js/site.min.js"></script>
+	 <script type="text/javascript" src="../dist/js/prism.js"></script>
+	<script>
+			function myFunction() {
+		var x = document.getElementById("myTopnav");
+		if (x.className === "topnav") {
+			x.className += " responsive";
+		} else {
+			x.className = "topnav";
+		}
+		}
+	</script>
+	<script async src="../../pagead2.googlesyndication.com/pagead/js/f9b65.txt?client=ca-pub-8096140274719176"
+     crossorigin="anonymous"></script>
+  </head>
+<body>    
+<nav role="navigation" class="navbar">
+	<!-- logo -->
+	<center><img src="../images/logo4.png" height="90" border="0" alt="" style="padding-left:5px;padding-top:2px;padding-bottom:5px;"></center>
+	<!-- main menu-->   
+	<div class="topnav" id="myTopnav">
+	<a href="../index-2.html" class="">Home</a>
+	<div class="mdropdown">
+    <button class="mdropbtn">Tutorials
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="mdropdown-content">
+	  <a href="../c/index.html" class="">C - Programming</a>
+	<a href="../ds/index.html" class="" >Data Structure</a>
+      <a href="../html/index.html" class="">HTML</a>
+	  <a href="../php/index.html" class="">PHP</a>
+	  <a href="../xml/index.html" class="" >XML</a>
+	  <a href="../servlet/index.html" class="" >SERVLET</a>
+     <a href="../python/index.html" class="" >PYTHON</a>
+     <a href="../dbms/index.html" class="" >DBMS</a>
+     <a href="../dm/index.html" class="" >Data Mining</a>
+     <a href="../daa/index.html" class="" >DAA</a>
+	 <a href="../nn/index.html" class="" >Neural Networks</a>
+	 <a href="../dl/index.html" class="" >Deep Learning</a>
+      <!--<a href="#php" class="">PHP</a>-->
+    </div>
+  </div>
+
+<!--
+	<a href="html/index.php" class="">HTML</a>
+	<a href="python/index.php" class="">PYTHON</a>
+	<a href="#php" class="">PHP</a>-->
+	<a href="../ppts/index.html" class="">PPTs</a>
+	<a href="../lecturenotes/index.html" class="">Lecture Notes</a>
+	<!--<a href="../questions/index.php" class="">Questions</a>-->
+	<a href="../objquestions/index.html" class="">Objective Questions</a>
+	<a href="index.html" class="active">Lab Programs</a>
+	<!--<a href="../syllabus/index.php" class="">Syllabus</a>-->
+	<a href="../blog/index.html" class="">Blog</a>
+	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+	<i class="fa fa-bars"></i>
+	</a>
+	</div>
+	<!-- end main menu-->
+</nav>
+</nav>
+<!--nav end -->
+<!--body container-->
+    <div class="container-fluid">
+    <div class="row row-offcanvas row-offcanvas-left">
+<!-- Side Menu-->
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" role="navigation" id="non-printable">
+    <ul class="list-group panel">
+		<li class="list-group-item"><img src="../images/tutorials_icons.png" width="20"alt="">&nbsp;<b>Tutorials</b></li>
+        <!--<li class="list-group-item"><input type="text" class="form-control search-query" placeholder="Search Something"></li>-->
+		 <li class="list-group-item"><a href="../c/index.html"><i class="glyphicon glyphicon-list-alt"></i>
+	    C - Programming</a></li>
+        <li class="list-group-item"><a href="../html/index.html"><i class="glyphicon glyphicon-list-alt"></i>
+	    HTML</a></li>
+		<li class="list-group-item"><a href="../php/index.html"><i class="glyphicon glyphicon-list-alt"></i>
+	    PHP</a></li>
+		<li class="list-group-item"><a href="../xml/index.html"><i class="glyphicon glyphicon-list-alt"></i>
+	    XML</a></li>
+		<li class="list-group-item"><a href="../python/index.html"><i class="glyphicon glyphicon-list-alt"></i>
+	    PYTHON</a></li>
+	    <li class="list-group-item"><a href="../dbms/index.html"><i class="glyphicon glyphicon-list-alt"></i>
+	   DBMS</a></li>
+	   <li class="list-group-item"><a href="../dm/index.html"><i class="glyphicon glyphicon-list-alt"></i>
+	   Data Mining</a></li>
+	    <li class="list-group-item"><a href="../daa/index.html"><i class="glyphicon glyphicon-list-alt"></i>
+	   DAA</a></li>
+		<li class="list-group-item"><a href="../nn/index.html"><i class="glyphicon glyphicon-list-alt"></i>
+	    Neural Networks</a></li>
+		<li class="list-group-item"><a href="../dl/index.html"><i class="glyphicon glyphicon-list-alt"></i>
+	    Deep Learning</a></li>
+		<!--<li class="list-group-item"><a href="#php"><i class="glyphicon glyphicon-list-alt"></i>
+	    PHP</a></li>
+		<li class="list-group-item"><a href="#xml"><i class="glyphicon glyphicon-list-alt"></i>
+	    XML</a></li>
+		<li class="list-group-item"><a href="#js"><i class="glyphicon glyphicon-list-alt"></i>
+	    JAVA SCRIPT</a></li>-->
+
+
+		<li class="list-group-item"><a href="../ppts/index.html"><img src="../images/ppt_icons.png" width="20"alt="">&nbsp;<b>PPTs</b></a></li>
+		<li class="list-group-item"><a href="../lecturenotes/index.html"><img src="../images/note_icons.png" width="20"alt="">&nbsp;<b>Lecture Notes</b></a></li>
+		   <!--<li class="list-group-item"><a href="#html"><i class="glyphicon glyphicon-list-alt"></i>
+	    HTML</a></li>
+		<li class="list-group-item"><a href="#python"><i class="glyphicon glyphicon-list-alt"></i>
+	    PYTHON</a></li>
+		<li class="list-group-item"><a href="#php"><i class="glyphicon glyphicon-list-alt"></i>
+	    PHP</a></li>
+		<li class="list-group-item"><a href="#xml"><i class="glyphicon glyphicon-list-alt"></i>
+	    XML</a></li>
+		<li class="list-group-item"><a href="#js"><i class="glyphicon glyphicon-list-alt"></i>
+	    JAVA SCRIPT</a></li>-->
+
+
+		<li class="list-group-item"><img src="../images/faq_icons.png" width="20"alt="">&nbsp;<b><a href="../questions/index.html" class="active">Questions</a></b></li>
+		 <!--  <li class="list-group-item"><a href="#html"><i class="glyphicon glyphicon-list-alt"></i>
+	    HTML</a></li>
+		<li class="list-group-item"><a href="#python"><i class="glyphicon glyphicon-list-alt"></i>
+	    PYTHON</a></li>
+		<li class="list-group-item"><a href="#php"><i class="glyphicon glyphicon-list-alt"></i>
+	    PHP</a></li>
+		<li class="list-group-item"><a href="#xml"><i class="glyphicon glyphicon-list-alt"></i>
+	    XML</a></li>
+		<li class="list-group-item"><a href="#js"><i class="glyphicon glyphicon-list-alt"></i>
+	    JAVA SCRIPT</a></li>-->
+		<li class="list-group-item"><a href="../objquestions/index.html"><img src="../images/objective_icons.png" width="20"alt="">&nbsp;<b>Objective Questions</b></a></li>
+		<li class="list-group-item"><a href="index.html"><img src="../images/lab_icons.png" width="20"alt="">&nbsp;<b>Lab Programs</b></a></li>
+		<!--<li class="list-group-item"><a href="../syllabus/index.php"><img src="../images/syllabus_icons.png" width="20"alt="">&nbsp;<b>Syllabus</b></a></li>-->
+		<li class="list-group-item"><a href="../blog/index.html"><img src="../images/faq_icons.png" width="20"alt="">&nbsp;<b>Blog</b></a></li>
+		   <!--<li class="list-group-item"><a href="#html"><i class="glyphicon glyphicon-list-alt"></i>
+	    HTML</a></li>
+		<li class="list-group-item"><a href="#python"><i class="glyphicon glyphicon-list-alt"></i>
+	    PYTHON</a></li>
+		<li class="list-group-item"><a href="#php"><i class="glyphicon glyphicon-list-alt"></i>
+	    PHP</a></li>
+		<li class="list-group-item"><a href="#xml"><i class="glyphicon glyphicon-list-alt"></i>
+	    XML</a></li>
+		<li class="list-group-item"><a href="#js"><i class="glyphicon glyphicon-list-alt"></i>
+	    JAVA SCRIPT</a></li>-->
+        <!--
+        <li>
+        <a href="#demo3" class="list-group-item " data-toggle="collapse">Item 3  <span class="glyphicon glyphicon-chevron-right"></span></a>
+        <div class="collapse" id="demo3">
+        <a href="#SubMenu1" class="list-group-item" data-toggle="collapse">Subitem 1  <span class="glyphicon glyphicon-chevron-right"></span></a>
+        <div class="collapse list-group-submenu" id="SubMenu1">
+			<a href="#" class="list-group-item">Subitem 1 a</a>
+            <a href="#" class="list-group-item">Subitem 2 b</a>
+            <a href="#SubSubMenu1" class="list-group-item" data-toggle="collapse">Subitem 3 c <span class="glyphicon glyphicon-chevron-right"></span></a>
+            <div class="collapse list-group-submenu list-group-submenu-1" id="SubSubMenu1">
+                  <a href="#" class="list-group-item">Sub sub item 1</a>
+                  <a href="#" class="list-group-item">Sub sub item 2</a>
+            </div>
+            <a href="#" class="list-group-item">Subitem 4 d</a>
+        </div>
+             <a href="javascript:;" class="list-group-item">Subitem 2</a>
+             <a href="javascript:;" class="list-group-item">Subitem 3</a>
+        </div>
+        </li>
+        <li>
+              <a href="#demo4" class="list-group-item " data-toggle="collapse">Item 4  <span class="glyphicon glyphicon-chevron-right"></span></a>
+                    <li class="collapse" id="demo4">
+                      <a href="" class="list-group-item">Subitem 1</a>
+                      <a href="" class="list-group-item">Subitem 2</a>
+                      <a href="" class="list-group-item">Subitem 3</a>
+                    </li>
+        </li>-->
+	</ul>
+	<!-- Multiplex2Ver1 Start-->
+<script async src="../../pagead2.googlesyndication.com/pagead/js/f9b65.txt?client=ca-pub-8096140274719176"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:inline-block;width:360px;height:400px"
+     data-ad-client="ca-pub-8096140274719176"
+     data-ad-slot="3459332850"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!-- Multiplex2Ver end-->
+    </div><!-- End side Menu-->
+<!-- content -->
+<div class="col-xs-12 col-sm-9">
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h3 class="panel-title"><a href="javascript:void(0);" class="toggle-sidebar" ><span class="fa fa-angle-double-left" data-toggle="offcanvas" title="Maximize Panel"></span></a> Menu</h3>
+    </div>
+	<!--panel-Body-->
+    <div class="panel-body">
+		<div class="content-row">
+			<center><h1>Natural Language Processing [ <font size="" color="#ff3333">Lab Manual</font> ]</font></h1></center><hr>
+			
+			<h1 style="font-size:25px;font-weight:bold;color:black;">[R18] B-Tech II Year I Semester (2-1) CSE(AIML) Natural Language Processing Lab Mannual JNTU Hyderabad (JNTUH).</h1>
+			
+<br/>
+<p>This tutorial provides <strong>Lab Programs</strong> on various topics of <strong>Natural Language Processing</strong>. It includes topics such as Basics, Control Structures, Sequences, Files, Modules, Packages and etc., .</p>
+
+<div class="row"> 
+<div class="col-md-12">
+<h2>Natural Language Processing Lab Programs</h2><br><table width='100%'>				<tr>
+		<td width="3%"><strong>1.</strong></td>
+		<td width="85%"><pre style="border:none;font-size:15px;font-color:#000033;">Word Analysis</pre></td>
+		<td width="12%"><a href="pythondisplay6006.php?url1=python/week1.py&amp;url2=&amp;url3=&amp;url4=&amp;title=Word%20Analysis&amp;alg=<br%20/><b>Notice</b>:%20%20Undefined%20variable:%20alg%20in%20<b>/home/u681245571/domains/studyglance.in/public_html/labprograms/nlplabprograms.php</b>%20on%20line%20<b>110</b><br%20/>&amp;opurl1=python/outputs/w1.png&amp;opurl2=&amp;opurl3=&amp;opurl4=&amp;opurl5=<br%20/><b>Notice</b>:%20%20Undefined%20variable:%20opurl5%20in%20<b>/home/u681245571/domains/studyglance.in/public_html/labprograms/nlplabprograms.php</b>%20on%20line%20<b>110</b><br%20/>" class="alab"><strong>View Solution </strong></a></td>
+		</tr>
+		<!--
+		<p><font color="#000033" style="font-size:14px;"><strong>1)</strong> Word Analysis</font> <a href="pythondisplay.php?url1=python/week1.py&url2=&url3=&url4=&title=Word Analysis&opurl1=python/outputs/w1.png&opurl2=&opurl3=&opurl4=" class="alab"><strong>View Solution </strong></a></p>-->
+								<tr>
+		<td width="3%"><strong>2.</strong></td>
+		<td width="85%"><pre style="border:none;font-size:15px;font-color:#000033;">Word Generation</pre></td>
+		<td width="12%"><a href="pythondisplayb76d.php?url1=python/week2.py&amp;url2=&amp;url3=&amp;url4=&amp;title=Word%20Generation&amp;alg=<br%20/><b>Notice</b>:%20%20Undefined%20variable:%20alg%20in%20<b>/home/u681245571/domains/studyglance.in/public_html/labprograms/nlplabprograms.php</b>%20on%20line%20<b>110</b><br%20/>&amp;opurl1=python/outputs/w2.png&amp;opurl2=&amp;opurl3=&amp;opurl4=&amp;opurl5=<br%20/><b>Notice</b>:%20%20Undefined%20variable:%20opurl5%20in%20<b>/home/u681245571/domains/studyglance.in/public_html/labprograms/nlplabprograms.php</b>%20on%20line%20<b>110</b><br%20/>" class="alab"><strong>View Solution </strong></a></td>
+		</tr>
+		<!--
+		<p><font color="#000033" style="font-size:14px;"><strong>2)</strong> Word Generation</font> <a href="pythondisplay.php?url1=python/week2.py&url2=&url3=&url4=&title=Word Generation&opurl1=python/outputs/w2.png&opurl2=&opurl3=&opurl4=" class="alab"><strong>View Solution </strong></a></p>-->
+								<tr>
+		<td width="3%"><strong>3.</strong></td>
+		<td width="85%"><pre style="border:none;font-size:15px;font-color:#000033;">Morphology</pre></td>
+		<td width="12%"><a href="pythondisplay212f.php?url1=python/week3.py&amp;url2=&amp;url3=&amp;url4=&amp;title=Morphology&amp;alg=<br%20/><b>Notice</b>:%20%20Undefined%20variable:%20alg%20in%20<b>/home/u681245571/domains/studyglance.in/public_html/labprograms/nlplabprograms.php</b>%20on%20line%20<b>110</b><br%20/>&amp;opurl1=python/outputs/w3.png&amp;opurl2=&amp;opurl3=&amp;opurl4=&amp;opurl5=<br%20/><b>Notice</b>:%20%20Undefined%20variable:%20opurl5%20in%20<b>/home/u681245571/domains/studyglance.in/public_html/labprograms/nlplabprograms.php</b>%20on%20line%20<b>110</b><br%20/>" class="alab"><strong>View Solution </strong></a></td>
+		</tr>
+		<!--
+		<p><font color="#000033" style="font-size:14px;"><strong>3)</strong> Morphology</font> <a href="pythondisplay.php?url1=python/week3.py&url2=&url3=&url4=&title=Morphology&opurl1=python/outputs/w3.png&opurl2=&opurl3=&opurl4=" class="alab"><strong>View Solution </strong></a></p>-->
+								<tr>
+		<td width="3%"><strong>4.</strong></td>
+		<td width="85%"><pre style="border:none;font-size:15px;font-color:#000033;">N-Grams</pre></td>
+		<td width="12%"><a href="pythondisplay3e13.php?url1=python/week4.py&amp;url2=&amp;url3=&amp;url4=&amp;title=N-Grams&amp;alg=<br%20/><b>Notice</b>:%20%20Undefined%20variable:%20alg%20in%20<b>/home/u681245571/domains/studyglance.in/public_html/labprograms/nlplabprograms.php</b>%20on%20line%20<b>110</b><br%20/>&amp;opurl1=python/outputs/w4.png&amp;opurl2=&amp;opurl3=&amp;opurl4=&amp;opurl5=<br%20/><b>Notice</b>:%20%20Undefined%20variable:%20opurl5%20in%20<b>/home/u681245571/domains/studyglance.in/public_html/labprograms/nlplabprograms.php</b>%20on%20line%20<b>110</b><br%20/>" class="alab"><strong>View Solution </strong></a></td>
+		</tr>
+		<!--
+		<p><font color="#000033" style="font-size:14px;"><strong>4)</strong> N-Grams</font> <a href="pythondisplay.php?url1=python/week4.py&url2=&url3=&url4=&title=N-Grams&opurl1=python/outputs/w4.png&opurl2=&opurl3=&opurl4=" class="alab"><strong>View Solution </strong></a></p>-->
+								<tr>
+		<td width="3%"><strong>5.</strong></td>
+		<td width="85%"><pre style="border:none;font-size:15px;font-color:#000033;">N-Grams Smoothing</pre></td>
+		<td width="12%"><a href="pythondisplay58bb.php?url1=python/week5.py&amp;url2=&amp;url3=&amp;url4=&amp;title=N-Grams%20Smoothing&amp;alg=<br%20/><b>Notice</b>:%20%20Undefined%20variable:%20alg%20in%20<b>/home/u681245571/domains/studyglance.in/public_html/labprograms/nlplabprograms.php</b>%20on%20line%20<b>110</b><br%20/>&amp;opurl1=python/outputs/w5.png&amp;opurl2=&amp;opurl3=&amp;opurl4=&amp;opurl5=<br%20/><b>Notice</b>:%20%20Undefined%20variable:%20opurl5%20in%20<b>/home/u681245571/domains/studyglance.in/public_html/labprograms/nlplabprograms.php</b>%20on%20line%20<b>110</b><br%20/>" class="alab"><strong>View Solution </strong></a></td>
+		</tr>
+		<!--
+		<p><font color="#000033" style="font-size:14px;"><strong>5)</strong> N-Grams Smoothing</font> <a href="pythondisplay.php?url1=python/week5.py&url2=&url3=&url4=&title=N-Grams Smoothing&opurl1=python/outputs/w5.png&opurl2=&opurl3=&opurl4=" class="alab"><strong>View Solution </strong></a></p>-->
+				</table>
+	<br><hr>
+</div>
+</div>
+
+        </div>
+    </div>
+	<!-- end panel body -->
+	<div>
+	</div>
+</div>
+</div>
+<!-- end content -->
+</div>
+ <!-- Google Ad Multiflex1 <div class="container">
+        <div class="row">
+		<div class="col-sm-12
+<!-- Google Ad Multiflex1 Start
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8096140274719176"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-8096140274719176"
+     data-ad-slot="3158072222"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+</div></div>
+END-->
+ <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>About</h6>
+	          <p class="text-justify">Study Glance provides Tutorials , Power point Presentations(ppts), Lecture Notes, Important & previously asked questions, Objective Type questions, Laboratory programs and we provide Syllabus of various subjects.</p>
+          </div>
+		<div class="col-xs-6 col-md-3" style="padding-left:100px;">
+            <h6>Categories</h6>
+            <ul class="footer-links">
+              <li><a href="../Tutorialindex.html">Tutorials</a></li>
+              <li><a href="../ppts/index.html">PPTs</a></li>
+              <li><a href="../lecturenotes/index.html">Lecture Notes</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-6 col-md-3" style="padding-left:100px;">
+            <h6></h6><br>
+            <ul class="footer-links">
+              
+              <li><a href="../questions/index.html">Questions</a></li>
+              <li><a href="index.html">Lab Programs</a></li>
+              <li><a href="../syllabus/index.html">Syllabus</a></li>
+            </ul>
+          </div>
+
+          
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by 
+         <a href="#">StudyGlance</a>.
+            </p>
+            <p><!-- hitwebcounter Code START -->
+
+<img src="https://hitwebcounter.com/counter/counter.php?page=7760160&amp;style=0007&amp;nbdigits=5&amp;type=ip&amp;initCount=0" Alt=""   border="0" />    </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+            </ul>
+          </div>
+        </div>
+      </div>
+</footer> </div>
+ 
+ <!--end body container-->
+    <!--footer
+    <div class="site-footer">
+      <div class="container">
+       </div>
+    </div>-->
+  </body>
+
+
+<!-- Mirrored from studyglance.in/labprograms/nlplabprograms.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 28 May 2025 03:42:05 GMT -->
+</html>

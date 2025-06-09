@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html>
+  
+<!-- Mirrored from studyglance.in/python/operator.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 28 May 2025 03:41:16 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>Arithmetic,Assignment,Bitwise,Comparison,Logical,Identity,Membership Operators in python | Study Glance</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="description" content=" " />
+	<meta property="og:title" content="Arithmetic,Assignment,Bitwise,Comparison,Logical,Identity,Membership Operators in python | Study Glance" />
+	<meta property="og:description" content="" />
+	<meta property="og:url" content="index-2.html" />
+
+
+    <link rel="icon" href="../images/logo1.png" type="image/x-icon"/>
+    <link rel="bookmark" href="../images/logo1.png"/>
+    <!-- site css -->
+    <link rel="stylesheet" href="../dist/css/style.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700,400italic,600italic,700italic,800italic,300italic" rel="stylesheet" type="text/css">
+    <!-- <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'> -->
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="../dist/js/site.min.js"></script>
+	<script type="text/javascript" src="../dist/js/prism.js"></script>
+	<script>
+		function myFunction() {
+		var x = document.getElementById("myTopnav");
+		if (x.className === "topnav") {
+			x.className += " responsive";
+		} else {
+			x.className = "topnav";
+		}
+		}
+	</script>
+  </head>
+<body>
+<!--nav-->
+<link rel="stylesheet" href="../dist/css/site.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700,400italic,600italic,700italic,800italic,300italic" rel="stylesheet" type="text/css">
+    <!-- <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'> -->
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="../dist/js/site.min.js"></script>
+	 <script type="text/javascript" src="../dist/js/prism.js"></script>
+	<script>
+			function myFunction() {
+		var x = document.getElementById("myTopnav");
+		if (x.className === "topnav") {
+			x.className += " responsive";
+		} else {
+			x.className = "topnav";
+		}
+		}
+	</script>
+	<script async src="../../pagead2.googlesyndication.com/pagead/js/f9b65.txt?client=ca-pub-8096140274719176"
+     crossorigin="anonymous"></script>
+  </head>
+<body>    
+<nav role="navigation" class="navbar">
+	<!-- logo -->
+	<center><img src="../images/logo4.png" height="90" border="0" alt="" style="padding-left:5px;padding-top:2px;padding-bottom:5px;"></center>
+	<!-- main menu-->   
+	<div class="topnav" id="myTopnav">
+	<a href="../index-2.html" class="">Home</a>
+	<div class="mdropdown">
+    <button class="mdropbtn">Tutorials
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="mdropdown-content">
+	  <a href="../c/index.html" class="">C - Programming</a>
+	<a href="../ds/index.html" class="" >Data Structure</a>
+      <a href="../html/index.html" class="">HTML</a>
+	  <a href="../php/index.html" class="">PHP</a>
+	  <a href="../xml/index.html" class="" >XML</a>
+	  <a href="../servlet/index.html" class="" >SERVLET</a>
+     <a href="index.html" class="active" >PYTHON</a>
+     <a href="../dbms/index.html" class="" >DBMS</a>
+     <a href="../dm/index.html" class="" >Data Mining</a>
+     <a href="../daa/index.html" class="" >DAA</a>
+	 <a href="../nn/index.html" class="" >Neural Networks</a>
+	 <a href="../dl/index.html" class="" >Deep Learning</a>
+      <!--<a href="#php" class="">PHP</a>-->
+    </div>
+  </div>
+
+<!--
+	<a href="html/index.php" class="">HTML</a>
+	<a href="python/index.php" class="active">PYTHON</a>
+	<a href="#php" class="">PHP</a>-->
+	<a href="../ppts/index.html" class="">PPTs</a>
+	<a href="../lecturenotes/index.html" class="">Lecture Notes</a>
+	<!--<a href="../questions/index.php" class="">Questions</a>-->
+	<a href="../objquestions/index.html" class="">Objective Questions</a>
+	<a href="../labprograms/index.html" class="">Lab Programs</a>
+	<!--<a href="../syllabus/index.php" class="">Syllabus</a>-->
+	<a href="../blog/index.html" class="">Blog</a>
+	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+	<i class="fa fa-bars"></i>
+	</a>
+	</div>
+	<!-- end main menu-->
+</nav>
+	<!-- end main menu-->
+</nav>
+<!--nav end -->
+<!--body container-->
+    <div class="container-fluid">
+    <div class="row row-offcanvas row-offcanvas-left">
+<!-- Side Menu-->
+	<div class="col-xs-6 col-sm-3 sidebar-offcanvas" role="navigation" id="non-printable">
+    <ul class="list-group panel">
+		<li class="list-group-item" "><img src="images/python.png" width="20"alt="">&nbsp;&nbsp; <b>PYTHON BASICS </b></li>
+        <!--<li class="list-group-item"><input type="text" class="form-control search-query" placeholder="Search Something"></li>-->
+        <li class="list-group-item "><a href="introduction.html"><i class="fa  fa-chevron-circle-right"></i>Introduction</a></li>
+		<li class="list-group-item "><a href="installation.html"><i class="fa  fa-chevron-circle-right"></i>Python Installation</a></li>
+        <!-- <li class="list-group-item"><a href="icons.html"><i class="fa  fa-chevron-circle-right"></i>Icons </a></li> -->
+		<li class="list-group-item "><a href="comments.html"><i class="fa  fa-chevron-circle-right"></i>Comments</a></li>
+		<li class="list-group-item "><a href="iooperations.html"><i class="fa  fa-chevron-circle-right"></i>IO Operations</a></li>
+		<li class="list-group-item "><a href="variables.html"><i class="fa  fa-chevron-circle-right"></i>Variables</a></li>
+		<li class="list-group-item "><a href="datatypes.html"><i class="fa  fa-chevron-circle-right"></i>Data Types</a></li>
+		<li class="list-group-item "><a href="typecasting.html"><i class="fa  fa-chevron-circle-right"></i>Typecasting</a></li>
+		<li class="list-group-item active"><a href="operator.html"><i class="fa  fa-chevron-circle-right"></i>Operators</a></li>
+		<li class="list-group-item "><a href="conditional.html"><i class="fa  fa-chevron-circle-right"></i>Conditional Statements </a></li>
+		<li class="list-group-item "><a href="loops.html"><i class="fa  fa-chevron-circle-right"></i>Loop Statements </a></li>
+		<li class="list-group-item "><a href="break.html"><i class="fa  fa-chevron-circle-right"></i>Break Continue </a></li>
+
+		<li class="list-group-item" "><img src="images/python.png" width="20"alt="">&nbsp;&nbsp; <b>PYTHON SEQUENCES </b></li>
+		<li class="list-group-item "><a href="string.html"><i class="fa  fa-chevron-circle-right"></i>String</a></li>
+		<li class="list-group-item "><a href="list.html"><i class="fa  fa-chevron-circle-right"></i>List</a></li>
+		<li class="list-group-item "><a href="tuple.html"><i class="fa  fa-chevron-circle-right"></i>Tuple</a></li>
+		<li class="list-group-item "><a href="set.html"><i class="fa  fa-chevron-circle-right"></i>Set</a></li>
+		<li class="list-group-item "><a href="dictionary.html"><i class="fa  fa-chevron-circle-right"></i>Dictionary</a></li>
+
+		<li class="list-group-item" "><img src="images/python.png" width="20"alt="">&nbsp;&nbsp; <b> FILES IN PYTHON </b></li>
+		<li class="list-group-item "><a href="files.html"><i class="fa  fa-chevron-circle-right"></i>Files Function & Methods</a></li>
+		<li class="list-group-item "><a href="command-line.html"><i class="fa  fa-chevron-circle-right"></i>Command-Line Arguments</a></li>
+		<li class="list-group-item "><a href="file-system.html"><i class="fa  fa-chevron-circle-right"></i>File System</a></li>
+		
+		<li class="list-group-item" "><img src="images/python.png" width="20"alt="">&nbsp;&nbsp; <b> PYTHON EXCEPTIONS </b></li>
+		<li class="list-group-item "><a href="exceptions.html"><i class="fa  fa-chevron-circle-right"></i>Exceptions</a></li>
+		<li class="list-group-item "><a href="ex-handling.html"><i class="fa  fa-chevron-circle-right"></i>Exception handling</a></li>
+		<li class="list-group-item "><a href="raise-assert.html"><i class="fa  fa-chevron-circle-right"></i>Raise &amp; Assert Statement</a></li>
+
+
+		<li class="list-group-item" "><img src="images/python.png" width="20"alt="">&nbsp;&nbsp; <b> PYTHON MODULES </b></li>
+		<li class="list-group-item "><a href="functions.html"><i class="fa  fa-chevron-circle-right"></i>Functions</a></li>
+		<li class="list-group-item "><a href="module.html"><i class="fa  fa-chevron-circle-right"></i>Modules</a></li>
+		<li class="list-group-item "><a href="namespaces.html"><i class="fa  fa-chevron-circle-right"></i>Namespaces</a></li>
+		<li class="list-group-item "><a href="packages.html"><i class="fa  fa-chevron-circle-right"></i>Packages</a></li>
+
+		
+		<li class="list-group-item" "><img src="images/python.png" width="20"alt="">&nbsp;&nbsp; <b> PYTHON REG-EXPS </b></li>
+		<li class="list-group-item "><a href="regex.html"><i class="fa  fa-chevron-circle-right"></i>Regular Expressions</a></li>
+		<li class="list-group-item "><a href="regex-module.html"><i class="fa  fa-chevron-circle-right"></i>RegEx Module</a></li>
+    </ul>
+</div><!-- End side Menu-->
+<!-- content -->
+<div class="col-xs-12 col-sm-9">
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h3 class="panel-title"><a href="javascript:void(0);" class="toggle-sidebar" ><span class="fa fa-angle-double-left" data-toggle="offcanvas" title="Maximize Panel"></span></a> Python Menu</h3>
+    </div>
+	<!--panel-Body-->
+    <div class="panel-body">
+		<div class="content-row">
+			<center><h1>Operators in Python</h1></center><hr>
+<p>The operator can be defined as a symbol which is responsible for a particular operation between two operands. <br>
+Python provides a variety of operators described as follows.</p>
+<ul>
+	<li>Arithmetic operators</li>
+	<li>Assignment Operators</li>
+	<li>Comparison operators</li>
+	<li>Bitwise Operators</li>
+	<li>Identity Operators</li>
+	<li>Logical Operators</li>
+	<li>Membership Operators</li>
+</ul>
+<h2>1. Arithmetic operators</h2>
+<p>Arithmetic operators are used to perform arithmetic operations between two operands.</p>
+<div class="table-responsive">
+	<table class="table table-bordered table-striped">
+		<colgroup>
+			<col class="col-xs-2">
+			<col class="col-xs-6">
+		</colgroup>
+		<thead>
+			<tr>
+				<th>Operator</th>
+                <th>Description</th>
+            </tr>
+		</thead>
+        <tbody>
+			<tr>
+				<td><code>+ (addition)</code></td>
+				<td>Add two operands</td>
+			</tr>
+			<tr>
+				<td><code>- (subtraction)</code></td>
+				<td>Subtract right operand from the left</td>
+			</tr>
+			<tr>
+				<td><code>*(multiplication)</code></td>
+				<td>Multiply two operands</td>
+			</tr>
+			<tr>
+				<td><code>/ (divide)</code></td>
+				<td>Divide left operand by the right one (always results into float)</td>
+			</tr>
+			<tr>
+				<td><code>%( reminder)</code></td>
+				<td>Modulus - remainder of the division of left operand by the right</td>
+			</tr>
+			<tr>
+				<td><code>// (floor division)</code></td>
+				<td>Floor division - division that results into whole number adjusted to the left in the number line</td>
+			</tr>
+			<tr>
+				<td><code>** (exponent)</code></td>
+				<td>Exponent - left operand raised to the power of right</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<h1><span style='font-size:34px;'>&#9971;</span>&nbsp;Python Example Program - Arithmetic operators in Python</h1><br>
+
+<div class="row"> 
+	<div class="col-md-6">
+		<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">x = 20
+y = 10
+print('x + y =',x+y)
+print('x - y =',x-y)
+print('x * y =',x*y)
+print('x / y =',x/y)
+print('x // y =',x//y)
+print('x ** y =',x**y)</code></pre></div>
+	</div>
+    <div class="col-md-6">
+		<div class="alert alert-warning"><b>Output:</b><pre><code class="language-python">x + y = 30
+x - y = 10
+x * y = 200
+x / y = 2
+x // y = 0
+x ** y = 8</code></pre></div>                      
+	</div>
+</div>
+
+<!-- panel body -->
+<h2>2. Assignment Operators</h2>
+<p>The assignment operators are used to assign the value of the right expression to the left operand.</p>
+<div class="table-responsive">
+	<table class="table table-bordered table-striped">
+		<colgroup>
+			<col class="col-xs-3">
+			<col class="col-xs-5">
+		</colgroup>
+		<thead>
+			<tr>
+				<th>Operator</th>
+                <th>Description</th>
+            </tr>
+		</thead>
+        <tbody>
+			<tr>
+				<td><code>= (Assigns to)</code></td>
+				<td>Assigns values from right side operands to left side operand.</td>
+			</tr>
+			<tr>
+				<td><code>+= (Assignment after Addition)</code></td>
+				<td>It adds right operand to the left operand and assign the result to left operand.</td>
+			</tr>
+			<tr>
+				<td><code>-= (Assignment after Subtraction)</code></td>
+				<td>It subtracts right operand from the left operand and assign the result to left operand.</td>
+			</tr>
+			<tr>
+				<td><code>*= (Assignment after Multiplication)</code></td>
+				<td>It multiplies right operand with the left operand and assign the result to left operand.</td>
+			</tr>
+			<tr>
+				<td><code>/= (Assignment after Division)</code></td>
+				<td>It divides left operand with the right operand and assign the result to left operand.</td>
+			</tr>
+			<tr>
+				<td><code>%= (Assignment after Modulus)</code></td>
+				<td>It takes modulus using two operands and assign the result to left operand.</td>
+			</tr>
+			<tr>
+				<td><code>**= (Assignment after Exponent)</code></td>
+				<td>Performs exponential (power) calculation on operators and assign value to the left operand.</td>
+			</tr>
+			<tr>
+				<td><code>//= (Assignment after floor division)</code></td>
+				<td>It performs floor division on operators and assign value to the left operand.</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<h1><span style='font-size:34px;'>&#9971;</span>&nbsp;Python Example Program - Assignment operators in Python</h1><br>
+<div class="row"> 
+	<div class="col-md-6">
+		<div class="alert alert-info"><b>Example:</b><pre><code class="language-python"># assign  a value to variable
+x = 10   
+y = 6 
+# x = x + y assignment after addition   
+x += y   
+# print result  
+print( "Addition = ", x)
+
+# x = x - y assignment after subtraction   
+x -= y   
+# print result 
+print( "Subtraction = ", x)
+
+# x = x * y assignment after multiplication   
+x *= y   
+# print result  
+print( "Multiplication = ", x)
+
+# x = x / y assignment after division   
+x /= y   
+# print result  
+print( "Division = ", x)
+
+# x = x % y assignment after modulus   
+x %= y   
+# print result  
+print( "Modulus = ", x)
+
+# x = x ** y Assignment after Exponent   
+x **= y   
+# print result  
+print( "Exponent = ", x)
+
+# x = x // y Assignment after floor division   
+x //= y   
+# print result  
+print( "Floor division = ", x)
+		</code></pre></div>
+	</div>
+	<div class="col-md-6">
+		<div class="alert alert-warning"><b>Output:</b><pre><code class="language-python">Addition =  16
+Subtraction =  10
+Multiplication =  60
+Division =  10.0
+Modulus =  4.0
+Exponent =  4096.0
+Floor division =  682.0
+		</code></pre></div>
+	</div>
+</div>
+<h2>3. Comparison operators</h2>
+<p>Comparison operators are used to comparing the value of the two operands and returns boolean true or false accordingly.</p>
+<div class="table-responsive">
+	<table class="table table-bordered table-striped">
+		<colgroup>
+			<col class="col-xs-2">
+			<col class="col-xs-6">
+		</colgroup>
+		<thead>
+			<tr>
+				<th>Operator</th>
+                <th>Description</th>
+            </tr>
+		</thead>
+        <tbody>
+			<tr>
+				<td><code>== (Equal to)</code></td>
+				<td>Equal to - True if both operands are equal. </td>
+			</tr>
+			<tr>
+				<td><code>!= (Not equal to)</code></td>
+				<td>Not equal to - True if operands are not equal.</td>
+			</tr>
+			<tr>
+				<td><code>&#60;= (Less than or equal)</code></td>
+				<td>Less than or equal to - True if left operand is less than or equal to the right</td>
+			</tr>
+			<tr>
+				<td><code>&#62;= (Greater than or equal)</code></td>
+				<td>Greater than or equal to - True if left operand is greater than or equal to the right</td>
+			</tr>
+			<tr>
+				<td><code>&#60; (Less than)</code></td>
+				<td>Less that - True if left operand is less than the right</td>
+			</tr>
+			<tr>
+				<td><code>&#62; (Greater than)</code></td>
+				<td>Greater that - True if left operand is greater than the right</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<h1><span style='font-size:34px;'>&#9971;</span>&nbsp;Python Example Program - Comparison operators in Python</h1><br>
+<div class="row"> 
+	<div class="col-md-6">
+		<div class="alert alert-info "><b>Example:</b><pre><code class="language-python">x = 20
+y = 10
+print('x > y  is',x &#62; y)
+print('x < y  is',x &#60; y)
+print('x == y is',x == y)
+print('x != y is',x != y)
+print('x >= y is',x >= y)
+print('x &#60;= y is',x &#60;= y)
+		</code></pre></div>
+	</div>
+	<div class="col-md-6">
+		<div class="alert alert-warning "><b>Output:</b><pre><code class="language-python">x > y  is True
+x < y  is False
+x == y is False
+x != y is True
+x >= y is True
+x &#62;= y is False
+		</code></pre></div>
+	</div>
+</div>
+<h2>4. Bitwise Operators</h2>
+<p>The bitwise operators perform bit by bit operation on the values of the two operands.</p>
+<div class="table-responsive">
+	<table class="table table-bordered table-striped">
+		<colgroup>
+			<col class="col-xs-2">
+			<col class="col-xs-6">
+		</colgroup>
+		<thead>
+			<tr>
+				<th>Operator</th>
+                <th>Description</th>
+            </tr>
+		</thead>
+        <tbody>
+			<tr>
+				<td><code>& (binary and)</code></td>
+				<td>Sets each bit to 1 if both bits are 1</td>
+			</tr>
+			<tr>
+				<td><code>| (binary or)</code></td>
+				<td>Sets each bit to 1 if one of two bits is 1</td>
+			</tr>
+			<tr>
+				<td><code>^ (binary xor)</code></td>
+				<td>Sets each bit to 1 if only one of two bits is 1</td>
+			</tr>
+			<tr>
+				<td><code>~ (negation)</code></td>
+				<td>Inverts all the bits</td>
+			</tr>
+			<tr>
+				<td><code>&#60;&#60; (left shift)</code></td>
+				<td>Shift left by pushing zeros in from the right and let the leftmost bits fall off</td>
+			</tr>
+			<tr>
+				<td><code>&#62;&#62; (right shift)</code></td>
+				<td>Shift right by pushing copies of the leftmost bit in from the left, and let the rightmost bits fall off</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<h1><span style='font-size:34px;'>&#9971;</span>&nbsp;Python Example Program - Bitwise operators in Python</h1><br>
+<div class="row"> 
+	<div class="col-md-6">
+		<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">a = 9       # equal to 1001
+b = 12      # equal to 1100
+
+print ("a & b = ",a & b)
+print ("a | b = ",a | b)
+print("a ^ b = ",a ^ b)
+print("~a = ",~a)
+print("a &#60;&#60; 2 = ",a &#60;&#60; 2)
+print("a &#62;&#62; 2 = ",a &#62;&#62; 2)</code></pre></div>
+	</div>
+	<div class="col-md-6">
+		<div class="alert alert-warning"><b>Output:</b><pre><code class="language-python">a & b = 8
+a | b = 13
+a ^ b = 5
+~a = -10
+a &#60;&#60; 2 = 36
+a &#62;&#62; 2 = 2</code></pre></div>
+	</div>
+</div>
+<h2>5. Identity Operators</h2>
+<p>Identity operators are used to compare the objects, not if they are equal, but if they are actually the same object, with the same memory location.</p>
+<div class="table-responsive">
+	<table class="table table-bordered table-striped">
+		<colgroup>
+			<col class="col-xs-2">
+			<col class="col-xs-6">
+		</colgroup>
+		<thead>
+			<tr>
+				<th>Operator</th>
+                <th>Description</th>
+            </tr>
+		</thead>
+        <tbody>
+			<tr>
+				<td><code>is</code></td>
+				<td>Returns true if both variables are the same object ( <strong>if id(x) equals id(y)</strong> )</td>
+			</tr>
+			<tr>
+				<td><code>is not</code></td>
+				<td>Returns true if both variables are not the same object</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<h1><span style='font-size:34px;'>&#9971;</span>&nbsp;Python Example Program - Identity operators in Python</h1><br>
+<div class="row"> 
+	<div class="col-md-6">
+		<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">x=10
+y=10
+print(x is y)
+print("id(x)= %d id(y)= %d" %(id(x),id(y)))
+y=20
+print(x is not y)
+print("id(x)= %d id(y)= %d" %(id(x),id(y)))</code></pre></div>
+	</div>
+	<div class="col-md-6">
+		<div class="alert alert-warning"><b>Output:</b><pre><code class="language-python">True
+id(x)= 10105376 id(y)= 10105376
+True
+id(x)= 10105376 id(y)= 10105696</code></pre></div>
+	</div>
+</div>
+<h2>6. Logical Operators</h2>
+<p>The logical operators are used primarily in the expression evaluation to make a decision.</p>
+<div class="table-responsive">
+	<table class="table table-bordered table-striped">
+		<colgroup>
+			<col class="col-xs-2">
+			<col class="col-xs-6">
+		</colgroup>
+		<thead>
+			<tr>
+				<th>Operator</th>
+                <th>Description</th>
+            </tr>
+		</thead>
+        <tbody>
+			<tr>
+				<td><code>and (logical and)</code></td>
+				<td>Returns True if both statements are true</td>
+			</tr>
+			<tr>
+				<td><code>or (logical or)</code></td>
+				<td>Returns True if one of the statements is true</td>
+			</tr>
+			<tr>
+				<td><code>not (logical not)</code></td>
+				<td>Reverse the result, returns False if the result is true</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<h1><span style='font-size:34px;'>&#9971;</span>&nbsp;Python Example Program - Logical operators in Python</h1><br>
+<div class="row"> 
+	<div class="col-md-6">
+		<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">x = True
+y = False
+print('x and y is',x and y)
+print('x or y is',x or y)
+print('not x is',not x)</code></pre></div>
+	</div>
+	<div class="col-md-6">
+		<div class="alert alert-warning"><b>Output:</b><pre><code class="language-python">x and y is False
+x or y is True
+not x is False</code></pre></div>
+	</div>
+</div>
+<h2>7. Membership Operators</h2>
+<p>The logical operators are used primarily in the expression evaluation to make a decision.</p>
+<div class="table-responsive">
+	<table class="table table-bordered table-striped">
+		<colgroup>
+			<col class="col-xs-2">
+			<col class="col-xs-6">
+		</colgroup>
+		<thead>
+			<tr>
+				<th>Operator</th>
+                <th>Description</th>
+            </tr>
+		</thead>
+        <tbody>
+			<tr>
+				<td><code>in</code></td>
+				<td>it Returns True if a sequence with the specified value is present in the object (list, tuple, or dictionary)</td>
+			</tr>
+			<tr>
+				<td><code>not in )</code></td>
+				<td>it Returns True if a sequence with the specified value is not present in the object (list, tuple, or dictionary)</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<h1><span style='font-size:34px;'>&#9971;</span>&nbsp;Python Example Program - Membership operators in Python</h1><br>
+<div class="row"> 
+	<div class="col-md-6">
+		<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">x = 'Hello world'
+print('H' in x)
+print('hello' not in x)</code></pre></div> 
+	</div>
+	<div class="col-md-6">
+		<div class="alert alert-warning"><b>Output:</b><pre><code class="language-python">True
+True</code></pre></div>
+	</div>
+</div>
+<hr>			<span class="nextbtn">Next Topic :</span><a href="conditional.html" class="anext"><strong>Conditional Statements in Python</strong></a>
+        </div>
+    </div>
+	<!-- end panel body -->
+</div>
+</div>
+<!-- end content -->
+</div>
+ </div>
+ <!--end body container-->
+    <!--footer-->
+    <!-- Google Ad Multiflex1 <div class="container">
+        <div class="row">
+		<div class="col-sm-12
+<!-- Google Ad Multiflex1 Start
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8096140274719176"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-8096140274719176"
+     data-ad-slot="3158072222"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+</div></div>
+END-->
+ <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>About</h6>
+	          <p class="text-justify">Study Glance provides Tutorials , Power point Presentations(ppts), Lecture Notes, Important & previously asked questions, Objective Type questions, Laboratory programs and we provide Syllabus of various subjects.</p>
+          </div>
+		<div class="col-xs-6 col-md-3" style="padding-left:100px;">
+            <h6>Categories</h6>
+            <ul class="footer-links">
+              <li><a href="../Tutorialindex.html">Tutorials</a></li>
+              <li><a href="../ppts/index.html">PPTs</a></li>
+              <li><a href="../lecturenotes/index.html">Lecture Notes</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-6 col-md-3" style="padding-left:100px;">
+            <h6></h6><br>
+            <ul class="footer-links">
+              
+              <li><a href="../questions/index.html">Questions</a></li>
+              <li><a href="../labprograms/index.html">Lab Programs</a></li>
+              <li><a href="../syllabus/index.html">Syllabus</a></li>
+            </ul>
+          </div>
+
+          
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by 
+         <a href="#">StudyGlance</a>.
+            </p>
+            <p><!-- hitwebcounter Code START -->
+
+<img src="https://hitwebcounter.com/counter/counter.php?page=7760160&amp;style=0007&amp;nbdigits=5&amp;type=ip&amp;initCount=0" Alt=""   border="0" />    </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+            </ul>
+          </div>
+        </div>
+      </div>
+</footer>  </body>
+
+<!-- Mirrored from studyglance.in/python/operator.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 28 May 2025 03:41:16 GMT -->
+</html>
+

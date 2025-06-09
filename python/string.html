@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html>
+  
+<!-- Mirrored from studyglance.in/python/string.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 28 May 2025 03:41:16 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>Strings, String Operators and String functions in python | Study Glance</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="description" content=" " />
+	<meta property="og:title" content="Strings, String Operators and String functions in python | Study Glance" />
+	<meta property="og:description" content="" />
+	<meta property="og:url" content="index-2.html" />
+
+
+    <link rel="icon" href="../images/logo1.png" type="image/x-icon"/>
+    <link rel="bookmark" href="../images/logo1.png"/>
+    <!-- site css -->
+    <link rel="stylesheet" href="../dist/css/style.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700,400italic,600italic,700italic,800italic,300italic" rel="stylesheet" type="text/css">
+    <!-- <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'> -->
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="../dist/js/site.min.js"></script>
+	<script type="text/javascript" src="../dist/js/prism.js"></script>
+
+	<script>
+		function myFunction() {
+		var x = document.getElementById("myTopnav");
+		if (x.className === "topnav") {
+			x.className += " responsive";
+		} else {
+			x.className = "topnav";
+		}
+		}
+	</script>
+  </head>
+<body>
+<!--nav-->
+<link rel="stylesheet" href="../dist/css/site.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700,400italic,600italic,700italic,800italic,300italic" rel="stylesheet" type="text/css">
+    <!-- <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'> -->
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="../dist/js/site.min.js"></script>
+	 <script type="text/javascript" src="../dist/js/prism.js"></script>
+	<script>
+			function myFunction() {
+		var x = document.getElementById("myTopnav");
+		if (x.className === "topnav") {
+			x.className += " responsive";
+		} else {
+			x.className = "topnav";
+		}
+		}
+	</script>
+	<script async src="../../pagead2.googlesyndication.com/pagead/js/f9b65.txt?client=ca-pub-8096140274719176"
+     crossorigin="anonymous"></script>
+  </head>
+<body>    
+<nav role="navigation" class="navbar">
+	<!-- logo -->
+	<center><img src="../images/logo4.png" height="90" border="0" alt="" style="padding-left:5px;padding-top:2px;padding-bottom:5px;"></center>
+	<!-- main menu-->   
+	<div class="topnav" id="myTopnav">
+	<a href="../index-2.html" class="">Home</a>
+	<div class="mdropdown">
+    <button class="mdropbtn">Tutorials
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="mdropdown-content">
+	  <a href="../c/index.html" class="">C - Programming</a>
+	<a href="../ds/index.html" class="" >Data Structure</a>
+      <a href="../html/index.html" class="">HTML</a>
+	  <a href="../php/index.html" class="">PHP</a>
+	  <a href="../xml/index.html" class="" >XML</a>
+	  <a href="../servlet/index.html" class="" >SERVLET</a>
+     <a href="index.html" class="active" >PYTHON</a>
+     <a href="../dbms/index.html" class="" >DBMS</a>
+     <a href="../dm/index.html" class="" >Data Mining</a>
+     <a href="../daa/index.html" class="" >DAA</a>
+	 <a href="../nn/index.html" class="" >Neural Networks</a>
+	 <a href="../dl/index.html" class="" >Deep Learning</a>
+      <!--<a href="#php" class="">PHP</a>-->
+    </div>
+  </div>
+
+<!--
+	<a href="html/index.php" class="">HTML</a>
+	<a href="python/index.php" class="active">PYTHON</a>
+	<a href="#php" class="">PHP</a>-->
+	<a href="../ppts/index.html" class="">PPTs</a>
+	<a href="../lecturenotes/index.html" class="">Lecture Notes</a>
+	<!--<a href="../questions/index.php" class="">Questions</a>-->
+	<a href="../objquestions/index.html" class="">Objective Questions</a>
+	<a href="../labprograms/index.html" class="">Lab Programs</a>
+	<!--<a href="../syllabus/index.php" class="">Syllabus</a>-->
+	<a href="../blog/index.html" class="">Blog</a>
+	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+	<i class="fa fa-bars"></i>
+	</a>
+	</div>
+	<!-- end main menu-->
+</nav>
+	<!-- end main menu-->
+</nav>
+<!--nav end -->
+<!--body container-->
+    <div class="container-fluid">
+    <div class="row row-offcanvas row-offcanvas-left">
+<!-- Side Menu-->
+	<div class="col-xs-6 col-sm-3 sidebar-offcanvas" role="navigation" id="non-printable">
+    <ul class="list-group panel">
+		<li class="list-group-item" "><img src="images/python.png" width="20"alt="">&nbsp;&nbsp; <b>PYTHON BASICS </b></li>
+        <!--<li class="list-group-item"><input type="text" class="form-control search-query" placeholder="Search Something"></li>-->
+        <li class="list-group-item "><a href="introduction.html"><i class="fa  fa-chevron-circle-right"></i>Introduction</a></li>
+		<li class="list-group-item "><a href="installation.html"><i class="fa  fa-chevron-circle-right"></i>Python Installation</a></li>
+        <!-- <li class="list-group-item"><a href="icons.html"><i class="fa  fa-chevron-circle-right"></i>Icons </a></li> -->
+		<li class="list-group-item "><a href="comments.html"><i class="fa  fa-chevron-circle-right"></i>Comments</a></li>
+		<li class="list-group-item "><a href="iooperations.html"><i class="fa  fa-chevron-circle-right"></i>IO Operations</a></li>
+		<li class="list-group-item "><a href="variables.html"><i class="fa  fa-chevron-circle-right"></i>Variables</a></li>
+		<li class="list-group-item "><a href="datatypes.html"><i class="fa  fa-chevron-circle-right"></i>Data Types</a></li>
+		<li class="list-group-item "><a href="typecasting.html"><i class="fa  fa-chevron-circle-right"></i>Typecasting</a></li>
+		<li class="list-group-item "><a href="operator.html"><i class="fa  fa-chevron-circle-right"></i>Operators</a></li>
+		<li class="list-group-item "><a href="conditional.html"><i class="fa  fa-chevron-circle-right"></i>Conditional Statements </a></li>
+		<li class="list-group-item "><a href="loops.html"><i class="fa  fa-chevron-circle-right"></i>Loop Statements </a></li>
+		<li class="list-group-item "><a href="break.html"><i class="fa  fa-chevron-circle-right"></i>Break Continue </a></li>
+
+		<li class="list-group-item" "><img src="images/python.png" width="20"alt="">&nbsp;&nbsp; <b>PYTHON SEQUENCES </b></li>
+		<li class="list-group-item active"><a href="string.html"><i class="fa  fa-chevron-circle-right"></i>String</a></li>
+		<li class="list-group-item "><a href="list.html"><i class="fa  fa-chevron-circle-right"></i>List</a></li>
+		<li class="list-group-item "><a href="tuple.html"><i class="fa  fa-chevron-circle-right"></i>Tuple</a></li>
+		<li class="list-group-item "><a href="set.html"><i class="fa  fa-chevron-circle-right"></i>Set</a></li>
+		<li class="list-group-item "><a href="dictionary.html"><i class="fa  fa-chevron-circle-right"></i>Dictionary</a></li>
+
+		<li class="list-group-item" "><img src="images/python.png" width="20"alt="">&nbsp;&nbsp; <b> FILES IN PYTHON </b></li>
+		<li class="list-group-item "><a href="files.html"><i class="fa  fa-chevron-circle-right"></i>Files Function & Methods</a></li>
+		<li class="list-group-item "><a href="command-line.html"><i class="fa  fa-chevron-circle-right"></i>Command-Line Arguments</a></li>
+		<li class="list-group-item "><a href="file-system.html"><i class="fa  fa-chevron-circle-right"></i>File System</a></li>
+		
+		<li class="list-group-item" "><img src="images/python.png" width="20"alt="">&nbsp;&nbsp; <b> PYTHON EXCEPTIONS </b></li>
+		<li class="list-group-item "><a href="exceptions.html"><i class="fa  fa-chevron-circle-right"></i>Exceptions</a></li>
+		<li class="list-group-item "><a href="ex-handling.html"><i class="fa  fa-chevron-circle-right"></i>Exception handling</a></li>
+		<li class="list-group-item "><a href="raise-assert.html"><i class="fa  fa-chevron-circle-right"></i>Raise &amp; Assert Statement</a></li>
+
+
+		<li class="list-group-item" "><img src="images/python.png" width="20"alt="">&nbsp;&nbsp; <b> PYTHON MODULES </b></li>
+		<li class="list-group-item "><a href="functions.html"><i class="fa  fa-chevron-circle-right"></i>Functions</a></li>
+		<li class="list-group-item "><a href="module.html"><i class="fa  fa-chevron-circle-right"></i>Modules</a></li>
+		<li class="list-group-item "><a href="namespaces.html"><i class="fa  fa-chevron-circle-right"></i>Namespaces</a></li>
+		<li class="list-group-item "><a href="packages.html"><i class="fa  fa-chevron-circle-right"></i>Packages</a></li>
+
+		
+		<li class="list-group-item" "><img src="images/python.png" width="20"alt="">&nbsp;&nbsp; <b> PYTHON REG-EXPS </b></li>
+		<li class="list-group-item "><a href="regex.html"><i class="fa  fa-chevron-circle-right"></i>Regular Expressions</a></li>
+		<li class="list-group-item "><a href="regex-module.html"><i class="fa  fa-chevron-circle-right"></i>RegEx Module</a></li>
+    </ul>
+</div><!-- End side Menu-->
+<!-- content -->
+<div class="col-xs-12 col-sm-9">
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h3 class="panel-title"><a href="javascript:void(0);" class="toggle-sidebar" ><span class="fa fa-angle-double-left" data-toggle="offcanvas" title="Maximize Panel"></span></a> Python Menu</h3>
+    </div>
+	<!--panel-Body-->
+    <div class="panel-body">
+		<div class="content-row">
+			<center><h1>String Sequence in Python</h1></center><hr>
+<p>In python, strings can be created by enclosing the character or the sequence of characters in the quotes. Python allows us to use single quotes, double quotes, or triple quotes to create the string.
+</p><br>
+<em><mark>Syntax:</mark></em><br>
+<pre><code class="language-python">str1 = 'Hello Python'
+str1 = "Hello Python"
+str1 = '''Hello 
+		Python'''</code></pre><br>
+<p>In python, strings are treated as the sequence of characters which means that python doesn't support the character data type instead a single character written as 'p' is treated as the string of length 1.</p>
+<h1>Python String indexing</h1>
+<p>Like other languages, the indexing of the python strings starts from 0. For example, the string "HELLO" is indexed as given in the below figure.</p>
+<p>str="HELLO"</p>
+<img src="images/string.jpg" width="220" border="0" alt="string index">
+<br><br>
+<p>str[0]=H<br>
+str[1]=E<br>
+str[4]=O</p><br>
+<p>Python allows negative indexing for its sequences.</p>
+<p>The index of -1 refers to the last item, -2 to the second last item and so on.</p>
+<img src="images/string1.jpg" width="220" border="0" alt="string index"><br><br>
+<p>str[-1]=O<br>
+str[-2]=L<br>
+str[-4]=E</p>
+<p>A string can only be replaced with a new string since its content cannot be partially replaced. Strings are immutable in python.</p>
+<p>                           
+str[0] = "B"&nbsp;<font size="5" color="#ff0000">&#9746; </font>&nbsp;&nbsp;&nbsp;can&acute;t replace a single character in a string <br><br>                            
+str = "BYE"&nbsp;<font size="5" color="#33cc00">&#9745; </font> &nbsp;&nbsp;&nbsp;can replace a new string</p>
+
+<h1>Python String Operators</h1>
+<div class="table-responsive">
+	<table class="table table-bordered table-striped">
+		<colgroup>
+			<col class="col-xs-1">
+			<col class="col-xs-6">
+		</colgroup>
+		<thead>
+			<tr>
+				<th>Operator</th>
+                <th>Description</th>
+            </tr>
+		</thead>
+        <tbody>
+			<tr>
+				<td><code>+</code></td>
+				<td>It is known as concatenation operator used to join the strings.</td>
+			</tr>
+			<tr>
+				<td><code>*</code></td>
+				<td>It is known as repetition operator. It concatenates the multiple copies of the same string.</td>
+			</tr>
+			<tr>
+				<td><code>[ ]</code></td>
+				<td>It is known as slice operator. It is used to access the sub-strings of a particular string.</td>
+			</tr>
+			<tr>
+				<td><code>[ : ]</code></td>
+				<td>It is known as range slice operator. It is used to access the characters from the specified range.</td>
+			</tr>
+			<tr>
+				<td><code>in</code></td>
+				<td>It is known as membership operator. It returns if a particular sub-string is present in the specified string.</td>
+			</tr>
+			<tr>
+				<td><code>not in</code></td>
+				<td>It is also a membership operator and does the exact reverse of in. It returns true if a particular substring is not present in the specified string.</td>
+			</tr>
+			<tr>
+				<td><code>r / R</code></td>
+				<td>It is used to specify the raw string. To define any string as a raw string, the character r or R is followed by the string. Such as "hello \n python".</td>
+			</tr>
+			<tr>
+				<td><code>%</code></td>
+				<td>It is used to perform string formatting. It makes use of the format specifies used in C programming like %d or %f to map their values in python. </td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<h1><span style='font-size:34px;'>&#9971;</span>&nbsp;Python Example Program - Working with String Operators in Python </h1><br>
+<div class="row"> 
+	<div class="col-md-7">
+		<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">str1 = "Hello"   
+str2 = " World"  
+print(str1*3) # prints HelloHelloHello  
+print(str1+str2) # prints Hello world   
+print(str1[4]) # prints o              
+print(str1[2:4]) # prints ll                  
+print('w' in str1) # prints false as w is not present in str1  
+print('Wo' not in str2) # prints false as Wo is present in str2.   
+print(r'Hello\n world') # prints Hello\n world as it is written  
+print("The string str1 : %s"%(str1)) # prints The string str : Hello </code></div>
+	</div>
+    <div class="col-md-5">
+		<div class="alert alert-warning"><b>Output:</b><pre><code class="language-python">HelloHelloHello
+Hello World
+o
+ll
+False
+False
+Hello\n world
+The string str1 : Hello</code></div>                      
+	</div>
+</div>
+
+<h1>Python String functions</h1>
+<p>Python provides various in-built functions that are used for string handling. Those are</p>
+<strong><ul>
+	<li>len()</li>
+	<li>lower()</li>
+	<li>upper()</li>
+	<li>replace()</li>
+	<li>join()</li>
+	<li>split()</li>
+	<li>find()</li>
+	<li>index()</li>
+	<li>isalnum()</li>
+	<li>isdigit()</li>
+	<li>isnumeric()</li>
+	<li>islower()</li>
+	<li>isupper()</li>
+</ul></strong>
+<h1>&#9758; len()</h1>
+<p>In python string len() function returns length of the given string.</p>
+<em><mark>Syntax:</mark></em><br>
+<pre><code class="language-python">len(string)</code></pre>
+<h1><span style='font-size:34px;'>&#9971;</span>&nbsp;Python Example Program - len() in Python</h1>
+<div class="row"> 
+	<div class="col-md-6">
+		<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">str1="Python Language"
+print(len(str1))</code></pre></div>
+	</div>
+    <div class="col-md-6">
+		<div class="alert alert-warning"><b>Output:</b><pre><code class="language-python">15</code></pre></div>                      
+	</div>
+</div>
+<h1>&#9758; lower ()</h1>
+<p>In python, lower() method returns all characters of given string in lowercase.</p>
+<em><mark>Syntax:</mark></em><br>
+<pre><code class="language-python">str.lower()</code></pre>
+<h1><span style='font-size:34px;'>&#9971;</span>&nbsp;Python Example Program - lower() in Python</h1>
+<div class="row"> 
+	<div class="col-md-6">
+		<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">str=”PyTHOn”
+print(str.lower())</code></pre></div>
+	</div>
+    <div class="col-md-6">
+		<div class="alert alert-warning"><b>Output:</b><pre><code class="language-python">python</code></pre></div>                      
+	</div>
+</div>
+<h1>&#9758; upper ()</h1>
+<p>In python upper() method converts all the character to uppercase and returns a uppercase string.</p>
+<em><mark>Syntax:</mark></em><br>
+<pre><code class="language-python">str.upper()</code></pre>
+<h1><span style='font-size:34px;'>&#9971;</span>&nbsp;Python Example Program - upper() in Python</h1>
+<div class="row"> 
+	<div class="col-md-6">
+		<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">str=”PyTHOn”
+print(str.upper())</code></pre></div>
+	</div>
+    <div class="col-md-6">
+		<div class="alert alert-warning"><b>Output:</b><pre><code class="language-python">PYTHON</code></pre></div>                      
+	</div>
+</div>
+<h1>&#9758; replace()</h1>
+<p>In python replace() method replaces the old sequence of characters with the new sequence. If the optional argument count is given, only the first count occurrences are replaced.</p>
+<em><mark>Syntax:</mark></em><br>
+<pre><code class="language-python">str.replace(old, new[, count])</code></pre><p>
+old : An old string which will be replaced.<br>
+new : New string which will replace the old string.<br>
+count : The number of times to process the replace.</p>
+<h1><span style='font-size:34px;'>&#9971;</span>&nbsp;Python Example Program - replace() in Python</h1>
+<div class="row"> 
+	<div class="col-md-6">
+		<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">str = "Java is Object-Oriented and Java is Portable "  
+# Calling function  
+str2 = str.replace("Java","Python")  # replaces all the occurences
+# Displaying result  
+print("Old String: \n",str)  
+print("New String: \n",str2)  
+
+str3 = str.replace("Java","Python",1) # replaces first occurance only  
+# Displaying result  
+print("\n Old String: \n",str)  
+print("New String: \n",str3)
+
+str4 = str1.replace(str1,"Python is Object-Oriented and Portable")
+print("New String: \n",str4)</code></pre></div>
+	</div>
+    <div class="col-md-6">
+		<div class="alert alert-warning"><b>Output:</b><pre><code class="language-python">python
+PYTHON
+Old String:
+ Java is Object-Oriented and Java is Portable
+New String:
+ Python is Object-Oriented and Python is Portable
+
+Old String:
+ Java is Object-Oriented and Java is Portable
+New String:
+ Python is Object-Oriented and Java is Portable
+
+New String:
+ Python is Object-Oriented and Portable</code></pre></div>                      
+	</div>
+</div>
+<h1>&#9758; join()</h1>
+<p>Python join() method is used to concat a string with iterable object. It returns a new string which is the concatenation of the strings in iterable.
+It allows various iterables like: List, Tuple, String etc.</p>
+<em><mark>Syntax:</mark></em><br>
+<pre><code class="language-python">str.join(sequence)</code></pre>
+<h1><span style='font-size:34px;'>&#9971;</span>&nbsp;Python Example Program - join() in Python</h1>
+<div class="row"> 
+	<div class="col-md-6">
+		<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">str1 = ":"   # string  
+str2 = "NNRG"    # iterable object 
+str3= str1.join(str2)  
+print(str3)</code></pre></div>
+	</div>
+    <div class="col-md-6">
+		<div class="alert alert-warning"><b>Output:</b><pre><code class="language-python">N:N:R:G</code></pre></div>                      
+	</div>
+</div>
+
+<h1>&#9758; split()</h1>
+<p>In python split() method splits the string into a comma separated list. It separates string based on the separator delimiter. The string splits according to the space if the delimiter is not provided.</p>
+<em><mark>Syntax:</mark></em><br>
+<pre><code class="language-python">str.split([sep=”delimiter”])</code></pre><p>sep: It specifies the delimiter as separator.</p>
+<h1><span style='font-size:34px;'>&#9971;</span>&nbsp;Python Example Program - split() in Python</h1>
+<div class="row"> 
+	<div class="col-md-6">
+		<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">str1 = "Java is a programming language"  
+str2 = str1.split()  
+# Displaying result  
+print(str1)  
+print(str2)  
+str1 = "Java,is,a,programming,language"  
+str2 = str1.split(sep=',')  
+# Displaying result  
+print(str1)  
+print(str2)</code></pre></div>
+	</div>
+    <div class="col-md-6">
+		<div class="alert alert-warning"><b>Output:</b><pre><code class="language-python">Java is a programming language
+['Java', 'is', 'a', 'programming', 'language']
+Java, is, a, programming, language
+['Java', 'is', 'a', 'programming', 'language']</code></pre></div>                      
+	</div>
+</div>
+
+<h1>&#9758; find()</h1>
+<p>In python find() method finds substring in the whole string and returns index of the first match. It returns -1 if substring does not match.</p>
+<em><mark>Syntax:</mark></em><br>
+<pre><code class="language-python">str.find(sub[, start[,end]])</code></pre>
+<p>sub :it specifies sub string. <br>
+start :It specifies start index of range.<br>
+end : It specifies end index of range.</p>
+<h1><span style='font-size:34px;'>&#9971;</span>&nbsp;Python Example Program - find() in Python</h1>
+<div class="row"> 
+	<div class="col-md-6">
+		<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">str1 = "python is a programming language"  
+str2 = str1.find("is")  
+str3 = str1.find("java") 
+str4 = str1.find("p",5) 
+str5 = str1.find("i",5,25) 
+print(str2,str3,str4,str5)</code></pre></div>
+	</div>
+    <div class="col-md-6">
+		<div class="alert alert-warning"><b>Output:</b><pre><code class="language-python">7    -1    12    7</code></pre></div>                      
+	</div>
+</div>
+<h1>&#9758; index()</h1>
+<p>In python index() method is same as the find() method except it returns error on failure. This method returns index of first occurred substring and an error if there is no match found.</p>
+<em><mark>Syntax:</mark></em><br>
+<pre><code class="language-python">index(sub[, start[,end]])</code></pre>
+<p>sub :it specifies sub string.<br>
+start :It specifies start index of range.<br>
+end : It specifies end index of range.</p>
+<h1><span style='font-size:34px;'>&#9971;</span>&nbsp;Python Example Program - index() in Python</h1>
+<div class="row"> 
+	<div class="col-md-6">
+		<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">str1 = "python is a programming language"  
+str2 = str1.index("is") 
+print(str2)
+str3 = str1.index("p",5) 
+print(str3)
+str4 = str1.index("i",5,25) 
+print(str4)
+str5 = str1.index("java") 
+print(str5)</code></pre></div>
+	</div>
+    <div class="col-md-6">
+		<div class="alert alert-warning"><b>Output:</b><pre><code class="language-python">7
+12
+7
+Substring not found</code></pre></div>                      
+	</div>
+</div>
+<h1>&#9758; isalnum()</h1>
+<p>In python isalnum() method checks whether the all characters of the string is alphanumeric or not. A character which is either a letter or a number is known as alphanumeric. It does not allow special chars even spaces.</p>
+<em><mark>Syntax:</mark></em><br>
+<pre><code class="language-python">str.isalnum()</code></pre>
+<h1><span style='font-size:34px;'>&#9971;</span>&nbsp;Python Example Program - isalnum() in Python</h1>
+<div class="row"> 
+	<div class="col-md-6">
+		<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">str1 = "python"
+str2 = "python123"
+str3 = "12345"
+str4 = "python@123"
+str5 = "python 123"
+print(str1. isalnum())
+print(str2. isalnum())
+print(str3. isalnum())
+print(str4. isalnum())
+print(str5. isalnum())</code></pre></div>
+	</div>
+    <div class="col-md-6">
+		<div class="alert alert-warning"><b>Output:</b><pre><code class="language-python">True
+True
+True
+False
+False</code></pre></div>                      
+	</div>
+</div>
+
+<h1>&#9758; isdigit()</h1>
+<p>In python isdigit() method returns True if all the characters in the string are digits. It returns False if no character is digit in the string.</p>
+<em><mark>Syntax:</mark></em><br>
+<pre><code class="language-python">str.isdigit()</code></pre>
+<h1><span style='font-size:34px;'>&#9971;</span>&nbsp;Python Example Program - isdigit() in Python</h1>
+<div class="row"> 
+	<div class="col-md-6">
+		<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">str1 = "12345"
+str2 = "python123"
+str3 = "123-45-78"
+str4 = "IIIV"
+str5 = “/u00B23” # 23
+str6 = “/u00BD”  # 1/2
+print(str1.isdigit())
+print(str2.isdigit())
+print(str3.isdigit())
+print(str4.isdigit())
+print(str5.isdigit())
+print(str6.isdigit())</code></pre></div>
+	</div>
+    <div class="col-md-6">
+		<div class="alert alert-warning"><b>Output:</b><pre><code class="language-python">True
+False
+False
+False
+True
+False</code></pre></div>                      
+	</div>
+</div>
+<h1>&#9758; isnumeric()</h1>
+<p>In python isnumeric() method checks whether all the characters of the string are numeric characters or not. It returns True if all the characters are numeric, otherwise returns False.</p>
+<em><mark>Syntax:</mark></em><br>
+<pre><code class="language-python">str.isnumeric()</code></pre>
+<h1><span style='font-size:34px;'>&#9971;</span>&nbsp;Python Example Program - isnumeric() in Python</h1>
+<div class="row"> 
+	<div class="col-md-6">
+		<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">str1 = "12345"
+str2 = "python123"
+str3 = "123-45-78"
+str4 = "IIIV"
+str5 = “/u00B23” # 23
+str6 = “/u00BD”  # 1/2
+print(str1.isnumeric())
+print(str2.isnumeric())
+print(str3.isnumeric())
+print(str4.isnumeric())
+print(str5.isnumeric())
+print(str6.isnumeric())</code></pre></div>
+	</div>
+    <div class="col-md-6">
+		<div class="alert alert-warning"><b>Output:</b><pre><code class="language-python">True
+False
+False
+False
+True
+True</code></pre></div>                      
+	</div>
+</div>
+<h1>&#9758; islower()</h1>
+<p>In python string islower() method returns True if all characters in the string are in lowercase. It returns False if not in lowercase.</p>
+<em><mark>Syntax:</mark></em><br>
+<pre><code class="language-python">str.islower()</code></pre>
+<h1><span style='font-size:34px;'>&#9971;</span>&nbsp;Python Example Program - islower() in Python</h1>
+<div class="row"> 
+	<div class="col-md-6">
+		<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">str1 = "python" 
+str2="PytHOn"
+str3="python3.7.3"
+print(str1.islower())
+print(str2.islower())
+print(str3.islower())</code></pre></div>
+	</div>
+    <div class="col-md-6">
+		<div class="alert alert-warning"><b>Output:</b><pre><code class="language-python">True
+False
+True</code></pre></div>                      
+	</div>
+</div>
+<h1>&#9758; isupper()</h1>
+<p>In python string isupper() method returns True if all characters in the string are in uppercase. It returns False if not in uppercase.</p>
+<em><mark>Syntax:</mark></em><br>
+<pre><code class="language-python">str.isupper()</code></pre>
+<h1><span style='font-size:34px;'>&#9971;</span>&nbsp;Python Example Program - isupper() in Python</h1>
+<div class="row"> 
+	<div class="col-md-6">
+		<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">str1 = "PYTHON" 
+str2="PytHOn"
+str3="PYTHON 3.7.3"
+print(str1.isupper())
+print(str2.isupper())
+print(str3.isupper())</code></pre></div>
+	</div>
+    <div class="col-md-6">
+		<div class="alert alert-warning"><b>Output:</b><pre><code class="language-python">True
+False
+True</code></pre></div>                      
+	</div>
+</div>
+<hr>			<span class="nextbtn">Next Topic :</span><a href="list.html" class="anext"><strong>List sequence in Python</strong></a>
+        </div>
+    </div>
+	<!-- end panel body -->
+</div>
+</div>
+<!-- end content -->
+</div>
+ </div>
+ <!--end body container-->
+    <!--footer-->
+    <!-- Google Ad Multiflex1 <div class="container">
+        <div class="row">
+		<div class="col-sm-12
+<!-- Google Ad Multiflex1 Start
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8096140274719176"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-8096140274719176"
+     data-ad-slot="3158072222"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+</div></div>
+END-->
+ <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>About</h6>
+	          <p class="text-justify">Study Glance provides Tutorials , Power point Presentations(ppts), Lecture Notes, Important & previously asked questions, Objective Type questions, Laboratory programs and we provide Syllabus of various subjects.</p>
+          </div>
+		<div class="col-xs-6 col-md-3" style="padding-left:100px;">
+            <h6>Categories</h6>
+            <ul class="footer-links">
+              <li><a href="../Tutorialindex.html">Tutorials</a></li>
+              <li><a href="../ppts/index.html">PPTs</a></li>
+              <li><a href="../lecturenotes/index.html">Lecture Notes</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-6 col-md-3" style="padding-left:100px;">
+            <h6></h6><br>
+            <ul class="footer-links">
+              
+              <li><a href="../questions/index.html">Questions</a></li>
+              <li><a href="../labprograms/index.html">Lab Programs</a></li>
+              <li><a href="../syllabus/index.html">Syllabus</a></li>
+            </ul>
+          </div>
+
+          
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by 
+         <a href="#">StudyGlance</a>.
+            </p>
+            <p><!-- hitwebcounter Code START -->
+
+<img src="https://hitwebcounter.com/counter/counter.php?page=7760160&amp;style=0007&amp;nbdigits=5&amp;type=ip&amp;initCount=0" Alt=""   border="0" />    </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+            </ul>
+          </div>
+        </div>
+      </div>
+</footer>  </body>
+
+<!-- Mirrored from studyglance.in/python/string.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 28 May 2025 03:41:17 GMT -->
+</html>

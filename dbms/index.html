@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+  
+<!-- Mirrored from studyglance.in/dbms/index.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 28 May 2025 03:37:01 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>DBMS Tutorial | Study Glance</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="description" content=" " />
+	<meta property="og:title" content="DBMS Introduction | Study Glance" />
+	<meta property="og:description" content="" />
+	<meta property="og:url" content="index-2.html" />
+    <link rel="icon" href="../images/logo1.png" type="image/x-icon"/>
+    <link rel="bookmark" href="../images/logo1.png"/>
+    <!-- site css -->
+    
+<!--nav-->
+<link rel="stylesheet" href="../dist/css/site.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700,400italic,600italic,700italic,800italic,300italic" rel="stylesheet" type="text/css">
+    <!-- <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'> -->
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="../dist/js/site.min.js"></script>
+	 <script type="text/javascript" src="../dist/js/prism.js"></script>
+	<script>
+			function myFunction() {
+		var x = document.getElementById("myTopnav");
+		if (x.className === "topnav") {
+			x.className += " responsive";
+		} else {
+			x.className = "topnav";
+		}
+		}
+	</script>
+	<script async src="../../pagead2.googlesyndication.com/pagead/js/f9b65.txt?client=ca-pub-8096140274719176"
+     crossorigin="anonymous"></script>
+  </head>
+<body>    
+<nav role="navigation" class="navbar">
+	<!-- logo -->
+	<center><img src="../images/logo4.png" height="90" border="0" alt="" style="padding-left:5px;padding-top:2px;padding-bottom:5px;"></center>
+	<!-- main menu-->   
+	<div class="topnav" id="myTopnav">
+	<a href="../index-2.html" class="">Home</a>
+	<div class="mdropdown">
+    <button class="mdropbtn">Tutorials
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="mdropdown-content">
+	  <a href="../c/index.html" class="">C - Programming</a>
+	<a href="../ds/index.html" class="" >Data Structure</a>
+      <a href="../html/index.html" class="">HTML</a>
+	  <a href="../php/index.html" class="">PHP</a>
+	  <a href="../xml/index.html" class="" >XML</a>
+	  <a href="../servlet/index.html" class="" >SERVLET</a>
+     <a href="../python/index.html" class="" >PYTHON</a>
+     <a href="index.html" class="active" >DBMS</a>
+     <a href="../dm/index.html" class="" >Data Mining</a>
+     <a href="../daa/index.html" class="" >DAA</a>
+	 <a href="../nn/index.html" class="" >Neural Networks</a>
+	 <a href="../dl/index.html" class="" >Deep Learning</a>
+      <!--<a href="#php" class="">PHP</a>-->
+    </div>
+  </div>
+
+<!--
+	<a href="html/index.php" class="">HTML</a>
+	<a href="python/index.php" class="">PYTHON</a>
+	<a href="#php" class="">PHP</a>-->
+	<a href="../ppts/index.html" class="">PPTs</a>
+	<a href="../lecturenotes/index.html" class="">Lecture Notes</a>
+	<!--<a href="../questions/index.php" class="">Questions</a>-->
+	<a href="../objquestions/index.html" class="">Objective Questions</a>
+	<a href="../labprograms/index.html" class="">Lab Programs</a>
+	<!--<a href="../syllabus/index.php" class="">Syllabus</a>-->
+	<a href="../blog/index.html" class="">Blog</a>
+	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+	<i class="fa fa-bars"></i>
+	</a>
+	</div>
+	<!-- end main menu-->
+</nav>
+<!--nav end -->
+<!--body container-->
+    <div class="container-fluid">
+    <div class="row row-offcanvas row-offcanvas-left">
+<!-- Side Menu-->
+	<div class="col-xs-6 col-sm-3 sidebar-offcanvas" role="navigation">
+		<ul class="list-group panel" id="non-printable">
+		<!--<li class="list-group-item"><img src="../images/clogo.png" width="40"alt="">&nbsp;&nbsp; <b> TUTORIAL</b></li>-->
+				<li class="list-group-item" style="text-transform: uppercase;text-align: left;" active"><img src="images/DBMS.jpg" width="30"alt="">&nbsp;&nbsp; <b>Basics </b></li>
+			<li class="list-group-item " ><a href="display0159.html?tno=1&amp;topic=A-Historical-Perspective"><i class="fa  fa-chevron-circle-right"></i>A Historical Perspective</a></li>
+		<li class="list-group-item " ><a href="displaybe69.html?tno=2&amp;topic=File-Systems-v/s-DBMS"><i class="fa  fa-chevron-circle-right"></i>File Systems v/s DBMS</a></li>
+		<li class="list-group-item " ><a href="display92dd.html?tno=3&amp;topic=Data-Models"><i class="fa  fa-chevron-circle-right"></i>Data Models</a></li>
+		<li class="list-group-item " ><a href="displayfb30.html?tno=4&amp;topic=Levels-of-Abstraction-in-DBMS"><i class="fa  fa-chevron-circle-right"></i>Levels of Abstraction</a></li>
+		<li class="list-group-item " ><a href="displayce65.html?tno=5&amp;topic=Structure-of-DBMS"><i class="fa  fa-chevron-circle-right"></i>Structure of DBMS</a></li>
+			<li class="list-group-item" style="text-transform: uppercase;text-align: left;" active"><img src="images/DBMS.jpg" width="30"alt="">&nbsp;&nbsp; <b>Database Design </b></li>
+			<li class="list-group-item " ><a href="display4eee.html?tno=6&amp;topic=Database-Design-in-DBMS"><i class="fa  fa-chevron-circle-right"></i>Database Design</a></li>
+		<li class="list-group-item " ><a href="display0e97.html?tno=7&amp;topic=ER-Diagrams-in-DBMS"><i class="fa  fa-chevron-circle-right"></i>ER Diagrams</a></li>
+		<li class="list-group-item " ><a href="display0910.html?tno=8&amp;topic=Attributes-in-DBMS"><i class="fa  fa-chevron-circle-right"></i>Attributes</a></li>
+		<li class="list-group-item " ><a href="displayaae8.html?tno=9&amp;topic=Entity-in-DBMS"><i class="fa  fa-chevron-circle-right"></i>Entity</a></li>
+		<li class="list-group-item " ><a href="display0b4d.html?tno=10&amp;topic=Relationships-in-DBMS"><i class="fa  fa-chevron-circle-right"></i>Relationships</a></li>
+		<li class="list-group-item " ><a href="display5709.html?tno=11&amp;topic=Additional-Features-of-the-ER-Model-in-DBMS"><i class="fa  fa-chevron-circle-right"></i>Additional Features of the ER Model</a></li>
+			<li class="list-group-item" style="text-transform: uppercase;text-align: left;" active"><img src="images/DBMS.jpg" width="30"alt="">&nbsp;&nbsp; <b>Relational Model </b></li>
+			<li class="list-group-item " ><a href="display435f.html?tno=12&amp;topic=Introduction-to-the-Relational-Model-in-DBMS"><i class="fa  fa-chevron-circle-right"></i>Introduction to the Relational Model</a></li>
+		<li class="list-group-item " ><a href="displaya45f.html?tno=13&amp;topic=Integrity-constraint-over-relations-in-DBMS"><i class="fa  fa-chevron-circle-right"></i>Integrity constraint over relations</a></li>
+		<li class="list-group-item " ><a href="displayff21.html?tno=14&amp;topic=Enforcing-Integrity-Constraints-in-DBMS"><i class="fa  fa-chevron-circle-right"></i>Enforcing Integrity Constraints</a></li>
+		<li class="list-group-item " ><a href="display87d8.html?tno=15&amp;topic=Querying-Relational-Data-in-DBMS"><i class="fa  fa-chevron-circle-right"></i>Querying Relational Data</a></li>
+		<li class="list-group-item " ><a href="displaya5f5.html?tno=16&amp;topic=Views-in-DBMS"><i class="fa  fa-chevron-circle-right"></i>Views</a></li>
+		<li class="list-group-item " ><a href="displayb839.html?tno=17&amp;topic=Relational-Algebra-in-DBMS"><i class="fa  fa-chevron-circle-right"></i>Relational Algebra</a></li>
+		<li class="list-group-item " ><a href="displayc013.html?tno=18&amp;topic=Tuple-Relational-Calculus-in-DBMS"><i class="fa  fa-chevron-circle-right"></i>Tuple Relational Calculus</a></li>
+			<li class="list-group-item" style="text-transform: uppercase;text-align: left;" active"><img src="images/DBMS.jpg" width="30"alt="">&nbsp;&nbsp; <b>SQL </b></li>
+			<li class="list-group-item " ><a href="displaybdc8.html?tno=19&amp;topic=Form-of-basic-SQL-query-in-DBMS"><i class="fa  fa-chevron-circle-right"></i>Form of basic SQL query</a></li>
+		<li class="list-group-item " ><a href="display5068.html?tno=20&amp;topic=UNION-in-DBMS"><i class="fa  fa-chevron-circle-right"></i>UNION</a></li>
+		<li class="list-group-item " ><a href="display8700.html?tno=21&amp;topic=INTERSECT-in-DBMS"><i class="fa  fa-chevron-circle-right"></i>INTERSECT</a></li>
+		<li class="list-group-item " ><a href="displayb49a.html?tno=22&amp;topic=EXCEPT-in-DBMS"><i class="fa  fa-chevron-circle-right"></i>EXCEPT</a></li>
+		<li class="list-group-item " ><a href="display0718.html?tno=23&amp;topic=Aggregation-Operators-in-DBMS"><i class="fa  fa-chevron-circle-right"></i>Aggregation Operators</a></li>
+		<li class="list-group-item " ><a href="display4bd4.html?tno=24&amp;topic=Complex-Integrity-Constraints-in-SQL"><i class="fa  fa-chevron-circle-right"></i>Complex Integrity Constraints in SQL</a></li>
+		<li class="list-group-item " ><a href="displayec9f.html?tno=25&amp;topic=Triggers-and-Active-data-bases-in-DBMS"><i class="fa  fa-chevron-circle-right"></i>Triggers and Active data bases</a></li>
+			<li class="list-group-item" style="text-transform: uppercase;text-align: left;" active"><img src="images/DBMS.jpg" width="30"alt="">&nbsp;&nbsp; <b>Schema Refinement </b></li>
+			<li class="list-group-item " ><a href="displayc913.html?tno=26&amp;topic=Problems-caused-by-redundancy-in-DBMS"><i class="fa  fa-chevron-circle-right"></i>Problems caused by redundancy</a></li>
+		<li class="list-group-item " ><a href="display5259.html?tno=27&amp;topic=Decompositions-and-its-problems-in-DBMS"><i class="fa  fa-chevron-circle-right"></i>Decompositions and its problems</a></li>
+		<li class="list-group-item " ><a href="displayc8ad.html?tno=28&amp;topic=Functional-Dependencies-and-its-reasoning-in-DBMS"><i class="fa  fa-chevron-circle-right"></i>Functional Dependencies and its reasoning</a></li>
+		<li class="list-group-item " ><a href="display7452.html?tno=29&amp;topic=Introduction-to-Normal-Forms"><i class="fa  fa-chevron-circle-right"></i>Introduction to Normal Forms</a></li>
+		<li class="list-group-item " ><a href="display44cc.html?tno=30&amp;topic=First-Normal-Form-(1NF)-in-DBMS"><i class="fa  fa-chevron-circle-right"></i>First Normal Form (1NF)</a></li>
+		<li class="list-group-item " ><a href="display8c81.html?tno=31&amp;topic=Second-Normal-Form-(2NF)-in-DBMS"><i class="fa  fa-chevron-circle-right"></i>Second Normal Form (2NF)</a></li>
+		<li class="list-group-item " ><a href="display9ea1.html?tno=32&amp;topic=Third-Normal-Form-(3NF)-in-DBMS"><i class="fa  fa-chevron-circle-right"></i>Third Normal Form (3NF)</a></li>
+		<li class="list-group-item " ><a href="displaya01d.html?tno=33&amp;topic=Boyce-Codd-Normal-Form-(BCNF)-in-DBMS"><i class="fa  fa-chevron-circle-right"></i>Boyce-Codd Normal Form (BCNF)</a></li>
+		<li class="list-group-item " ><a href="displayb11c.html?tno=34&amp;topic=Fourth-Normal-Form-(4NF)-in-DBMS"><i class="fa  fa-chevron-circle-right"></i>Fourth Normal Form (4NF)</a></li>
+		<li class="list-group-item " ><a href="display1b56.html?tno=35&amp;topic=Fifth-Normal-Form-(5NF-or-PJNF)-in-DBMS"><i class="fa  fa-chevron-circle-right"></i>Fifth Normal Form (5NF or PJNF)</a></li>
+		<li class="list-group-item " ><a href="display4bb0.html?tno=36&amp;topic=Sixth-Normal-Form-(6NF)-in-DBMS"><i class="fa  fa-chevron-circle-right"></i>Sixth Normal Form (6NF)</a></li>
+			<li class="list-group-item" style="text-transform: uppercase;text-align: left;" active"><img src="images/DBMS.jpg" width="30"alt="">&nbsp;&nbsp; <b>Transaction </b></li>
+			<li class="list-group-item " ><a href="display2578.html?tno=37&amp;topic=Transaction-Concept-in-DBMS"><i class="fa  fa-chevron-circle-right"></i>Transaction Concept</a></li>
+		<li class="list-group-item " ><a href="displaye695.html?tno=38&amp;topic=Transaction-State-in-DBMS"><i class="fa  fa-chevron-circle-right"></i>Transaction State</a></li>
+		<li class="list-group-item " ><a href="display7df8.html?tno=39&amp;topic=Implementation-of-Atomicity-and-Durability--in-DBMS"><i class="fa  fa-chevron-circle-right"></i>Implementation of Atomicity and Durability </a></li>
+		<li class="list-group-item " ><a href="displayef7a.html?tno=40&amp;topic=Concurrent-Executions-in-DBMS"><i class="fa  fa-chevron-circle-right"></i>Concurrent Executions</a></li>
+		<li class="list-group-item " ><a href="displayca6d.html?tno=41&amp;topic=Serializability-in-DBMS"><i class="fa  fa-chevron-circle-right"></i>Serializability</a></li>
+		<li class="list-group-item " ><a href="display75e4.html?tno=42&amp;topic=Recoverability-in-DBMS"><i class="fa  fa-chevron-circle-right"></i>Recoverability</a></li>
+		<li class="list-group-item " ><a href="displaye7a7.html?tno=43&amp;topic=Implementation-of-Isolation-in-DBMS"><i class="fa  fa-chevron-circle-right"></i>Implementation of Isolation</a></li>
+		<li class="list-group-item " ><a href="displayd494.html?tno=44&amp;topic=-Lock-Based-Protocols-in-DBMS"><i class="fa  fa-chevron-circle-right"></i> Lock Based Protocols</a></li>
+		<li class="list-group-item " ><a href="displayef5e.html?tno=45&amp;topic=Timestamp-Based-Protocols-in-DBMS"><i class="fa  fa-chevron-circle-right"></i>Timestamp Based Protocols</a></li>
+		<li class="list-group-item " ><a href="display76d6.html?tno=46&amp;topic=Validation-Based-Protocols-in-DBMS"><i class="fa  fa-chevron-circle-right"></i>Validation Based Protocols</a></li>
+		<li class="list-group-item " ><a href="display5e57.html?tno=47&amp;topic=Multiple-Granularity-in-DBMS"><i class="fa  fa-chevron-circle-right"></i>Multiple Granularity</a></li>
+		<li class="list-group-item " ><a href="displaye69a.html?tno=48&amp;topic=Recovery-and-Atomicity-in-dbms"><i class="fa  fa-chevron-circle-right"></i>Recovery and Atomicity in dbms</a></li>
+		<li class="list-group-item " ><a href="display49a2.html?tno=49&amp;topic=Recovery-with-Concurrent-Transactions-in-DBMS"><i class="fa  fa-chevron-circle-right"></i>Recovery with Concurrent Transactions</a></li>
+			<li class="list-group-item" style="text-transform: uppercase;text-align: left;" active"><img src="images/DBMS.jpg" width="30"alt="">&nbsp;&nbsp; <b>Indexing </b></li>
+			<li class="list-group-item " ><a href="displaycd38.html?tno=50&amp;topic=Data-on-External-Storage-in-DBMS"><i class="fa  fa-chevron-circle-right"></i>Data on External Storage</a></li>
+		<li class="list-group-item " ><a href="displayd7e2.html?tno=51&amp;topic=File-Organization-and-Indexing-in-DBMS"><i class="fa  fa-chevron-circle-right"></i>File Organization and Indexing</a></li>
+		<li class="list-group-item " ><a href="displayda84.html?tno=52&amp;topic=Cluster-Indexes-in-DBMS"><i class="fa  fa-chevron-circle-right"></i>Cluster Indexes</a></li>
+		<li class="list-group-item " ><a href="display9639.html?tno=53&amp;topic=Primary-Indexes-in-DBMS"><i class="fa  fa-chevron-circle-right"></i>Primary Indexes</a></li>
+		<li class="list-group-item " ><a href="displayfd32.html?tno=54&amp;topic=Secondary-Indexes-in-DBMS"><i class="fa  fa-chevron-circle-right"></i>Secondary Indexes</a></li>
+		<li class="list-group-item " ><a href="displayb243.html?tno=55&amp;topic=Index-data-Structures"><i class="fa  fa-chevron-circle-right"></i>Index data Structures</a></li>
+		<li class="list-group-item " ><a href="display307f.html?tno=56&amp;topic=Comparison-of-File-Organizations,-Indexes-and-Performance-Tuning"><i class="fa  fa-chevron-circle-right"></i>Comparison of File Organizations, Indexes and Performance Tuning</a></li>
+		<li class="list-group-item " ><a href="display5625.html?tno=57&amp;topic=Indexed-Sequential-Access-Methods"><i class="fa  fa-chevron-circle-right"></i>Indexed Sequential Access Methods</a></li>
+		<li class="list-group-item " ><a href="display2248.html?tno=58&amp;topic=Dynamic-Index-Structure---B+-Tree"><i class="fa  fa-chevron-circle-right"></i>Dynamic Index Structure - B+ Tree</a></li>
+		
+	</ul>
+	    </div>
+<!-- End side Menu-->
+<!-- content -->
+<div class="col-xs-12 col-sm-9">
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h3 class="panel-title"><a href="javascript:void(0);" class="toggle-sidebar" ><span class="fa fa-angle-double-left" data-toggle="offcanvas" title="Maximize Panel"></span></a>DBMS Menu</h3>
+    </div>
+	<!--panel-Body-->
+    <div class="panel-body">
+		<div class="content-row">
+			<center><h1>Database Management System Tutorial</h1></center>
+<hr>
+<div class="row"> 
+<p><h1>Data:</h1> Data is a real-world entity or an object. Data is a distinct piece of information or facts that need to be processed. It can be in any form like text, number, picture, measurements, and bytes.</p>
+<br>
+<h1>What is Information?</h1>
+<p>Data becomes information when it is processed, organized, structured, and interpreted in a given context, turning it into useful and meaningful.</p><br>
+<h1>What is a Database?</h1>
+<p>The database is a collection of inter-related data which is used to retrieve, insert and delete the data efficiently. It is also used to organize the data in the form of a table, schema, views, and reports, etc.</p><br>
+<h1>What is a Database Management System (DBMS)</h1>
+
+<mark><em>Definition</em></mark><pre><em>A Database Management System (DBMS) refers to the technology for creating and managing databases. DBMS is a software tool to organize (create, retrieve, update, and manage) data in a database</em></pre><br>
+	<p>A <strong>Database Management System (DBMS)</strong> is a software system that allows users to store, manage, and access data efficiently and effectively. It provides a structured and organized way to store data that can be easily retrieved and manipulated.</p>
+<p>A DBMS typically consists of three main components: a database, a database engine, and a user interface. The database is where the data is stored, and the database engine is responsible for managing the data and ensuring its integrity. The user interface provides users with a way to interact with the data, typically through a query language.</p>
+<p>DBMS systems are widely used in various industries and applications, including finance, healthcare, education, government, and e-commerce. They are essential tools for managing large amounts of data and ensuring its accuracy, consistency, and security.</p>
+<br>
+<p>Some of the key benefits of using a DBMS include:</p>
+<ol>
+    <li><strong>Data Sharing:</strong> A DBMS allows multiple users to access the same data simultaneously, ensuring that all users have access to the most up-to-date information.</li>
+    <li><strong>Data Security:</strong> A DBMS provides various mechanisms to ensure the security of the data, such as user authentication, access control, and encryption</li>
+    <li><strong>Data Consistency:</strong> A DBMS ensures that the data is consistent across all applications and users by enforcing rules and constraints.</li>
+    <li><strong>Data Integrity:</strong> A DBMS provides mechanisms to ensure that the data is accurate and reliable by enforcing data constraints and performing data validation</li>
+    <li><strong>Data Accessibility:</strong> A DBMS provides an efficient and effective way to access and retrieve data, allowing users to perform complex queries and retrieve specific data quickly and easily.</li>
+</ol>
+<p>Overall, a DBMS is an essential tool for managing data in modern organizations, providing efficient, reliable, and secure access to critical information.</p>
+</div><br>
+
+<br>
+<div class="row"> 
+	<div class="col-md-5"><br>
+		<a href="index.html"><img src="images/DBMS.jpg" width="50%"></img></a>
+	</div>
+	<div class="col-md-5" style="border:1px #ffcc99 solid;border-radius:10px;">
+	<h4>List of other Tutorials:</h4>
+	<ul>
+	<li><a href="../python/index.html" class="anext">Python Programming tutorial</a></li>
+	<li><a href="../html/index.html" class="anext">Hyper Text Markup Language (HTML) tutorial</a></li>
+	<li><a href="../xml/index.html" class="anext">eXtensible Markup Language(XML) tutorial</a></li>
+	<li><a href="../js/index.html" class="anext">Java Script tutorial</a></li>
+	</ul>
+	</div>
+</div>
+<br>
+ <h2 style="color:#ff9900;">DBMS Tutorial Index :</h2><br>
+<div class="row"> 
+<div class="col-md-6" style="padding-left:10px;">
+<!--<img src="../images/php.png" width="40"alt="">&nbsp;&nbsp; <b>PHP TUTORIAL</b>-->
+
+<ul>
+				<li class="list-group-item"><img src="images/DBMS.jpg" width="20"alt="">&nbsp;&nbsp; <b>Basics </b></li>
+			<li><a href="display0159.html?tno=1&amp;topic=A-Historical-Perspective" class="atopic">A Historical Perspective</a></li>
+		<li><a href="displaybe69.html?tno=2&amp;topic=File-Systems-v/s-DBMS" class="atopic">File Systems v/s DBMS</a></li>
+		<li><a href="display92dd.html?tno=3&amp;topic=Data-Models" class="atopic">Data Models</a></li>
+		<li><a href="displayfb30.html?tno=4&amp;topic=Levels-of-Abstraction-in-DBMS" class="atopic">Levels of Abstraction in DBMS</a></li>
+		<li><a href="displayce65.html?tno=5&amp;topic=Structure-of-DBMS" class="atopic">Structure of DBMS</a></li>
+			<li class="list-group-item"><img src="images/DBMS.jpg" width="20"alt="">&nbsp;&nbsp; <b>Database Design </b></li>
+			<li><a href="display4eee.html?tno=6&amp;topic=Database-Design-in-DBMS" class="atopic">Database Design in DBMS</a></li>
+		<li><a href="display0e97.html?tno=7&amp;topic=ER-Diagrams-in-DBMS" class="atopic">ER Diagrams in DBMS</a></li>
+		<li><a href="display0910.html?tno=8&amp;topic=Attributes-in-DBMS" class="atopic">Attributes in DBMS</a></li>
+		<li><a href="displayaae8.html?tno=9&amp;topic=Entity-in-DBMS" class="atopic">Entity in DBMS</a></li>
+		<li><a href="display0b4d.html?tno=10&amp;topic=Relationships-in-DBMS" class="atopic">Relationships in DBMS</a></li>
+		<li><a href="display5709.html?tno=11&amp;topic=Additional-Features-of-the-ER-Model-in-DBMS" class="atopic">Additional Features of the ER Model in DBMS</a></li>
+			<li class="list-group-item"><img src="images/DBMS.jpg" width="20"alt="">&nbsp;&nbsp; <b>Relational Model </b></li>
+			<li><a href="display435f.html?tno=12&amp;topic=Introduction-to-the-Relational-Model-in-DBMS" class="atopic">Introduction to the Relational Model in DBMS</a></li>
+		<li><a href="displaya45f.html?tno=13&amp;topic=Integrity-constraint-over-relations-in-DBMS" class="atopic">Integrity constraint over relations in DBMS</a></li>
+		<li><a href="displayff21.html?tno=14&amp;topic=Enforcing-Integrity-Constraints-in-DBMS" class="atopic">Enforcing Integrity Constraints in DBMS</a></li>
+		<li><a href="display87d8.html?tno=15&amp;topic=Querying-Relational-Data-in-DBMS" class="atopic">Querying Relational Data in DBMS</a></li>
+		<li><a href="displaya5f5.html?tno=16&amp;topic=Views-in-DBMS" class="atopic">Views in DBMS</a></li>
+		<li><a href="displayb839.html?tno=17&amp;topic=Relational-Algebra-in-DBMS" class="atopic">Relational Algebra in DBMS</a></li>
+		<li><a href="displayc013.html?tno=18&amp;topic=Tuple-Relational-Calculus-in-DBMS" class="atopic">Tuple Relational Calculus in DBMS</a></li>
+			<li class="list-group-item"><img src="images/DBMS.jpg" width="20"alt="">&nbsp;&nbsp; <b>SQL </b></li>
+			<li><a href="displaybdc8.html?tno=19&amp;topic=Form-of-basic-SQL-query-in-DBMS" class="atopic">Form of basic SQL query in DBMS</a></li>
+		<li><a href="display5068.html?tno=20&amp;topic=UNION-in-DBMS" class="atopic">UNION in DBMS</a></li>
+		<li><a href="display8700.html?tno=21&amp;topic=INTERSECT-in-DBMS" class="atopic">INTERSECT in DBMS</a></li>
+		<li><a href="displayb49a.html?tno=22&amp;topic=EXCEPT-in-DBMS" class="atopic">EXCEPT in DBMS</a></li>
+		<li><a href="display0718.html?tno=23&amp;topic=Aggregation-Operators-in-DBMS" class="atopic">Aggregation Operators in DBMS</a></li>
+		<li><a href="display4bd4.html?tno=24&amp;topic=Complex-Integrity-Constraints-in-SQL" class="atopic">Complex Integrity Constraints in SQL</a></li>
+		<li><a href="displayec9f.html?tno=25&amp;topic=Triggers-and-Active-data-bases-in-DBMS" class="atopic">Triggers and Active data bases in DBMS</a></li>
+			<li class="list-group-item"><img src="images/DBMS.jpg" width="20"alt="">&nbsp;&nbsp; <b>Schema Refinement </b></li>
+			<li><a href="displayc913.html?tno=26&amp;topic=Problems-caused-by-redundancy-in-DBMS" class="atopic">Problems caused by redundancy in DBMS</a></li>
+		<li><a href="display5259.html?tno=27&amp;topic=Decompositions-and-its-problems-in-DBMS" class="atopic">Decompositions and its problems in DBMS</a></li>
+		<li><a href="displayc8ad.html?tno=28&amp;topic=Functional-Dependencies-and-its-reasoning-in-DBMS" class="atopic">Functional Dependencies and its reasoning in DBMS</a></li>
+		<li><a href="display7452.html?tno=29&amp;topic=Introduction-to-Normal-Forms" class="atopic">Introduction to Normal Forms</a></li>
+		<li><a href="display44cc.html?tno=30&amp;topic=First-Normal-Form-(1NF)-in-DBMS" class="atopic">First Normal Form (1NF) in DBMS</a></li>
+		<li><a href="display8c81.html?tno=31&amp;topic=Second-Normal-Form-(2NF)-in-DBMS" class="atopic">Second Normal Form (2NF) in DBMS</a></li>
+		<li><a href="display9ea1.html?tno=32&amp;topic=Third-Normal-Form-(3NF)-in-DBMS" class="atopic">Third Normal Form (3NF) in DBMS</a></li>
+		<li><a href="displaya01d.html?tno=33&amp;topic=Boyce-Codd-Normal-Form-(BCNF)-in-DBMS" class="atopic">Boyce-Codd Normal Form (BCNF) in DBMS</a></li>
+		<li><a href="displayb11c.html?tno=34&amp;topic=Fourth-Normal-Form-(4NF)-in-DBMS" class="atopic">Fourth Normal Form (4NF) in DBMS</a></li>
+		<li><a href="display1b56.html?tno=35&amp;topic=Fifth-Normal-Form-(5NF-or-PJNF)-in-DBMS" class="atopic">Fifth Normal Form (5NF or PJNF) in DBMS</a></li>
+		<li><a href="display4bb0.html?tno=36&amp;topic=Sixth-Normal-Form-(6NF)-in-DBMS" class="atopic">Sixth Normal Form (6NF) in DBMS</a></li>
+			<li class="list-group-item"><img src="images/DBMS.jpg" width="20"alt="">&nbsp;&nbsp; <b>Transaction </b></li>
+			<li><a href="display2578.html?tno=37&amp;topic=Transaction-Concept-in-DBMS" class="atopic">Transaction Concept in DBMS</a></li>
+		<li><a href="displaye695.html?tno=38&amp;topic=Transaction-State-in-DBMS" class="atopic">Transaction State in DBMS</a></li>
+		<li><a href="display7df8.html?tno=39&amp;topic=Implementation-of-Atomicity-and-Durability--in-DBMS" class="atopic">Implementation of Atomicity and Durability  in DBMS</a></li>
+		<li><a href="displayef7a.html?tno=40&amp;topic=Concurrent-Executions-in-DBMS" class="atopic">Concurrent Executions in DBMS</a></li>
+		<li><a href="displayca6d.html?tno=41&amp;topic=Serializability-in-DBMS" class="atopic">Serializability in DBMS</a></li>
+		<li><a href="display75e4.html?tno=42&amp;topic=Recoverability-in-DBMS" class="atopic">Recoverability in DBMS</a></li>
+		<li><a href="displaye7a7.html?tno=43&amp;topic=Implementation-of-Isolation-in-DBMS" class="atopic">Implementation of Isolation in DBMS</a></li>
+		<li><a href="displayd494.html?tno=44&amp;topic=-Lock-Based-Protocols-in-DBMS" class="atopic"> Lock Based Protocols in DBMS</a></li>
+		<li><a href="displayef5e.html?tno=45&amp;topic=Timestamp-Based-Protocols-in-DBMS" class="atopic">Timestamp Based Protocols in DBMS</a></li>
+		<li><a href="display76d6.html?tno=46&amp;topic=Validation-Based-Protocols-in-DBMS" class="atopic">Validation Based Protocols in DBMS</a></li>
+		<li><a href="display5e57.html?tno=47&amp;topic=Multiple-Granularity-in-DBMS" class="atopic">Multiple Granularity in DBMS</a></li>
+		<li><a href="displaye69a.html?tno=48&amp;topic=Recovery-and-Atomicity-in-dbms" class="atopic">Recovery and Atomicity in dbms</a></li>
+		<li><a href="display49a2.html?tno=49&amp;topic=Recovery-with-Concurrent-Transactions-in-DBMS" class="atopic">Recovery with Concurrent Transactions in DBMS</a></li>
+			<li class="list-group-item"><img src="images/DBMS.jpg" width="20"alt="">&nbsp;&nbsp; <b>Indexing </b></li>
+			<li><a href="displaycd38.html?tno=50&amp;topic=Data-on-External-Storage-in-DBMS" class="atopic">Data on External Storage in DBMS</a></li>
+		<li><a href="displayd7e2.html?tno=51&amp;topic=File-Organization-and-Indexing-in-DBMS" class="atopic">File Organization and Indexing in DBMS</a></li>
+		<li><a href="displayda84.html?tno=52&amp;topic=Cluster-Indexes-in-DBMS" class="atopic">Cluster Indexes in DBMS</a></li>
+		<li><a href="display9639.html?tno=53&amp;topic=Primary-Indexes-in-DBMS" class="atopic">Primary Indexes in DBMS</a></li>
+		<li><a href="displayfd32.html?tno=54&amp;topic=Secondary-Indexes-in-DBMS" class="atopic">Secondary Indexes in DBMS</a></li>
+		<li><a href="displayb243.html?tno=55&amp;topic=Index-data-Structures" class="atopic">Index data Structures</a></li>
+		<li><a href="display307f.html?tno=56&amp;topic=Comparison-of-File-Organizations,-Indexes-and-Performance-Tuning" class="atopic">Comparison of File Organizations, Indexes and Performance Tuning</a></li>
+		<li><a href="display5625.html?tno=57&amp;topic=Indexed-Sequential-Access-Methods" class="atopic">Indexed Sequential Access Methods</a></li>
+		<li><a href="display2248.html?tno=58&amp;topic=Dynamic-Index-Structure---B+-Tree" class="atopic">Dynamic Index Structure - B+ Tree</a></li>
+		</ul>
+</div>
+<div class="col-md-6" style="padding-left:10px;">
+<!--<img src="../images/php.png" width="40"alt="">&nbsp;&nbsp; <b>PHP TUTORIAL</b>-->
+</div>
+</div>
+			<hr>
+			<span class="nextbtn">Next Topic :</span><a href="displayf6d0.html?tno=1&amp;topic=Introduction" class="anext"><strong>Introduction</strong></a>
+        </div>
+    </div>
+	<!-- end panel body -->
+</div>
+</div>
+<!-- end content -->
+</div>
+ <!-- Google Ad Multiflex1 <div class="container">
+        <div class="row">
+		<div class="col-sm-12
+<!-- Google Ad Multiflex1 Start
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8096140274719176"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-8096140274719176"
+     data-ad-slot="3158072222"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+</div></div>
+END-->
+ <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>About</h6>
+	          <p class="text-justify">Study Glance provides Tutorials , Power point Presentations(ppts), Lecture Notes, Important & previously asked questions, Objective Type questions, Laboratory programs and we provide Syllabus of various subjects.</p>
+          </div>
+		<div class="col-xs-6 col-md-3" style="padding-left:100px;">
+            <h6>Categories</h6>
+            <ul class="footer-links">
+              <li><a href="../Tutorialindex.html">Tutorials</a></li>
+              <li><a href="../ppts/index.html">PPTs</a></li>
+              <li><a href="../lecturenotes/index.html">Lecture Notes</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-6 col-md-3" style="padding-left:100px;">
+            <h6></h6><br>
+            <ul class="footer-links">
+              
+              <li><a href="../questions/index.html">Questions</a></li>
+              <li><a href="../labprograms/index.html">Lab Programs</a></li>
+              <li><a href="../syllabus/index.html">Syllabus</a></li>
+            </ul>
+          </div>
+
+          
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by 
+         <a href="#">StudyGlance</a>.
+            </p>
+            <p><!-- hitwebcounter Code START -->
+
+<img src="https://hitwebcounter.com/counter/counter.php?page=7760160&amp;style=0007&amp;nbdigits=5&amp;type=ip&amp;initCount=0" Alt=""   border="0" />    </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+            </ul>
+          </div>
+        </div>
+      </div>
+</footer> </div>
+ <!--end body container-->
+    <!--footer
+    <div class="site-footer">
+      <div class="container">
+       </div>
+    </div>-->
+  </body>
+
+<!-- Mirrored from studyglance.in/dbms/index.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 28 May 2025 03:37:17 GMT -->
+</html>

@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html>
+  
+<!-- Mirrored from studyglance.in/python/set.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 28 May 2025 03:41:17 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>Set in python, Set Index, Set Operations, Set Functions | Study Glance</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="description" content=" " />
+	<meta property="og:title" content="Set in python, Set Index, Set Operations, Set Functions | Study Glance" />
+	<meta property="og:description" content="" />
+	<meta property="og:url" content="index-2.html" />
+
+
+    <link rel="icon" href="../images/logo1.png" type="image/x-icon"/>
+    <link rel="bookmark" href="../images/logo1.png"/>
+    <!-- site css -->
+     <link rel="stylesheet" href="../dist/css/style.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700,400italic,600italic,700italic,800italic,300italic" rel="stylesheet" type="text/css">
+    <!-- <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'> -->
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="../dist/js/site.min.js"></script>
+	<script type="text/javascript" src="../dist/js/prism.js"></script>
+
+	<script>
+		function myFunction() {
+		var x = document.getElementById("myTopnav");
+		if (x.className === "topnav") {
+			x.className += " responsive";
+		} else {
+			x.className = "topnav";
+		}
+		}
+	</script>
+  </head>
+<body>
+<!--nav-->
+<link rel="stylesheet" href="../dist/css/site.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700,400italic,600italic,700italic,800italic,300italic" rel="stylesheet" type="text/css">
+    <!-- <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'> -->
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="../dist/js/site.min.js"></script>
+	 <script type="text/javascript" src="../dist/js/prism.js"></script>
+	<script>
+			function myFunction() {
+		var x = document.getElementById("myTopnav");
+		if (x.className === "topnav") {
+			x.className += " responsive";
+		} else {
+			x.className = "topnav";
+		}
+		}
+	</script>
+	<script async src="../../pagead2.googlesyndication.com/pagead/js/f9b65.txt?client=ca-pub-8096140274719176"
+     crossorigin="anonymous"></script>
+  </head>
+<body>    
+<nav role="navigation" class="navbar">
+	<!-- logo -->
+	<center><img src="../images/logo4.png" height="90" border="0" alt="" style="padding-left:5px;padding-top:2px;padding-bottom:5px;"></center>
+	<!-- main menu-->   
+	<div class="topnav" id="myTopnav">
+	<a href="../index-2.html" class="">Home</a>
+	<div class="mdropdown">
+    <button class="mdropbtn">Tutorials
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="mdropdown-content">
+	  <a href="../c/index.html" class="">C - Programming</a>
+	<a href="../ds/index.html" class="" >Data Structure</a>
+      <a href="../html/index.html" class="">HTML</a>
+	  <a href="../php/index.html" class="">PHP</a>
+	  <a href="../xml/index.html" class="" >XML</a>
+	  <a href="../servlet/index.html" class="" >SERVLET</a>
+     <a href="index.html" class="active" >PYTHON</a>
+     <a href="../dbms/index.html" class="" >DBMS</a>
+     <a href="../dm/index.html" class="" >Data Mining</a>
+     <a href="../daa/index.html" class="" >DAA</a>
+	 <a href="../nn/index.html" class="" >Neural Networks</a>
+	 <a href="../dl/index.html" class="" >Deep Learning</a>
+      <!--<a href="#php" class="">PHP</a>-->
+    </div>
+  </div>
+
+<!--
+	<a href="html/index.php" class="">HTML</a>
+	<a href="python/index.php" class="active">PYTHON</a>
+	<a href="#php" class="">PHP</a>-->
+	<a href="../ppts/index.html" class="">PPTs</a>
+	<a href="../lecturenotes/index.html" class="">Lecture Notes</a>
+	<!--<a href="../questions/index.php" class="">Questions</a>-->
+	<a href="../objquestions/index.html" class="">Objective Questions</a>
+	<a href="../labprograms/index.html" class="">Lab Programs</a>
+	<!--<a href="../syllabus/index.php" class="">Syllabus</a>-->
+	<a href="../blog/index.html" class="">Blog</a>
+	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+	<i class="fa fa-bars"></i>
+	</a>
+	</div>
+	<!-- end main menu-->
+</nav>
+	<!-- end main menu-->
+</nav>
+<!--nav end -->
+<!--body container-->
+    <div class="container-fluid">
+    <div class="row row-offcanvas row-offcanvas-left">
+<!-- Side Menu-->
+	<div class="col-xs-6 col-sm-3 sidebar-offcanvas" role="navigation" id="non-printable">
+    <ul class="list-group panel">
+		<li class="list-group-item" "><img src="images/python.png" width="20"alt="">&nbsp;&nbsp; <b>PYTHON BASICS </b></li>
+        <!--<li class="list-group-item"><input type="text" class="form-control search-query" placeholder="Search Something"></li>-->
+        <li class="list-group-item "><a href="introduction.html"><i class="fa  fa-chevron-circle-right"></i>Introduction</a></li>
+		<li class="list-group-item "><a href="installation.html"><i class="fa  fa-chevron-circle-right"></i>Python Installation</a></li>
+        <!-- <li class="list-group-item"><a href="icons.html"><i class="fa  fa-chevron-circle-right"></i>Icons </a></li> -->
+		<li class="list-group-item "><a href="comments.html"><i class="fa  fa-chevron-circle-right"></i>Comments</a></li>
+		<li class="list-group-item "><a href="iooperations.html"><i class="fa  fa-chevron-circle-right"></i>IO Operations</a></li>
+		<li class="list-group-item "><a href="variables.html"><i class="fa  fa-chevron-circle-right"></i>Variables</a></li>
+		<li class="list-group-item "><a href="datatypes.html"><i class="fa  fa-chevron-circle-right"></i>Data Types</a></li>
+		<li class="list-group-item "><a href="typecasting.html"><i class="fa  fa-chevron-circle-right"></i>Typecasting</a></li>
+		<li class="list-group-item "><a href="operator.html"><i class="fa  fa-chevron-circle-right"></i>Operators</a></li>
+		<li class="list-group-item "><a href="conditional.html"><i class="fa  fa-chevron-circle-right"></i>Conditional Statements </a></li>
+		<li class="list-group-item "><a href="loops.html"><i class="fa  fa-chevron-circle-right"></i>Loop Statements </a></li>
+		<li class="list-group-item "><a href="break.html"><i class="fa  fa-chevron-circle-right"></i>Break Continue </a></li>
+
+		<li class="list-group-item" "><img src="images/python.png" width="20"alt="">&nbsp;&nbsp; <b>PYTHON SEQUENCES </b></li>
+		<li class="list-group-item "><a href="string.html"><i class="fa  fa-chevron-circle-right"></i>String</a></li>
+		<li class="list-group-item "><a href="list.html"><i class="fa  fa-chevron-circle-right"></i>List</a></li>
+		<li class="list-group-item "><a href="tuple.html"><i class="fa  fa-chevron-circle-right"></i>Tuple</a></li>
+		<li class="list-group-item active"><a href="set.html"><i class="fa  fa-chevron-circle-right"></i>Set</a></li>
+		<li class="list-group-item "><a href="dictionary.html"><i class="fa  fa-chevron-circle-right"></i>Dictionary</a></li>
+
+		<li class="list-group-item" "><img src="images/python.png" width="20"alt="">&nbsp;&nbsp; <b> FILES IN PYTHON </b></li>
+		<li class="list-group-item "><a href="files.html"><i class="fa  fa-chevron-circle-right"></i>Files Function & Methods</a></li>
+		<li class="list-group-item "><a href="command-line.html"><i class="fa  fa-chevron-circle-right"></i>Command-Line Arguments</a></li>
+		<li class="list-group-item "><a href="file-system.html"><i class="fa  fa-chevron-circle-right"></i>File System</a></li>
+		
+		<li class="list-group-item" "><img src="images/python.png" width="20"alt="">&nbsp;&nbsp; <b> PYTHON EXCEPTIONS </b></li>
+		<li class="list-group-item "><a href="exceptions.html"><i class="fa  fa-chevron-circle-right"></i>Exceptions</a></li>
+		<li class="list-group-item "><a href="ex-handling.html"><i class="fa  fa-chevron-circle-right"></i>Exception handling</a></li>
+		<li class="list-group-item "><a href="raise-assert.html"><i class="fa  fa-chevron-circle-right"></i>Raise &amp; Assert Statement</a></li>
+
+
+		<li class="list-group-item" "><img src="images/python.png" width="20"alt="">&nbsp;&nbsp; <b> PYTHON MODULES </b></li>
+		<li class="list-group-item "><a href="functions.html"><i class="fa  fa-chevron-circle-right"></i>Functions</a></li>
+		<li class="list-group-item "><a href="module.html"><i class="fa  fa-chevron-circle-right"></i>Modules</a></li>
+		<li class="list-group-item "><a href="namespaces.html"><i class="fa  fa-chevron-circle-right"></i>Namespaces</a></li>
+		<li class="list-group-item "><a href="packages.html"><i class="fa  fa-chevron-circle-right"></i>Packages</a></li>
+
+		
+		<li class="list-group-item" "><img src="images/python.png" width="20"alt="">&nbsp;&nbsp; <b> PYTHON REG-EXPS </b></li>
+		<li class="list-group-item "><a href="regex.html"><i class="fa  fa-chevron-circle-right"></i>Regular Expressions</a></li>
+		<li class="list-group-item "><a href="regex-module.html"><i class="fa  fa-chevron-circle-right"></i>RegEx Module</a></li>
+    </ul>
+</div><!-- End side Menu-->
+<!-- content -->
+<div class="col-xs-12 col-sm-9">
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h3 class="panel-title"><a href="javascript:void(0);" class="toggle-sidebar" ><span class="fa fa-angle-double-left" data-toggle="offcanvas" title="Maximize Panel"></span></a> Python Menu</h3>
+    </div>
+	<!--panel-Body-->
+    <div class="panel-body">
+		<div class="content-row">
+			<center><h1>Set Sequence in Python</h1></center><hr>
+<p>In python, the set can be defined as the unordered collection of various items enclosed within the curly braces. The elements of the set cannot be duplicate. The elements of the python set must be immutable.<br><br>
+Unlike other collections in python, there is no index attached to the elements of the set, i.e., we cannot directly access any element of the set by the index. However, we can print them all together or we can get the list of elements by looping through the set.</p>
+
+<h2>Creating a set</h2>
+<p>The set can be created by enclosing the comma separated items with the curly braces. </p>
+<em><mark>Syntax:</mark></em><br>
+<pre><code class="language-python">Set={value1, value2….}</code></pre><br>
+<div class="row"> 
+	<div class="col-md-6">
+		<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">Days = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"}  
+print(Days)  
+print(type(Days))  
+print("Looping through the set elements ... ")  
+for i in Days:  
+    print(i)</code></pre></div>
+	</div>
+    <div class="col-md-6">
+		<div class="alert alert-warning"><b>Output:</b><pre><code class="language-python">{'Wednesday', 'Tuesday', 'Sunday', 'Friday', 'Thursday', 'Saturday', 'Monday'}
+<class 'set'>
+Looping through the set elements...
+Wednesday
+Tuesday
+Sunday
+Friday
+Thursday
+Saturday
+Monday</code></pre></div>                      
+	</div>
+</div>
+<h2>Set Operators</h2>
+<p>In Python, we can perform various mathematical operations on python sets like union, intersection, difference, etc</p>
+<div class="table-responsive">
+	<table class="table table-bordered table-striped">
+		<colgroup>
+			<col class="col-xs-1">
+			<col class="col-xs-6">
+		</colgroup>
+		<thead>
+			<tr>
+				<th>Operator</th>
+                <th>Description</th>
+            </tr>
+		</thead>
+        <tbody>
+			<tr>
+				<td><code>|</code></td>
+				<td>Union Operator</td>
+			</tr>
+			<tr>
+				<td><code>&</code></td>
+				<td>Intersection Operator</td>
+			</tr>
+			<tr>
+				<td><code>-</code></td>
+				<td>Difference Operator:</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<h2>&#9758; Union (|) Operator</h2>
+<p>The union of two sets are calculated by using the or (|) operator. The union of the two sets contains the all the items that are present in both the sets.</p>
+<div class="row"> 
+	<div class="col-md-6">
+		<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">Days1={"Mon","Tue","Wed","Sat"}
+Days2={"Thr","Fri","Sat","Sun","Mon"}
+print(Days1 | Days2)</code></pre></div>
+	</div>
+    <div class="col-md-6">
+		<div class="alert alert-warning"><b>Output:</b><pre><code class="language-python">{'Thr', 'Fri', 'Sun', 'Tue', 'Wed', 'Mon', 'Sat'}</code></pre></div></div></div>
+<h2>&#9758; Intersection (&) Operator</h2>
+<p>The & (intersection) operator is used to calculate the intersection of the two sets in python. The intersection of the two sets are given as the set of the elements that common in both sets.</p>
+<div class="row"> 
+	<div class="col-md-6">
+		<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">Days1={"Mon","Tue","Wed","Sat"}
+Days2={"Thr","Fri","Sat","Sun","Mon"}
+print(Days1 & Days2)</code></pre></div>
+	</div>
+    <div class="col-md-6">
+		<div class="alert alert-warning"><b>Output:</b><pre><code class="language-python">{'Mon', 'Sat'}</code></pre></div></div></div>
+<h2>&#9758; Difference (-) Operator</h2>
+<p>The difference of two sets can be calculated by using the subtraction (-) operator. The resulting set will be obtained by removing all the elements from set 1 that are present in set 2.</p>
+<div class="row"> 
+	<div class="col-md-6">
+		<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">Days1={"Mon","Tue","Wed","Sat"}
+Days2={"Thr","Fri","Sat","Sun","Mon"}
+print(Days1 - Days2)</code></pre></div>
+	</div>
+    <div class="col-md-6">
+		<div class="alert alert-warning"><b>Output:</b><pre><code class="language-python">{'Tue', 'Wed'}</code></pre></div></div></div>
+<h2>Set Functions</h2>
+<p>Python contains the following methods to be used with the sets. Those are</p>
+<strong><ul>
+	<li>len(set)</li>
+	<li>max(set)</li>
+	<li>min(set)</li>
+	<li>sum(set)</li>
+	<li>sorted(set)</li>
+	<li>set()</li>
+	<li>add()</li>
+	<li>update()</li>
+	<li>discard()</li>
+	<li>remove()</li>
+	<li>pop()</li>
+	<li>clear()</li>
+	<li>union()</li>
+	<li>intersection()</li>
+	<li>difference()</li>
+	<li>issubset()</li>
+	<li>issuperset()</li>
+</ul></strong>
+<h2>&#9758; len()</h2>
+<p>In Python len() is used to find the length of set,i.e it returns the number of items in the set. </p>
+<em><mark>Syntax:</mark></em><br>
+<pre><code class="language-python">len(set)</code></pre><br>
+<div class="row"> 
+	<div class="col-md-6">
+		<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">num={1,2,3,4,5,6}
+print(“length of set :”,len(num))</code></pre></div>
+	</div>
+    <div class="col-md-6">
+		<div class="alert alert-warning"><b>Output:</b><pre><code class="language-python">length of set : 6</code></pre></div></div></div>
+<h2>&#9758; max()</h2>
+<p>In Python max() is used to find maximum value in the set.</p>
+<em><mark>Syntax:</mark></em><br>
+<pre><code class="language-python">max(set)</code></pre><br>
+<div class="row"> 
+	<div class="col-md-6">
+		<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">num={1,2,3,4,5,6}
+lang={'java','c','python','cpp'}
+print("Max of set :",max(num))
+print("Max of set :",max(lang))</code></pre></div>
+	</div>
+    <div class="col-md-6">
+		<div class="alert alert-warning"><b>Output:</b><pre><code class="language-python">Max of set : 6
+Max of set : python</code></pre></div></div></div>
+<h2>&#9758; min()</h2>
+<p>In Python min() is used to find minimum value in the set.</p>
+<em><mark>Syntax:</mark></em><br>
+<pre><code class="language-python">min(set)</code></pre><br>
+<div class="row"> 
+	<div class="col-md-6">
+		<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">num={1,2,3,4,5,6}
+lang={'java','c','python','cpp'}
+print("Min of set :",min(num))
+print("Min of set :",min(lang))</code></pre></div>
+	</div>
+    <div class="col-md-6">
+		<div class="alert alert-warning"><b>Output:</b><pre><code class="language-python">Min of set: 1
+Min of set : c</code></pre></div></div></div>
+<h2>&#9758; sum()</h2>
+<p>In python, sum(set) function returns sum of all values in the set. Set values must in number type.</p>
+<em><mark>Syntax:</mark></em><br>
+<pre><code class="language-python">sum(set)</code></pre><br>
+<div class="row"> 
+	<div class="col-md-6">
+		<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">num={1,2,3,4,5,6}
+print(“sum of set items :”,sum(num))</code></pre></div>
+	</div>
+    <div class="col-md-6">
+		<div class="alert alert-warning"><b>Output:</b><pre><code class="language-python">sum of set items: 21</code></pre></div></div></div>
+<h2>&#9758; sorted()</h2>
+<p>In python, sorted (set) function is used to sort all items of set in an ascending order.  It also sorts the items into descending and ascending order. It takes an optional parameter 'reverse' which sorts the set into descending order.</p>
+<em><mark>Syntax:</mark></em><br>
+<pre><code class="language-python">sorted (set[,reverse=True])</code></pre><br>
+<div class="row"> 
+	<div class="col-md-6">
+		<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">num={1,3,2,4,6,5}
+lang={'java','c','python','cpp'}
+print(sorted(num))
+print(sorted(lang))
+print(sorted(num,reverse=True))</code></pre></div>
+	</div>
+    <div class="col-md-6">
+		<div class="alert alert-warning"><b>Output:</b><pre><code class="language-python">{1, 2, 3, 4, 5, 6}
+{'c', 'cpp', 'java', 'python'}
+{6, 5, 4, 3, 2, 1}</code></pre></div></div></div>
+<h2>&#9758; set()</h2>
+<p>The set() method takes sequence types and converts them to sets. This is used to convert a given string or list or tuple into set.</p>
+<em><mark>Syntax:</mark></em><br>
+<pre><code class="language-python">set(sequence)</code></pre><br>
+<div class="row"> 
+	<div class="col-md-6">
+		<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">set1=set("PYTHON")
+print(set1)
+days=["Mon", "Tue", "Wed", "Thur", "Fri", "Sat", "Sun"]
+set2 = set(days)  
+print(set2) 
+days=("Mon", "Tue", "Wed", "Thur", "Fri", "Sat", "Sun")
+set3 = set(days)
+print(set3)</code></pre></div>
+	</div>
+    <div class="col-md-6">
+		<div class="alert alert-warning"><b>Output:</b><pre><code class="language-python">{'N', 'O', 'T', 'H', 'P', 'Y'}
+{'Fri', 'Thur', 'Tue', 'Sun', 'Mon', 'Sat', 'Wed'}
+{'Fri', 'Thur', 'Tue', 'Sun', 'Mon', 'Sat', 'Wed'}</code></pre></div></div></div>
+<h2>&#9758; add()</h2>
+<p>In python, the add() method used to add some particular item to the set.</p>
+<em><mark>Syntax:</mark></em><br>
+<pre><code class="language-python">set.add (item)</code></pre><br>
+<div class="row"> 
+	<div class="col-md-6">
+		<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">Days = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday"}  
+print("\n printing the original set ... ")  
+print(Days)
+Days.add("Saturday");
+Days.add("Sunday");
+print("\n Printing the modified set..."); 
+print(Days)</code></pre></div>
+	</div>
+    <div class="col-md-6">
+		<div class="alert alert-warning"><b>Output:</b><pre><code class="language-python">printing the original set ...
+{'Wednesday', 'Friday', 'Thursday', 'Tuesday', 'Monday'}
+
+ Printing the modified set...
+{'Wednesday', 'Sunday', 'Friday', 'Thursday', 'Tuesday', 'Saturday', 'Monday'}</code></pre></div></div></div>
+<h2>&#9758; update()</h2>
+<p>Python provides the update () method to add more than one item in the set.</p>
+<em><mark>Syntax:</mark></em><br>
+<pre><code class="language-python">set.update ([item1, item2…])</code></pre><br>
+<div class="row"> 
+	<div class="col-md-6">
+		<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">Months={"Jan","Feb","Mar","Apr"}
+print("\n Printing the original set ... ")  
+print(Months)
+Months.update (["May","Jun","Jul"])
+print("\n Printing the modified set..."); 
+print(Months)</code></pre></div>
+	</div>
+    <div class="col-md-6">
+		<div class="alert alert-warning"><b>Output:</b><pre><code class="language-python">Printing the original set ...
+{'Mar', 'Apr', 'Jan', 'Feb'}
+ Printing the modified set...
+{'Mar', 'Apr', 'Jan', 'Jun', 'May', 'Jul', 'Feb'}</code></pre></div></div></div>
+<h2>&#9758; discard()</h2>
+<p>Python provides discard () method which can be used to remove the items from the set. If item doesn't exist in the set, the python will not give the error. The program maintains its control flow.
+</p>
+<em><mark>Syntax:</mark></em><br>
+<pre><code class="language-python">set.discard (item)</code></pre><br>
+<div class="row"> 
+	<div class="col-md-6">
+		<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">Months={"Jan","Feb","Mar","Apr"}
+print("\n printing the original set ... ")  
+print(Months)
+Months.discard("Apr")
+print("\n Printing the modified set..."); 
+print(Months)
+Months.discard("May")		#doesn’t give error
+print("\n Printing the modified set..."); 
+print(Months)</code></pre></div>
+	</div>
+    <div class="col-md-6">
+		<div class="alert alert-warning"><b>Output:</b><pre><code class="language-python">printing the original set ...
+{'Jan', 'Apr', 'Mar', 'Feb'}
+ Printing the modified set...
+{'Jan', 'Mar', 'Feb'}
+ Printing the modified set...
+{'Jan', 'Mar', 'Feb'}</code></pre></div></div></div>
+<h2>&#9758; remove()</h2>
+<p>Python provides remove () method which can be used to remove the items from the set. If item doesn't exist in the set, the python will give the error.</p>
+<em><mark>Syntax:</mark></em><br>
+<pre><code class="language-python">set.remove (item)</code></pre><br>
+<div class="row"> 
+	<div class="col-md-6">
+		<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">Months={"Jan","Feb","Mar","Apr"}
+print("\n printing the original set ... ")  
+print(Months)
+Months.remove("Apr")
+print("\n Printing the modified set..."); 
+print(Months)
+Months.remove("May")		#it give error
+print("\n Printing the modified set..."); 
+print(Months)</code></pre></div>
+	</div>
+    <div class="col-md-6">
+		<div class="alert alert-warning"><b>Output:</b><pre><code class="language-python">printing the original set ...
+{'Feb', 'Jan', 'Apr', 'Mar'}
+Printing the modified set...
+{'Feb', 'Jan', 'Mar'}
+KeyError: 'May' doesn’t exist.</code></pre></div></div></div>
+<h2>&#9758; pop()</h2>
+<p>In Python, pop () method is used to remove the item. However, this method will always remove the last item.</p>
+<em><mark>Syntax:</mark></em><br>
+<pre><code class="language-python">set.pop ()</code></pre><br>
+<div class="row"> 
+	<div class="col-md-6">
+		<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">Days = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday"}  
+print("\n printing the original set ... ")  
+print(Days)
+Days.pop()
+print("\n Printing the modified set..."); 
+print(Days)</code></pre></div>
+	</div>
+    <div class="col-md-6">
+		<div class="alert alert-warning"><b>Output:</b><pre><code class="language-python">Printing the original set...
+{'Monday', 'Wednesday', 'Friday', 'Tuesday', 'Thursday'}
+Printing the modified set...
+{'Wednesday', 'Friday', 'Tuesday', 'Thursday'}</code></pre></div></div></div>
+<h2>&#9758; clear()</h2>
+<p>In Python, clear () method is used to remove the all items in set.</p>
+<em><mark>Syntax:</mark></em><br>
+<pre><code class="language-python">set.clear ()</code></pre><br>
+<div class="row"> 
+	<div class="col-md-6">
+		<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">Days = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday"}  
+print("\n printing the original set ... ")  
+print(Days)
+Days.clear()
+print("\n Printing the modified set..."); 
+print(Days)</code></pre></div>
+	</div>
+    <div class="col-md-6">
+		<div class="alert alert-warning"><b>Output:</b><pre><code class="language-python">printing the original set ...
+{'Monday', 'Wednesday', 'Friday', 'Tuesday', 'Thursday'}
+Printing the modified set...
+set()</code></pre></div></div></div>
+<h2>&#9758; union ()</h2>
+<p>In Python, the union () method is used to perform union of two sets. The union of the two sets contains the all the items that are present in both the sets.</p>
+<em><mark>Syntax:</mark></em><br>
+<pre><code class="language-python">set1.union (set2)</code></pre><br>
+<div class="row"> 
+	<div class="col-md-6">
+		<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">Days1={"Mon","Tue","Wed","Sat"}
+Days2={"Thr","Fri","Sat","Sun","Mon"}
+print(Days1.union(Days2))</code></pre></div>
+	</div>
+    <div class="col-md-6">
+		<div class="alert alert-warning"><b>Output:</b><pre><code class="language-python">{'Thr', 'Fri', 'Sun', 'Tue', 'Wed', 'Mon', 'Sat'}</code></pre></div></div></div>
+<h2>&#9758; intersection ()</h2>
+<p>In Python, the intersection () is used to calculate the intersection of the two sets in python. The intersection of the two sets is given as the set of the elements that common in both sets.</p>
+<em><mark>Syntax:</mark></em><br>
+<pre><code class="language-python">set1.intersection (set2)</code></pre><br>
+<div class="row"> 
+	<div class="col-md-6">
+		<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">Days1={"Mon","Tue","Wed","Sat"}
+Days2={"Thr","Fri","Sat","Sun","Mon"}
+print(Days1.intersection(Days2))</code></pre></div>
+	</div>
+    <div class="col-md-6">
+		<div class="alert alert-warning"><b>Output:</b><pre><code class="language-python">{'Mon', 'Sat'}</code></pre></div></div></div>
+<h2>&#9758; difference ()</h2>
+<p>The difference of two sets can be calculated by using the difference () method. The resulting set will be obtained by removing all the elements from set 1 that are present in set 2.</p>
+<em><mark>Syntax:</mark></em><br>
+<pre><code class="language-python">set1.difference (set2)</code></pre><br>
+<div class="row"> 
+	<div class="col-md-6">
+		<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">Days1={"Mon","Tue","Wed","Sat"}
+Days2={"Thr","Fri","Sat","Sun","Mon"}
+print(Days1.difference(Days2))</code></pre></div>
+	</div>
+    <div class="col-md-6">
+		<div class="alert alert-warning"><b>Output:</b><pre><code class="language-python">{'Tue', 'Wed'}</code></pre></div></div></div>
+<h2>&#9758; issubset()</h2>
+<p>The issubset() method returns True if all elements of a set are present in another set (passed as an argument). If not, it returns False.</p>
+<em><mark>Syntax:</mark></em><br>
+<pre><code class="language-python">set1.issubset (set2)</code></pre><br>
+<div class="row"> 
+	<div class="col-md-6">
+		<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">set1={1,2,3,4}
+set2={1,2,3,4,5,6,7,8,9}
+print(set1.issubset(set2))
+print(set2.issubset(set1))</code></pre></div>
+	</div>
+    <div class="col-md-6">
+		<div class="alert alert-warning"><b>Output:</b><pre><code class="language-python">True
+False</code></pre></div></div></div>
+<h2>&#9758; issuperset()</h2>
+<p>The issuperset () method returns True if a set has every elements of another set (passed as an argument). If not, it returns False.</p>
+<em><mark>Syntax:</mark></em><br>
+<pre><code class="language-python">set1.issuperset (set2)</code></pre><br>
+<div class="row"> 
+	<div class="col-md-6">
+		<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">set1={1,2,3,4}
+set2={1,2,3,4,5,6,7,8,9}
+print(set1.issuperset(set2))
+print(set2.issuperset(set1))</code></pre></div>
+	</div>
+    <div class="col-md-6">
+		<div class="alert alert-warning"><b>Output:</b><pre><code class="language-python">False
+True</code></pre></div></div></div>
+<hr>
+			<span class="nextbtn">Next Topic :</span><a href="dictionary.html" class="anext"><strong>Dictionary sequence in Python</strong></a>
+        </div>
+    </div>
+	<!-- end panel body -->
+</div>
+</div>
+<!-- end content -->
+</div>
+ </div>
+ <!--end body container-->
+    <!--footer-->
+     <!-- Google Ad Multiflex1 <div class="container">
+        <div class="row">
+		<div class="col-sm-12
+<!-- Google Ad Multiflex1 Start
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8096140274719176"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-8096140274719176"
+     data-ad-slot="3158072222"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+</div></div>
+END-->
+ <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>About</h6>
+	          <p class="text-justify">Study Glance provides Tutorials , Power point Presentations(ppts), Lecture Notes, Important & previously asked questions, Objective Type questions, Laboratory programs and we provide Syllabus of various subjects.</p>
+          </div>
+		<div class="col-xs-6 col-md-3" style="padding-left:100px;">
+            <h6>Categories</h6>
+            <ul class="footer-links">
+              <li><a href="../Tutorialindex.html">Tutorials</a></li>
+              <li><a href="../ppts/index.html">PPTs</a></li>
+              <li><a href="../lecturenotes/index.html">Lecture Notes</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-6 col-md-3" style="padding-left:100px;">
+            <h6></h6><br>
+            <ul class="footer-links">
+              
+              <li><a href="../questions/index.html">Questions</a></li>
+              <li><a href="../labprograms/index.html">Lab Programs</a></li>
+              <li><a href="../syllabus/index.html">Syllabus</a></li>
+            </ul>
+          </div>
+
+          
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by 
+         <a href="#">StudyGlance</a>.
+            </p>
+            <p><!-- hitwebcounter Code START -->
+
+<img src="https://hitwebcounter.com/counter/counter.php?page=7760160&amp;style=0007&amp;nbdigits=5&amp;type=ip&amp;initCount=0" Alt=""   border="0" />    </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+            </ul>
+          </div>
+        </div>
+      </div>
+</footer>  </body>
+
+<!-- Mirrored from studyglance.in/python/set.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 28 May 2025 03:41:17 GMT -->
+</html>

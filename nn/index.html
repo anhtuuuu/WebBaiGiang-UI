@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+  
+<!-- Mirrored from studyglance.in/nn/index.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 28 May 2025 03:37:32 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>Neural Networks Tutorial | Study Glance</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="description" content=" " />
+	<meta property="og:title" content="Neural Networks Introduction | Study Glance" />
+	<meta property="og:description" content="" />
+	<meta property="og:url" content="index-2.html" />
+    <link rel="icon" href="../images/logo1.png" type="image/x-icon"/>
+    <link rel="bookmark" href="../images/logo1.png"/>
+    <!-- site css -->
+    
+<!--nav-->
+<link rel="stylesheet" href="../dist/css/site.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700,400italic,600italic,700italic,800italic,300italic" rel="stylesheet" type="text/css">
+    <!-- <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'> -->
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="../dist/js/site.min.js"></script>
+	 <script type="text/javascript" src="../dist/js/prism.js"></script>
+	<script>
+			function myFunction() {
+		var x = document.getElementById("myTopnav");
+		if (x.className === "topnav") {
+			x.className += " responsive";
+		} else {
+			x.className = "topnav";
+		}
+		}
+	</script>
+	<script async src="../../pagead2.googlesyndication.com/pagead/js/f9b65.txt?client=ca-pub-8096140274719176"
+     crossorigin="anonymous"></script>
+  </head>
+<body>    
+<nav role="navigation" class="navbar">
+	<!-- logo -->
+	<center><img src="../images/logo4.png" height="90" border="0" alt="" style="padding-left:5px;padding-top:2px;padding-bottom:5px;"></center>
+	<!-- main menu-->   
+	<div class="topnav" id="myTopnav">
+	<a href="../index-2.html" class="">Home</a>
+	<div class="mdropdown">
+    <button class="mdropbtn">Tutorials
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="mdropdown-content">
+	  <a href="../c/index.html" class="">C - Programming</a>
+	<a href="../ds/index.html" class="" >Data Structure</a>
+      <a href="../html/index.html" class="">HTML</a>
+	  <a href="../php/index.html" class="">PHP</a>
+	  <a href="../xml/index.html" class="" >XML</a>
+	  <a href="../servlet/index.html" class="" >SERVLET</a>
+     <a href="../python/index.html" class="" >PYTHON</a>
+     <a href="../dbms/index.html" class="" >DBMS</a>
+     <a href="../dm/index.html" class="" >Data Mining</a>
+     <a href="../daa/index.html" class="" >DAA</a>
+	 <a href="index.html" class="active" >Neural Networks</a>
+	 <a href="../dl/index.html" class="" >Deep Learning</a>
+      <!--<a href="#php" class="">PHP</a>-->
+    </div>
+  </div>
+
+<!--
+	<a href="html/index.php" class="">HTML</a>
+	<a href="python/index.php" class="">PYTHON</a>
+	<a href="#php" class="">PHP</a>-->
+	<a href="../ppts/index.html" class="">PPTs</a>
+	<a href="../lecturenotes/index.html" class="">Lecture Notes</a>
+	<!--<a href="../questions/index.php" class="">Questions</a>-->
+	<a href="../objquestions/index.html" class="">Objective Questions</a>
+	<a href="../labprograms/index.html" class="">Lab Programs</a>
+	<!--<a href="../syllabus/index.php" class="">Syllabus</a>-->
+	<a href="../blog/index.html" class="">Blog</a>
+	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+	<i class="fa fa-bars"></i>
+	</a>
+	</div>
+	<!-- end main menu-->
+</nav>
+<!--nav end -->
+<!--body container-->
+    <div class="container-fluid">
+    <div class="row row-offcanvas row-offcanvas-left">
+<!-- Side Menu-->
+	<div class="col-xs-6 col-sm-3 sidebar-offcanvas" role="navigation">
+		<ul class="list-group panel" id="non-printable">
+		<li class="list-group-item"><img src="images/nndl-logo.jpg" width="40"alt="">&nbsp;&nbsp; <b> TUTORIAL</b></li>
+			<li class="list-group-item " ><a href="displayf6d0.html?tno=1&amp;topic=Introduction"><i class="fa  fa-chevron-circle-right"></i>Introduction</a></li>
+		<li class="list-group-item " ><a href="display6c7c.html?tno=2&amp;topic=Basic-models"><i class="fa  fa-chevron-circle-right"></i>Basic models</a></li>
+		<li class="list-group-item " ><a href="display115d.html?tno=3&amp;topic=Terminologies"><i class="fa  fa-chevron-circle-right"></i>Terminologies</a></li>
+			<li class="list-group-item" style="text-transform: uppercase;text-align: left;" active"><img src="images/nndl-logo.jpg" width="20"alt="">&nbsp;&nbsp; <b>Supervised Learning Networks </b></li>
+			<li class="list-group-item " ><a href="display8c33.html?tno=4&amp;topic=Perceptron-Networks"><i class="fa  fa-chevron-circle-right"></i>Perceptron Networks</a></li>
+		<li class="list-group-item " ><a href="displaydbc6.html?tno=5&amp;topic=Adaptive-Linear-Neuron"><i class="fa  fa-chevron-circle-right"></i>Adaptive Linear Neuron</a></li>
+		<li class="list-group-item " ><a href="display3922.html?tno=6&amp;topic=Back-Propagation"><i class="fa  fa-chevron-circle-right"></i>Back Propagation</a></li>
+		<li class="list-group-item " ><a href="display926e.html?tno=7&amp;topic=Associate-Memory-Network"><i class="fa  fa-chevron-circle-right"></i>Associate Memory Network</a></li>
+		<li class="list-group-item " ><a href="display87bc.html?tno=8&amp;topic=Bidirectional-Associative-Memory"><i class="fa  fa-chevron-circle-right"></i>Bidirectional Associative Memory</a></li>
+		<li class="list-group-item " ><a href="display81dd.html?tno=9&amp;topic=Hopfield-Networks"><i class="fa  fa-chevron-circle-right"></i>Hopfield Networks</a></li>
+			<li class="list-group-item" style="text-transform: uppercase;text-align: left;" active"><img src="images/nndl-logo.jpg" width="20"alt="">&nbsp;&nbsp; <b>Unsupervised Learning </b></li>
+			<li class="list-group-item " ><a href="display25cf.html?tno=10&amp;topic=Fixed-Weight-Competitive-Networks"><i class="fa  fa-chevron-circle-right"></i>Fixed Weight Competitive Networks</a></li>
+		<li class="list-group-item " ><a href="display2265.html?tno=11&amp;topic=Kohonen-Self-Organizing-Feature-Maps"><i class="fa  fa-chevron-circle-right"></i>Kohonen Self-Organizing Feature Maps</a></li>
+		<li class="list-group-item " ><a href="display0d7a.html?tno=12&amp;topic=Learning-Vector-Quantization"><i class="fa  fa-chevron-circle-right"></i>Learning Vector Quantization</a></li>
+		<li class="list-group-item " ><a href="display87d1.html?tno=13&amp;topic=Counter-Propagation-Networks"><i class="fa  fa-chevron-circle-right"></i>Counter Propagation Networks</a></li>
+		<!--
+        <li class="list-group-item " ><a href="display.php?tno=1&topic=Introduction-in-PHP"><i class="fa  fa-chevron-circle-right"></i>Introduction</a></li>
+
+        <li class="list-group-item "><a href="display.php?tno=2&topic=Comments-in-PHP"><i class="fa  fa-chevron-circle-right"></i>Comments</a></li>
+
+		<li class="list-group-item "><a href="display.php?tno=3&topic=Variables-Declaration-in-PHP"><i class="fa  fa-chevron-circle-right"></i>Variables</a></li>
+
+        <li class="list-group-item " ><a href="display.php?tno=4&topic=Datatypes-in-PHP"><i class="fa  fa-chevron-circle-right"></i>Datatypes</a></li>
+
+		<li class="list-group-item "><a href="display.php?tno=5&topic=Operators-in-PHP"><i class="fa  fa-chevron-circle-right"></i>Operators</a></li>
+
+		<li class="list-group-item "><a href="display.php?tno=6&topic=Control-Structures-in-PHP"><i class="fa  fa-chevron-circle-right"></i>Control Structures</a></li>
+
+        <li class="list-group-item "><a href="display.php?tno=7&topic=Arrays-in-PHP"><i class="fa  fa-chevron-circle-right"></i>Arrays</a></li>
+
+		<li class="list-group-item "><a href="display.php?tno=8&topic=Functions-in-PHP"><i class="fa  fa-chevron-circle-right"></i>Functions</a></li>
+
+		<li class="list-group-item "><a href="display.php?tno=9&topic=Strings-in-PHP"><i class="fa  fa-chevron-circle-right"></i>Strings</a></li>
+
+		<li class="list-group-item "><a href="display.php?tno=10&topic=Form-Handing-in-PHP"><i class="fa  fa-chevron-circle-right"></i>Form Handing</a></li>
+
+		<li class="list-group-item "><a href="display.php?tno=11&topic=File Uploading-in-PHP"><i class="fa  fa-chevron-circle-right"></i>File Uploading</a></li>
+
+		<li class="list-group-item "><a href="display.php?tno=12&topic=Database-Programming-in-PHP"><i class="fa  fa-chevron-circle-right"></i>Database Programming</a></li>
+
+		<li class="list-group-item "><a href="display.php?tno=13&topic=Sessions-in-PHP"><i class="fa  fa-chevron-circle-right"></i>Sessions</a></li>
+
+		<li class="list-group-item "><a href="display.php?tno=14&topic=Cookies-in-PHP"><i class="fa  fa-chevron-circle-right"></i>Cookies</a></li>
+
+		<li class="list-group-item "><a href="display.php?tno=15&topic=File-Handling-in-PHP"><i class="fa  fa-chevron-circle-right"></i>File Handling</a></li>-->
+	</ul>
+	    </div>
+<!-- End side Menu-->
+<!-- content -->
+<div class="col-xs-12 col-sm-9">
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h3 class="panel-title"><a href="javascript:void(0);" class="toggle-sidebar" ><span class="fa fa-angle-double-left" data-toggle="offcanvas" title="Maximize Panel"></span></a>NN Menu</h3>
+    </div>
+	<!--panel-Body-->
+    <div class="panel-body">
+		<div class="content-row">
+			<center><h1>Neural Networks Tutorial</h1></center>
+<hr>
+<p>Artificial Neural Networks, commonly referred to as "Neural Networks", has been motivated right from its inception by the recognition that the human brain computes in an entirely different way from the conventional digital computer. The brain is a highly complex, nonlinear, and parallel computer (information-processing system). It has the capability to organize its structural constituents, known as neurons, so as to perform certain computations (e.g., pattern recognition, perception, and motor control) many times faster than the fastest digital computer in existence today.</p>
+<p>To be specific, the brain routinely accomplishes perceptual recognition tasks (e.g., recognizing familiar face embedded in an unfamiliar scene) in approximately 100–200 ms, whereas tasks of much lesser than the powerful computer.
+</p>
+<br>
+<div class="row"> 
+	<div class="col-md-5"><br>
+		<a href="index.html"><img src="images/nndl-logo.jpg" width="50%"></img></a>
+	</div>
+	<div class="col-md-5" style="border:1px #ffcc99 solid;border-radius:10px;">
+	<h4>List of other Tutorials:</h4>
+	<ul>
+	<li><a href="../python/index.html" class="anext">Python Programming tutorial</a></li>
+	<li><a href="../html/index.html" class="anext">Hyper Text Markup Language (HTML) tutorial</a></li>
+	<li><a href="../xml/index.html" class="anext">eXtensible Markup Language(XML) tutorial</a></li>
+	<li><a href="../js/index.html" class="anext">Java Script tutorial</a></li>
+	</ul>
+	</div>
+</div>
+<br>
+<p>A neural network is a machine that is designed to model the way in which the brain performs a particular task or function of interest; the network is usually implemented by using electronic components or is simulated in software on a digital computer. To achieve good performance, neural networks employ a massive interconnection of simple computing cells referred to as “neurons” or “processing units.”</p>
+<br>
+<p><strong>TEXT BOOKS:</strong>
+<ol>
+	<li><a href="https://raw.githubusercontent.com/janishar/mit-deep-learning-book-pdf/master/complete-book-bookmarked-pdf/deeplearningbook.pdf" target=”_blank”>Deep Learning By Ian Goodfellow and Yoshua Bengio and Aaron Courville</a></li>
+	<li><a href="https://lps.ufrj.br/~caloba/Livros/Haykin2009.pdf" target=”_blank”>Neural Networks and Learning Machines by Simon Haykin, 3rd Edition, Pearson Prentice Hall.</a></li>
+	<li><a href="https://pg.its.edu.in/sites/default/files/MCAKCA032-PRINCIPALES OF SOFT COMPUTING-SN SIVNANDAM AND DEEPA SN.pdf" target=”_blank”>Principles of Soft Computing by S. N. Sivanandam, 2rd Edition, Wiley.</a></li>
+</ol></p>
+<br>
+ <h2 style="color:#ff9900;"><img src="images/nndl-logo.jpg" width="40"alt="">&nbsp;Tutorial Index :</h2><br>
+<div class="row"> 
+<div class="col-md-6" style="padding-left:10px;">
+<!--<img src="../images/php.png" width="40"alt="">&nbsp;&nbsp; <b>PHP TUTORIAL</b>-->
+
+<ul>
+			<li><a href="displayf6d0.html?tno=1&amp;topic=Introduction" class="atopic">Introduction</a></li>
+		<li><a href="display6c7c.html?tno=2&amp;topic=Basic-models" class="atopic">Basic models</a></li>
+		<li><a href="display115d.html?tno=3&amp;topic=Terminologies" class="atopic">Terminologies</a></li>
+		<li><a href="display80af.html?tno=h&amp;topic=Supervised-Learning-Networks" class="atopic">Supervised Learning Networks</a></li>
+		<li><a href="display8c33.html?tno=4&amp;topic=Perceptron-Networks" class="atopic">Perceptron Networks</a></li>
+		<li><a href="displaydbc6.html?tno=5&amp;topic=Adaptive-Linear-Neuron" class="atopic">Adaptive Linear Neuron</a></li>
+		<li><a href="display3922.html?tno=6&amp;topic=Back-Propagation" class="atopic">Back Propagation</a></li>
+		<li><a href="display926e.html?tno=7&amp;topic=Associate-Memory-Network" class="atopic">Associate Memory Network</a></li>
+		<li><a href="display87bc.html?tno=8&amp;topic=Bidirectional-Associative-Memory" class="atopic">Bidirectional Associative Memory</a></li>
+		<li><a href="display81dd.html?tno=9&amp;topic=Hopfield-Networks" class="atopic">Hopfield Networks</a></li>
+		<li><a href="display0d11.html?tno=h&amp;topic=Unsupervised-Learning" class="atopic">Unsupervised Learning</a></li>
+		<li><a href="display25cf.html?tno=10&amp;topic=Fixed-Weight-Competitive-Networks" class="atopic">Fixed Weight Competitive Networks</a></li>
+		<li><a href="display2265.html?tno=11&amp;topic=Kohonen-Self-Organizing-Feature-Maps" class="atopic">Kohonen Self-Organizing Feature Maps</a></li>
+		<li><a href="display0d7a.html?tno=12&amp;topic=Learning-Vector-Quantization" class="atopic">Learning Vector Quantization</a></li>
+		<li><a href="display87d1.html?tno=13&amp;topic=Counter-Propagation-Networks" class="atopic">Counter Propagation Networks</a></li>
+		</ul>
+</div>
+<div class="col-md-6" style="padding-left:10px;">
+<!--<img src="../images/php.png" width="40"alt="">&nbsp;&nbsp; <b>PHP TUTORIAL</b>-->
+</div>
+</div>
+			<hr>
+			<span class="nextbtn">Next Topic :</span><a href="displayae5b.html?tno=1&amp;topic=Introduction-to-PHP" class="anext"><strong>Introduction to Neural Networks</strong></a>
+        </div>
+    </div>
+	<!-- end panel body -->
+</div>
+</div>
+<!-- end content -->
+</div>
+ <!-- Google Ad Multiflex1 <div class="container">
+        <div class="row">
+		<div class="col-sm-12
+<!-- Google Ad Multiflex1 Start
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8096140274719176"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-8096140274719176"
+     data-ad-slot="3158072222"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+</div></div>
+END-->
+ <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>About</h6>
+	          <p class="text-justify">Study Glance provides Tutorials , Power point Presentations(ppts), Lecture Notes, Important & previously asked questions, Objective Type questions, Laboratory programs and we provide Syllabus of various subjects.</p>
+          </div>
+		<div class="col-xs-6 col-md-3" style="padding-left:100px;">
+            <h6>Categories</h6>
+            <ul class="footer-links">
+              <li><a href="../Tutorialindex.html">Tutorials</a></li>
+              <li><a href="../ppts/index.html">PPTs</a></li>
+              <li><a href="../lecturenotes/index.html">Lecture Notes</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-6 col-md-3" style="padding-left:100px;">
+            <h6></h6><br>
+            <ul class="footer-links">
+              
+              <li><a href="../questions/index.html">Questions</a></li>
+              <li><a href="../labprograms/index.html">Lab Programs</a></li>
+              <li><a href="../syllabus/index.html">Syllabus</a></li>
+            </ul>
+          </div>
+
+          
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by 
+         <a href="#">StudyGlance</a>.
+            </p>
+            <p><!-- hitwebcounter Code START -->
+
+<img src="https://hitwebcounter.com/counter/counter.php?page=7760160&amp;style=0007&amp;nbdigits=5&amp;type=ip&amp;initCount=0" Alt=""   border="0" />    </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+            </ul>
+          </div>
+        </div>
+      </div>
+</footer> </div>
+ <!--end body container-->
+    <!--footer
+    <div class="site-footer">
+      <div class="container">
+       </div>
+    </div>-->
+  </body>
+
+<!-- Mirrored from studyglance.in/nn/index.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 28 May 2025 03:37:38 GMT -->
+</html>

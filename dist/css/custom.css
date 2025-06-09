@@ -1,0 +1,45 @@
+:root{
+    --blue-sky: #ff9900;
+}
+
+.w-20{
+    width: 20% !important;
+}
+.list-group-item{
+    margin-top: 20px;
+}
+.pl-2r{
+    padding-left: 2rem;
+}
+a{
+    text-decoration: none !important;
+}
+
+.star{
+    cursor: pointer;
+    color: #ff9900;
+    text-shadow: 0 0 1px black;
+}
+
+.question{
+    background-color: #e6e9ee;
+    border-radius: 15px;
+}
+.content-row{
+height: 750px;
+overflow-x: none;
+overflow-y: scroll;
+}
+.question li{
+    list-style: none;
+    display: flex;
+}
+.question li p{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding-left: 20px;
+}
+.search{
+    top: 25%;
+}

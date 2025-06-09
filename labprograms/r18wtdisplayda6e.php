@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+  
+<!-- Mirrored from studyglance.in/labprograms/r18wtdisplay.php?url1=&url2=&url3=&url4=&url5=&url6=&url7=&url8=&url9=&url10=&url11=&url12=&url13=&title=Install%20TOMCAT%20web%20server.%20Convert%20the%20static%20web%20pages%20of%20assignments%202%20into%20dynamic%20web%20pages%20using%20servlets%20and%20cookies.%20Hint:%20Users%20information%20(user%20id,%20password,%20credit%20card%20number)%20would%20be%20stored%20in%20web.xml.%20Each%20user%20should%20have%20a%20separate%20Shopping%20Cart.&alg=&opurl1=&opurl2=&opurl3=&opurl4=&opurl5=&opurl6=&opurl7=&opurl8=&opurl9=&opurl10= by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 28 May 2025 03:51:10 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>Study Glance | Web Technologies Lab Manual(Programs)</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" href="../images/logo1.png" type="image/x-icon"/>
+    <link rel="bookmark" href="../images/logo1.png"/>
+    <!-- site css -->
+     <link rel="stylesheet" href="../dist/css/style.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700,400italic,600italic,700italic,800italic,300italic" rel="stylesheet" type="text/css">
+    <!-- <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'> -->
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="../dist/js/site.min.js"></script>
+	<script type="text/javascript" src="../dist/js/prism.js"></script>
+	<script>
+		function myFunction() {
+		var x = document.getElementById("myTopnav");
+		if (x.className === "topnav") {
+			x.className += " responsive";
+		} else {
+			x.className = "topnav";
+		}
+		}
+	</script>
+	<style>
+.downloadbtn {
+background-color: #0099cc; 
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top:10px;
+  padding:8px 15px 8px 15px;
+  cursor: pointer;
+  }
+  button.downloadbtn:hover {
+background-color: #ff3300; 
+  }
+	</style>
+	<script async src="../../pagead2.googlesyndication.com/pagead/js/f9b65.txt?client=ca-pub-8096140274719176"
+     crossorigin="anonymous"></script>
+  </head>
+<body>
+<!--nav-->
+<link rel="stylesheet" href="../dist/css/site.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700,400italic,600italic,700italic,800italic,300italic" rel="stylesheet" type="text/css">
+    <!-- <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'> -->
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="../dist/js/site.min.js"></script>
+	 <script type="text/javascript" src="../dist/js/prism.js"></script>
+	<script>
+			function myFunction() {
+		var x = document.getElementById("myTopnav");
+		if (x.className === "topnav") {
+			x.className += " responsive";
+		} else {
+			x.className = "topnav";
+		}
+		}
+	</script>
+	<script async src="../../pagead2.googlesyndication.com/pagead/js/f9b65.txt?client=ca-pub-8096140274719176"
+     crossorigin="anonymous"></script>
+  </head>
+<body>    
+<nav role="navigation" class="navbar">
+	<!-- logo -->
+	<center><img src="../images/logo4.png" height="90" border="0" alt="" style="padding-left:5px;padding-top:2px;padding-bottom:5px;"></center>
+	<!-- main menu-->   
+	<div class="topnav" id="myTopnav">
+	<a href="../index-2.html" class="">Home</a>
+	<div class="mdropdown">
+    <button class="mdropbtn">Tutorials
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="mdropdown-content">
+	  <a href="../c/index.html" class="">C - Programming</a>
+	<a href="../ds/index.html" class="" >Data Structure</a>
+      <a href="../html/index.html" class="">HTML</a>
+	  <a href="../php/index.html" class="">PHP</a>
+	  <a href="../xml/index.html" class="" >XML</a>
+	  <a href="../servlet/index.html" class="" >SERVLET</a>
+     <a href="../python/index.html" class="" >PYTHON</a>
+     <a href="../dbms/index.html" class="" >DBMS</a>
+     <a href="../dm/index.html" class="" >Data Mining</a>
+     <a href="../daa/index.html" class="" >DAA</a>
+	 <a href="../nn/index.html" class="" >Neural Networks</a>
+	 <a href="../dl/index.html" class="" >Deep Learning</a>
+      <!--<a href="#php" class="">PHP</a>-->
+    </div>
+  </div>
+
+<!--
+	<a href="html/index.php" class="">HTML</a>
+	<a href="python/index.php" class="">PYTHON</a>
+	<a href="#php" class="">PHP</a>-->
+	<a href="../ppts/index.html" class="">PPTs</a>
+	<a href="../lecturenotes/index.html" class="">Lecture Notes</a>
+	<!--<a href="../questions/index.php" class="">Questions</a>-->
+	<a href="../objquestions/index.html" class="">Objective Questions</a>
+	<a href="index.html" class="active">Lab Programs</a>
+	<!--<a href="../syllabus/index.php" class="">Syllabus</a>-->
+	<a href="../blog/index.html" class="">Blog</a>
+	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+	<i class="fa fa-bars"></i>
+	</a>
+	</div>
+	<!-- end main menu-->
+</nav>
+<!--nav end -->
+<!--body container-->
+    <div class="container-fluid">
+    <div class="row row-offcanvas row-offcanvas-left">
+<!-- Side Menu-->
+	<div class="col-xs-6 col-sm-3 sidebar-offcanvas" role="navigation" id="non-printable">
+    <ul class="list-group panel">
+		<li class="list-group-item"><img src="../images/tutorials_icons.png" width="20"alt="">&nbsp;<b>Tutorials</b></li>
+        <!--<li class="list-group-item"><input type="text" class="form-control search-query" placeholder="Search Something"></li>-->
+		 <li class="list-group-item"><a href="../c/index.html"><i class="glyphicon glyphicon-list-alt"></i>
+	    C - Programming</a></li>
+        <li class="list-group-item"><a href="../html/index.html"><i class="glyphicon glyphicon-list-alt"></i>
+	    HTML</a></li>
+		<li class="list-group-item"><a href="../php/index.html"><i class="glyphicon glyphicon-list-alt"></i>
+	    PHP</a></li>
+		<li class="list-group-item"><a href="../xml/index.html"><i class="glyphicon glyphicon-list-alt"></i>
+	    XML</a></li>
+		<li class="list-group-item"><a href="../python/index.html"><i class="glyphicon glyphicon-list-alt"></i>
+	    PYTHON</a></li>
+	    <li class="list-group-item"><a href="../dbms/index.html"><i class="glyphicon glyphicon-list-alt"></i>
+	   DBMS</a></li>
+	   <li class="list-group-item"><a href="../dm/index.html"><i class="glyphicon glyphicon-list-alt"></i>
+	   Data Mining</a></li>
+	    <li class="list-group-item"><a href="../daa/index.html"><i class="glyphicon glyphicon-list-alt"></i>
+	   DAA</a></li>
+		<li class="list-group-item"><a href="../nn/index.html"><i class="glyphicon glyphicon-list-alt"></i>
+	    Neural Networks</a></li>
+		<li class="list-group-item"><a href="../dl/index.html"><i class="glyphicon glyphicon-list-alt"></i>
+	    Deep Learning</a></li>
+		<!--<li class="list-group-item"><a href="#php"><i class="glyphicon glyphicon-list-alt"></i>
+	    PHP</a></li>
+		<li class="list-group-item"><a href="#xml"><i class="glyphicon glyphicon-list-alt"></i>
+	    XML</a></li>
+		<li class="list-group-item"><a href="#js"><i class="glyphicon glyphicon-list-alt"></i>
+	    JAVA SCRIPT</a></li>-->
+
+
+		<li class="list-group-item"><a href="../ppts/index.html"><img src="../images/ppt_icons.png" width="20"alt="">&nbsp;<b>PPTs</b></a></li>
+		<li class="list-group-item"><a href="../lecturenotes/index.html"><img src="../images/note_icons.png" width="20"alt="">&nbsp;<b>Lecture Notes</b></a></li>
+		   <!--<li class="list-group-item"><a href="#html"><i class="glyphicon glyphicon-list-alt"></i>
+	    HTML</a></li>
+		<li class="list-group-item"><a href="#python"><i class="glyphicon glyphicon-list-alt"></i>
+	    PYTHON</a></li>
+		<li class="list-group-item"><a href="#php"><i class="glyphicon glyphicon-list-alt"></i>
+	    PHP</a></li>
+		<li class="list-group-item"><a href="#xml"><i class="glyphicon glyphicon-list-alt"></i>
+	    XML</a></li>
+		<li class="list-group-item"><a href="#js"><i class="glyphicon glyphicon-list-alt"></i>
+	    JAVA SCRIPT</a></li>-->
+
+
+		<li class="list-group-item"><img src="../images/faq_icons.png" width="20"alt="">&nbsp;<b><a href="../questions/index.html" class="active">Questions</a></b></li>
+		 <!--  <li class="list-group-item"><a href="#html"><i class="glyphicon glyphicon-list-alt"></i>
+	    HTML</a></li>
+		<li class="list-group-item"><a href="#python"><i class="glyphicon glyphicon-list-alt"></i>
+	    PYTHON</a></li>
+		<li class="list-group-item"><a href="#php"><i class="glyphicon glyphicon-list-alt"></i>
+	    PHP</a></li>
+		<li class="list-group-item"><a href="#xml"><i class="glyphicon glyphicon-list-alt"></i>
+	    XML</a></li>
+		<li class="list-group-item"><a href="#js"><i class="glyphicon glyphicon-list-alt"></i>
+	    JAVA SCRIPT</a></li>-->
+		<li class="list-group-item"><a href="../objquestions/index.html"><img src="../images/objective_icons.png" width="20"alt="">&nbsp;<b>Objective Questions</b></a></li>
+		<li class="list-group-item"><a href="index.html"><img src="../images/lab_icons.png" width="20"alt="">&nbsp;<b>Lab Programs</b></a></li>
+		<!--<li class="list-group-item"><a href="../syllabus/index.php"><img src="../images/syllabus_icons.png" width="20"alt="">&nbsp;<b>Syllabus</b></a></li>-->
+		<li class="list-group-item"><a href="../blog/index.html"><img src="../images/faq_icons.png" width="20"alt="">&nbsp;<b>Blog</b></a></li>
+		   <!--<li class="list-group-item"><a href="#html"><i class="glyphicon glyphicon-list-alt"></i>
+	    HTML</a></li>
+		<li class="list-group-item"><a href="#python"><i class="glyphicon glyphicon-list-alt"></i>
+	    PYTHON</a></li>
+		<li class="list-group-item"><a href="#php"><i class="glyphicon glyphicon-list-alt"></i>
+	    PHP</a></li>
+		<li class="list-group-item"><a href="#xml"><i class="glyphicon glyphicon-list-alt"></i>
+	    XML</a></li>
+		<li class="list-group-item"><a href="#js"><i class="glyphicon glyphicon-list-alt"></i>
+	    JAVA SCRIPT</a></li>-->
+        <!--
+        <li>
+        <a href="#demo3" class="list-group-item " data-toggle="collapse">Item 3  <span class="glyphicon glyphicon-chevron-right"></span></a>
+        <div class="collapse" id="demo3">
+        <a href="#SubMenu1" class="list-group-item" data-toggle="collapse">Subitem 1  <span class="glyphicon glyphicon-chevron-right"></span></a>
+        <div class="collapse list-group-submenu" id="SubMenu1">
+			<a href="#" class="list-group-item">Subitem 1 a</a>
+            <a href="#" class="list-group-item">Subitem 2 b</a>
+            <a href="#SubSubMenu1" class="list-group-item" data-toggle="collapse">Subitem 3 c <span class="glyphicon glyphicon-chevron-right"></span></a>
+            <div class="collapse list-group-submenu list-group-submenu-1" id="SubSubMenu1">
+                  <a href="#" class="list-group-item">Sub sub item 1</a>
+                  <a href="#" class="list-group-item">Sub sub item 2</a>
+            </div>
+            <a href="#" class="list-group-item">Subitem 4 d</a>
+        </div>
+             <a href="javascript:;" class="list-group-item">Subitem 2</a>
+             <a href="javascript:;" class="list-group-item">Subitem 3</a>
+        </div>
+        </li>
+        <li>
+              <a href="#demo4" class="list-group-item " data-toggle="collapse">Item 4  <span class="glyphicon glyphicon-chevron-right"></span></a>
+                    <li class="collapse" id="demo4">
+                      <a href="" class="list-group-item">Subitem 1</a>
+                      <a href="" class="list-group-item">Subitem 2</a>
+                      <a href="" class="list-group-item">Subitem 3</a>
+                    </li>
+        </li>-->
+	</ul>
+	<!-- Multiplex2Ver1 Start-->
+<script async src="../../pagead2.googlesyndication.com/pagead/js/f9b65.txt?client=ca-pub-8096140274719176"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:inline-block;width:360px;height:400px"
+     data-ad-client="ca-pub-8096140274719176"
+     data-ad-slot="3459332850"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!-- Multiplex2Ver end-->
+    </div><!-- End side Menu-->
+<!-- content -->
+<div class="col-xs-12 col-sm-9">
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h3 class="panel-title"><a href="javascript:void(0);" class="toggle-sidebar" ><span class="fa fa-angle-double-left" data-toggle="offcanvas" title="Maximize Panel"></span></a> Menu</h3>
+    </div>
+	<!--panel-Body-->
+    <div class="panel-body">
+		<div class="content-row">
+			
+ <center><h1><a href="r18wtlabprograms.html" class="atopic">Web Technologies [ <font size="" color="#ff3333">Lab Programs</font> ]</a></h1></center><hr>
+ <h1 style="font-size:25px;font-weight:bold;color:black;">[R18] Web Technologies Lab Manual B-Tech III Year I Semester (3-1) CSE JNTU Hyderabad (JNTUH).</h1>
+ <!--<iframe src="https://docs.google.com/gview?url=http://localhost/studyglance/XML.pdf&embedded=true" style="width:600px; height:500px;" frameborder="0"></iframe>-->
+  <!--<iframe src="File Handling in PHP.pptx" type="application/pptx" width="100%"  height="600px" />-->
+  <h2>Aim: </h2>
+  <h3><pre style="border:none;font-size:15px;font-color:#000033;"> Install TOMCAT web server. Convert the static web pages of assignments 2 into dynamic web pages using servlets and cookies. Hint: Users information (user id, password, credit card number) would be stored in web.xml. Each user should have a separate Shopping Cart.</pre> </h3>
+  <!--<h2> Algorithm </h2>
+  <pre></pre>-->
+  <h2>Source Code: </h2>
+ <!--<br />
+<b>Notice</b>:  Undefined variable: disurl2 in <b>/home/u681245571/domains/studyglance.in/public_html/labprograms/r18wtdisplay.php</b> on line <b>139</b><br />
+<br />
+<b>Notice</b>:  Undefined variable: disurl3 in <b>/home/u681245571/domains/studyglance.in/public_html/labprograms/r18wtdisplay.php</b> on line <b>151</b><br />
+<br />
+<b>Notice</b>:  Undefined variable: disurl4 in <b>/home/u681245571/domains/studyglance.in/public_html/labprograms/r18wtdisplay.php</b> on line <b>163</b><br />
+-->
+<h2>Output: </h2>
+<!--<br />
+<b>Notice</b>:  Undefined variable: opurl2 in <b>/home/u681245571/domains/studyglance.in/public_html/labprograms/r18wtdisplay.php</b> on line <b>190</b><br />
+<br />
+<b>Notice</b>:  Undefined variable: opurl3 in <b>/home/u681245571/domains/studyglance.in/public_html/labprograms/r18wtdisplay.php</b> on line <b>199</b><br />
+-->
+
+<!--
+<p><span style='font-size:32px;color:#ff9900;'><strong>&#9997;</strong></span> To download above <strong><font color="#ff6600">Program </font>[Source Code ] </strong>, Click the <strong>download</strong> button shown in below</p>
+			<center><strong><a  href="<br />
+<b>Notice</b>:  Undefined variable: durl in <b>/home/u681245571/domains/studyglance.in/public_html/labprograms/r18wtdisplay.php</b> on line <b>210</b><br />
+" download><button class="downloadbtn"><strong>Download </strong><font size="5">&#8628;</font></button></a></strong></center>
+  <hr>-->
+  <h2><font color="#000099">Related Content : </font></h2>
+
+<h2>Web Programming Lab Manual</h2>		<p><font color="#000033" style="font-size:14px;"><strong>1)</strong> Write a PHP script to print prime numbers between 1-50</font> <a href="r18wtdisplay3215.php?url1=r18wt/Week-1/Week1.php&amp;url2=&amp;url3=&amp;url4=&amp;url5=&amp;url6=&amp;url7=&amp;url8=&amp;url9=&amp;url10=&amp;url11=&amp;url12=&amp;url13=&amp;title=Write%20a%20PHP%20script%20to%20print%20prime%20numbers%20between%201-50&amp;alg=&amp;opurl1=r18wt/Week-1/outputs/w11.png&amp;opurl2=&amp;opurl3=&amp;opurl4=&amp;opurl5=&amp;opurl6=&amp;opurl7=&amp;opurl8=&amp;opurl9=&amp;opurl10=" class="alab"><strong>View Solution </strong></a></p>
+						<p><font color="#000033" style="font-size:14px;"><strong>2)</strong> PHP script to   
+a) Find the length of a string. 
+b) Count no of words in a string.  
+c) Reverse a string.   
+d) Search for a specific string.   </font> <a href="r18wtdisplay57a0.php?url1=r18wt/Week-2/Week2.php&amp;url2=&amp;url3=&amp;url4=&amp;url5=&amp;url6=&amp;url7=&amp;url8=&amp;url9=&amp;url10=&amp;url11=&amp;url12=&amp;url13=&amp;title=PHP%20script%20to%20%20%20a)%20Find%20the%20length%20of%20a%20string.%20b)%20Count%20no%20of%20words%20in%20a%20string.%20%20c)%20Reverse%20a%20string.%20%20%20d)%20Search%20for%20a%20specific%20string.%20%20%20&amp;alg=&amp;opurl1=r18wt/Week-2/outputs/w21.png&amp;opurl2=&amp;opurl3=&amp;opurl4=&amp;opurl5=&amp;opurl6=&amp;opurl7=&amp;opurl8=&amp;opurl9=&amp;opurl10=" class="alab"><strong>View Solution </strong></a></p>
+						<p><font color="#000033" style="font-size:14px;"><strong>3)</strong> Write a PHP script to merge two arrays and sort them as numbers, in descending order</font> <a href="r18wtdisplaydc05.php?url1=r18wt/Week-3/Week3.php&amp;url2=&amp;url3=&amp;url4=&amp;url5=&amp;url6=&amp;url7=&amp;url8=&amp;url9=&amp;url10=&amp;url11=&amp;url12=&amp;url13=&amp;title=Write%20a%20PHP%20script%20to%20merge%20two%20arrays%20and%20sort%20them%20as%20numbers,%20in%20descending%20order&amp;alg=&amp;opurl1=r18wt/Week-3/outputs/w31.png&amp;opurl2=&amp;opurl3=&amp;opurl4=&amp;opurl5=&amp;opurl6=&amp;opurl7=&amp;opurl8=&amp;opurl9=&amp;opurl10=" class="alab"><strong>View Solution </strong></a></p>
+						<p><font color="#000033" style="font-size:14px;"><strong>4)</strong> Write a PHP script that reads data from one file and write into another file.</font> <a href="r18wtdisplay5736.php?url1=r18wt/Week-4/file1.txt&amp;url2=r18wt/Week-4/Week4.php&amp;url3=&amp;url4=&amp;url5=&amp;url6=&amp;url7=&amp;url8=&amp;url9=&amp;url10=&amp;url11=&amp;url12=&amp;url13=&amp;title=Write%20a%20PHP%20script%20that%20reads%20data%20from%20one%20file%20and%20write%20into%20another%20file.&amp;alg=&amp;opurl1=r18wt/Week-4/outputs/w41.png&amp;opurl2=r18wt/Week-4/outputs/w42.png&amp;opurl3=&amp;opurl4=&amp;opurl5=&amp;opurl6=&amp;opurl7=&amp;opurl8=&amp;opurl9=&amp;opurl10=" class="alab"><strong>View Solution </strong></a></p>
+						<p><font color="#000033" style="font-size:14px;"><strong>5)</strong> Develop static pages (using Only HTML) of an online book store. The pages should resemble: www.amazon.com. The website should consist the following pages.   
+a) Home page    
+b) Registration and user Login     
+c) User Profile Page     
+d) Books catalog      
+e) Shopping Cart     
+f) Payment By credit card     
+g) Order Conformation</font> <a href="r18wtdisplay.php?url1=r18wt/Week-5/index.html&url2=r18wt/Week-5/top.html&url3=r18wt/Week-5/left.html&url4=r18wt/Week-5/right.html&url5=r18wt/Week-5/login.html&url6=r18wt/Week-5/registration.html&url7=r18wt/Week-5/userprofile.html&url8=r18wt/Week-5/cse.html&url9=r18wt/Week-5/ece.html&url10=r18wt/Week-5/it.html&url11=r18wt/Week-5/cart.html&url12=r18wt/Week-5/paybycreditcard.html&url13=r18wt/Week-5/orderconf.html&title=Develop static pages (using Only HTML) of an online book store. The pages should resemble: www.amazon.com. The website should consist the following pages.   
+a) Home page    
+b) Registration and user Login     
+c) User Profile Page     
+d) Books catalog      
+e) Shopping Cart     
+f) Payment By credit card     
+g) Order Conformation&alg=&opurl1=r18wt/Week-5/outputs/w51.PNG&opurl2=r18wt/Week-5/outputs/w52.PNG&opurl3=r18wt/Week-5/outputs/w53.PNG&opurl4=r18wt/Week-5/outputs/w54.PNG&opurl5=r18wt/Week-5/outputs/w55.PNG&opurl6=r18wt/Week-5/outputs/w56.PNG&opurl7=r18wt/Week-5/outputs/w57.PNG&opurl8=r18wt/Week-5/outputs/w58.PNG&opurl9=r18wt/Week-5/outputs/w59.PNG&opurl10=r18wt/Week-5/outputs/w510.PNG" class="alab"><strong>View Solution </strong></a></p>
+						<p><font color="#000033" style="font-size:14px;"><strong>6)</strong> Validate the Registration, user login, user profile and payment by credit card pages using JavaScript.</font> <a href="r18wtdisplayd76b.php?url1=&amp;url2=&amp;url3=&amp;url4=&amp;url5=&amp;url6=&amp;url7=&amp;url8=&amp;url9=&amp;url10=&amp;url11=&amp;url12=&amp;url13=&amp;title=Validate%20the%20Registration,%20user%20login,%20user%20profile%20and%20payment%20by%20credit%20card%20pages%20using%20JavaScript.&amp;alg=&amp;opurl1=&amp;opurl2=&amp;opurl3=&amp;opurl4=&amp;opurl5=&amp;opurl6=&amp;opurl7=&amp;opurl8=&amp;opurl9=&amp;opurl10=" class="alab"><strong>View Solution </strong></a></p>
+						<p><font color="#000033" style="font-size:14px;"><strong>7)</strong> Create and save an XML document on the server, which contains 10 users information. Write a program, which takes User Id as an input and returns the user details by taking the user information from the XML document.</font> <a href="r18wtdisplay83ec.php?url1=&amp;url2=&amp;url3=&amp;url4=&amp;url5=&amp;url6=&amp;url7=&amp;url8=&amp;url9=&amp;url10=&amp;url11=&amp;url12=&amp;url13=&amp;title=Create%20and%20save%20an%20XML%20document%20on%20the%20server,%20which%20contains%2010%20users%20information.%20Write%20a%20program,%20which%20takes%20User%20Id%20as%20an%20input%20and%20returns%20the%20user%20details%20by%20taking%20the%20user%20information%20from%20the%20XML%20document.&amp;alg=&amp;opurl1=&amp;opurl2=&amp;opurl3=&amp;opurl4=&amp;opurl5=&amp;opurl6=&amp;opurl7=&amp;opurl8=&amp;opurl9=&amp;opurl10=" class="alab"><strong>View Solution </strong></a></p>
+						<p><font color="#000033" style="font-size:14px;"><strong>8)</strong> Install TOMCAT web server. Convert the static web pages of assignments 2 into dynamic web pages using servlets and cookies. Hint: Users information (user id, password, credit card number) would be stored in web.xml. Each user should have a separate Shopping Cart.</font> <a href="r18wtdisplayda6e.php?url1=&amp;url2=&amp;url3=&amp;url4=&amp;url5=&amp;url6=&amp;url7=&amp;url8=&amp;url9=&amp;url10=&amp;url11=&amp;url12=&amp;url13=&amp;title=Install%20TOMCAT%20web%20server.%20Convert%20the%20static%20web%20pages%20of%20assignments%202%20into%20dynamic%20web%20pages%20using%20servlets%20and%20cookies.%20Hint:%20Users%20information%20(user%20id,%20password,%20credit%20card%20number)%20would%20be%20stored%20in%20web.xml.%20Each%20user%20should%20have%20a%20separate%20Shopping%20Cart.&amp;alg=&amp;opurl1=&amp;opurl2=&amp;opurl3=&amp;opurl4=&amp;opurl5=&amp;opurl6=&amp;opurl7=&amp;opurl8=&amp;opurl9=&amp;opurl10=" class="alab"><strong>View Solution </strong></a></p>
+						<p><font color="#000033" style="font-size:14px;"><strong>9)</strong> Redo the previous task using JSP by converting the static web pages of assignments 2 into dynamic web pages. Create a database with user information and books information. The books catalogue should be dynamically loaded from the database. Follow the MVC architecture while doing the website.</font> <a href="r18wtdisplay55e4.php?url1=&amp;url2=&amp;url3=&amp;url4=&amp;url5=&amp;url6=&amp;url7=&amp;url8=&amp;url9=&amp;url10=&amp;url11=&amp;url12=&amp;url13=&amp;title=Redo%20the%20previous%20task%20using%20JSP%20by%20converting%20the%20static%20web%20pages%20of%20assignments%202%20into%20dynamic%20web%20pages.%20Create%20a%20database%20with%20user%20information%20and%20books%20information.%20The%20books%20catalogue%20should%20be%20dynamically%20loaded%20from%20the%20database.%20Follow%20the%20MVC%20architecture%20while%20doing%20the%20website.&amp;alg=&amp;opurl1=&amp;opurl2=&amp;opurl3=&amp;opurl4=&amp;opurl5=&amp;opurl6=&amp;opurl7=&amp;opurl8=&amp;opurl9=&amp;opurl10=" class="alab"><strong>View Solution </strong></a></p>
+				<br><hr>
+  
+        </div>
+    </div>
+
+	<!-- end panel body -->
+	<div>
+	</div>
+</div>
+</div>
+<!-- end content -->
+</div>
+ <!-- Google Ad Multiflex1 <div class="container">
+        <div class="row">
+		<div class="col-sm-12
+<!-- Google Ad Multiflex1 Start
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8096140274719176"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-8096140274719176"
+     data-ad-slot="3158072222"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+</div></div>
+END-->
+ <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>About</h6>
+	          <p class="text-justify">Study Glance provides Tutorials , Power point Presentations(ppts), Lecture Notes, Important & previously asked questions, Objective Type questions, Laboratory programs and we provide Syllabus of various subjects.</p>
+          </div>
+		<div class="col-xs-6 col-md-3" style="padding-left:100px;">
+            <h6>Categories</h6>
+            <ul class="footer-links">
+              <li><a href="../Tutorialindex.html">Tutorials</a></li>
+              <li><a href="../ppts/index.html">PPTs</a></li>
+              <li><a href="../lecturenotes/index.html">Lecture Notes</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-6 col-md-3" style="padding-left:100px;">
+            <h6></h6><br>
+            <ul class="footer-links">
+              
+              <li><a href="../questions/index.html">Questions</a></li>
+              <li><a href="index.html">Lab Programs</a></li>
+              <li><a href="../syllabus/index.html">Syllabus</a></li>
+            </ul>
+          </div>
+
+          
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by 
+         <a href="#">StudyGlance</a>.
+            </p>
+            <p><!-- hitwebcounter Code START -->
+
+<img src="https://hitwebcounter.com/counter/counter.php?page=7760160&amp;style=0007&amp;nbdigits=5&amp;type=ip&amp;initCount=0" Alt=""   border="0" />    </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+            </ul>
+          </div>
+        </div>
+      </div>
+</footer> </div>
+ 
+ <!--end body container-->
+    <!--footer
+    <div class="site-footer">
+      <div class="container">
+       </div>
+    </div>-->
+  </body>
+
+
+<!-- Mirrored from studyglance.in/labprograms/r18wtdisplay.php?url1=&url2=&url3=&url4=&url5=&url6=&url7=&url8=&url9=&url10=&url11=&url12=&url13=&title=Install%20TOMCAT%20web%20server.%20Convert%20the%20static%20web%20pages%20of%20assignments%202%20into%20dynamic%20web%20pages%20using%20servlets%20and%20cookies.%20Hint:%20Users%20information%20(user%20id,%20password,%20credit%20card%20number)%20would%20be%20stored%20in%20web.xml.%20Each%20user%20should%20have%20a%20separate%20Shopping%20Cart.&alg=&opurl1=&opurl2=&opurl3=&opurl4=&opurl5=&opurl6=&opurl7=&opurl8=&opurl9=&opurl10= by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 28 May 2025 03:51:10 GMT -->
+</html>

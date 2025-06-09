@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html>
+  
+<!-- Mirrored from studyglance.in/python/files.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 28 May 2025 03:41:17 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>Files in python, File Built-in Function, File Built-in Attributes | Study Glance</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="description" content="Files in python, File Built-in Function, File Built-in Attributes in python " />
+	<meta name="keywords" content="Files in python, File Built-in Function, File Built-in Attributes in python,access-modein python,close(),read(),readline(),write(),writelines(),tell(),seek(), studyglance, fully loaded notes, jntuh, "/>
+   	<meta name="robots" content="index,follow" />
+	<meta property="og:title" content="Files in python, File Built-in Function, File Built-in Attributes | Study Glance" />
+	<meta property="og:description" content="Files in python, File Built-in Function, File Built-in Attributes in python" />
+	<meta property="og:url" content="index-2.html" />
+
+
+    <link rel="icon" href="../images/logo1.png" type="image/x-icon"/>
+    <link rel="bookmark" href="../images/logo1.png"/>
+    <!-- site css -->
+    <link rel="stylesheet" href="../dist/css/style.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700,400italic,600italic,700italic,800italic,300italic" rel="stylesheet" type="text/css">
+    <!-- <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'> -->
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="../dist/js/site.min.js"></script>
+	<script type="text/javascript" src="../dist/js/prism.js"></script>
+
+	<script>
+		function myFunction() {
+		var x = document.getElementById("myTopnav");
+		if (x.className === "topnav") {
+			x.className += " responsive";
+		} else {
+			x.className = "topnav";
+		}
+		}
+	</script>
+  </head>
+<body>
+<!--nav-->
+<link rel="stylesheet" href="../dist/css/site.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700,400italic,600italic,700italic,800italic,300italic" rel="stylesheet" type="text/css">
+    <!-- <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'> -->
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="../dist/js/site.min.js"></script>
+	 <script type="text/javascript" src="../dist/js/prism.js"></script>
+	<script>
+			function myFunction() {
+		var x = document.getElementById("myTopnav");
+		if (x.className === "topnav") {
+			x.className += " responsive";
+		} else {
+			x.className = "topnav";
+		}
+		}
+	</script>
+	<script async src="../../pagead2.googlesyndication.com/pagead/js/f9b65.txt?client=ca-pub-8096140274719176"
+     crossorigin="anonymous"></script>
+  </head>
+<body>    
+<nav role="navigation" class="navbar">
+	<!-- logo -->
+	<center><img src="../images/logo4.png" height="90" border="0" alt="" style="padding-left:5px;padding-top:2px;padding-bottom:5px;"></center>
+	<!-- main menu-->   
+	<div class="topnav" id="myTopnav">
+	<a href="../index-2.html" class="">Home</a>
+	<div class="mdropdown">
+    <button class="mdropbtn">Tutorials
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="mdropdown-content">
+	  <a href="../c/index.html" class="">C - Programming</a>
+	<a href="../ds/index.html" class="" >Data Structure</a>
+      <a href="../html/index.html" class="">HTML</a>
+	  <a href="../php/index.html" class="">PHP</a>
+	  <a href="../xml/index.html" class="" >XML</a>
+	  <a href="../servlet/index.html" class="" >SERVLET</a>
+     <a href="index.html" class="active" >PYTHON</a>
+     <a href="../dbms/index.html" class="" >DBMS</a>
+     <a href="../dm/index.html" class="" >Data Mining</a>
+     <a href="../daa/index.html" class="" >DAA</a>
+	 <a href="../nn/index.html" class="" >Neural Networks</a>
+	 <a href="../dl/index.html" class="" >Deep Learning</a>
+      <!--<a href="#php" class="">PHP</a>-->
+    </div>
+  </div>
+
+<!--
+	<a href="html/index.php" class="">HTML</a>
+	<a href="python/index.php" class="active">PYTHON</a>
+	<a href="#php" class="">PHP</a>-->
+	<a href="../ppts/index.html" class="">PPTs</a>
+	<a href="../lecturenotes/index.html" class="">Lecture Notes</a>
+	<!--<a href="../questions/index.php" class="">Questions</a>-->
+	<a href="../objquestions/index.html" class="">Objective Questions</a>
+	<a href="../labprograms/index.html" class="">Lab Programs</a>
+	<!--<a href="../syllabus/index.php" class="">Syllabus</a>-->
+	<a href="../blog/index.html" class="">Blog</a>
+	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+	<i class="fa fa-bars"></i>
+	</a>
+	</div>
+	<!-- end main menu-->
+</nav>
+	<!-- end main menu-->
+</nav>
+<!--nav end -->
+<!--body container-->
+    <div class="container-fluid">
+    <div class="row row-offcanvas row-offcanvas-left">
+<!-- Side Menu-->
+	<div class="col-xs-6 col-sm-3 sidebar-offcanvas" role="navigation" id="non-printable">
+    <ul class="list-group panel">
+		<li class="list-group-item" "><img src="images/python.png" width="20"alt="">&nbsp;&nbsp; <b>PYTHON BASICS </b></li>
+        <!--<li class="list-group-item"><input type="text" class="form-control search-query" placeholder="Search Something"></li>-->
+        <li class="list-group-item "><a href="introduction.html"><i class="fa  fa-chevron-circle-right"></i>Introduction</a></li>
+		<li class="list-group-item "><a href="installation.html"><i class="fa  fa-chevron-circle-right"></i>Python Installation</a></li>
+        <!-- <li class="list-group-item"><a href="icons.html"><i class="fa  fa-chevron-circle-right"></i>Icons </a></li> -->
+		<li class="list-group-item "><a href="comments.html"><i class="fa  fa-chevron-circle-right"></i>Comments</a></li>
+		<li class="list-group-item "><a href="iooperations.html"><i class="fa  fa-chevron-circle-right"></i>IO Operations</a></li>
+		<li class="list-group-item "><a href="variables.html"><i class="fa  fa-chevron-circle-right"></i>Variables</a></li>
+		<li class="list-group-item "><a href="datatypes.html"><i class="fa  fa-chevron-circle-right"></i>Data Types</a></li>
+		<li class="list-group-item "><a href="typecasting.html"><i class="fa  fa-chevron-circle-right"></i>Typecasting</a></li>
+		<li class="list-group-item "><a href="operator.html"><i class="fa  fa-chevron-circle-right"></i>Operators</a></li>
+		<li class="list-group-item "><a href="conditional.html"><i class="fa  fa-chevron-circle-right"></i>Conditional Statements </a></li>
+		<li class="list-group-item "><a href="loops.html"><i class="fa  fa-chevron-circle-right"></i>Loop Statements </a></li>
+		<li class="list-group-item "><a href="break.html"><i class="fa  fa-chevron-circle-right"></i>Break Continue </a></li>
+
+		<li class="list-group-item" "><img src="images/python.png" width="20"alt="">&nbsp;&nbsp; <b>PYTHON SEQUENCES </b></li>
+		<li class="list-group-item "><a href="string.html"><i class="fa  fa-chevron-circle-right"></i>String</a></li>
+		<li class="list-group-item "><a href="list.html"><i class="fa  fa-chevron-circle-right"></i>List</a></li>
+		<li class="list-group-item "><a href="tuple.html"><i class="fa  fa-chevron-circle-right"></i>Tuple</a></li>
+		<li class="list-group-item "><a href="set.html"><i class="fa  fa-chevron-circle-right"></i>Set</a></li>
+		<li class="list-group-item "><a href="dictionary.html"><i class="fa  fa-chevron-circle-right"></i>Dictionary</a></li>
+
+		<li class="list-group-item" "><img src="images/python.png" width="20"alt="">&nbsp;&nbsp; <b> FILES IN PYTHON </b></li>
+		<li class="list-group-item active"><a href="files.html"><i class="fa  fa-chevron-circle-right"></i>Files Function & Methods</a></li>
+		<li class="list-group-item "><a href="command-line.html"><i class="fa  fa-chevron-circle-right"></i>Command-Line Arguments</a></li>
+		<li class="list-group-item "><a href="file-system.html"><i class="fa  fa-chevron-circle-right"></i>File System</a></li>
+		
+		<li class="list-group-item" "><img src="images/python.png" width="20"alt="">&nbsp;&nbsp; <b> PYTHON EXCEPTIONS </b></li>
+		<li class="list-group-item "><a href="exceptions.html"><i class="fa  fa-chevron-circle-right"></i>Exceptions</a></li>
+		<li class="list-group-item "><a href="ex-handling.html"><i class="fa  fa-chevron-circle-right"></i>Exception handling</a></li>
+		<li class="list-group-item "><a href="raise-assert.html"><i class="fa  fa-chevron-circle-right"></i>Raise &amp; Assert Statement</a></li>
+
+
+		<li class="list-group-item" "><img src="images/python.png" width="20"alt="">&nbsp;&nbsp; <b> PYTHON MODULES </b></li>
+		<li class="list-group-item "><a href="functions.html"><i class="fa  fa-chevron-circle-right"></i>Functions</a></li>
+		<li class="list-group-item "><a href="module.html"><i class="fa  fa-chevron-circle-right"></i>Modules</a></li>
+		<li class="list-group-item "><a href="namespaces.html"><i class="fa  fa-chevron-circle-right"></i>Namespaces</a></li>
+		<li class="list-group-item "><a href="packages.html"><i class="fa  fa-chevron-circle-right"></i>Packages</a></li>
+
+		
+		<li class="list-group-item" "><img src="images/python.png" width="20"alt="">&nbsp;&nbsp; <b> PYTHON REG-EXPS </b></li>
+		<li class="list-group-item "><a href="regex.html"><i class="fa  fa-chevron-circle-right"></i>Regular Expressions</a></li>
+		<li class="list-group-item "><a href="regex-module.html"><i class="fa  fa-chevron-circle-right"></i>RegEx Module</a></li>
+    </ul>
+</div><!-- End side Menu-->
+<!-- content -->
+<div class="col-xs-12 col-sm-9">
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h3 class="panel-title"><a href="javascript:void(0);" class="toggle-sidebar" ><span class="fa fa-angle-double-left" data-toggle="offcanvas" title="Maximize Panel"></span></a> Python Menu</h3>
+    </div>
+	<!--panel-Body-->
+    <div class="panel-body">
+		<div class="content-row">
+			<center><h1>Files in Python</h1></center><hr>
+<p>Till now, we were taking the input from the console and writing it back to the console to interact with the user. Instead of that we can able use files as input or output.<br> 
+File is a named location on disk to store related information. It is used to permanently store data in a non-volatile memory (e.g. hard disk).<br>
+When we want to read from or write to a file we need to open it first. When we are done, it needs to be closed, so that resources that are tied with the file are freed.</p>
+<p>Hence, in Python, a file operation takes place in the following order.</p>
+<strong><ul>
+	<li>Open a file</li>
+	<li>Read or write (perform operation)</li>
+	<li>Close the file</li>
+</ul></strong>
+
+<h2>File Built-in Function [open ()]</h2>
+<p>Python has a built-in function open() to open a file. Which accepts two arguments, file name and access mode in which the file is accessed. The function returns a file object which can be used to perform various operations like reading, writing, etc.</p>
+<em><mark>Syntax:</mark></em><br>
+<pre><code class="language-python">Fileobject = open (file-name, access-mode)</code></pre><br>
+
+<p>file-name: It specifies the name of the file to be opened.</p>
+<p><strong>access-mode:</strong> There are following access modes for opening a file:</p>
+<div class="table-responsive">
+	<table class="table table-bordered table-striped">
+		<colgroup>
+			<col class="col-xs-1">
+			<col class="col-xs-6">
+		</colgroup>
+		<thead>
+			<tr>
+				<th>access-mode</th>
+                <th>Description</th>
+            </tr>
+		</thead>
+        <tbody>
+			<tr>
+				<td><code>"w"</code></td>
+				<td>Write - Opens a file for writing, creates the file if it does not exist.</td>
+			</tr>
+			<tr>
+				<td><code>"r"</code></td>
+				<td>Read - Default value. Opens a file for reading, error if the file does not exist.</td>
+			</tr>
+			<tr>
+				<td><code>"a"</code></td>
+				<td>Append - Opens a file for appending, creates the file if it does not exist.</td>
+			</tr>
+			<tr>
+				<td><code>"x"</code></td>
+				<td>Create - Creates the specified file, returns an error if the file exists.</td>
+			</tr>
+			<tr>
+				<td><code>"w+"</code></td>
+				<td>Open a file for updating (reading and writing), overwrite if the file exists.</td>
+			</tr>
+			<tr>
+				<td><code>"r+"</code></td>
+				<td>Open a file for updating (reading and writing), doesn’t overwrite if the file exists.</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<p>In addition you can specify if the file should be handled as binary or text mode</p>
+<div class="table-responsive">
+	<table class="table table-bordered table-striped">
+		<colgroup>
+			<col class="col-xs-1">
+			<col class="col-xs-6">
+		</colgroup>
+		<thead>
+			<tr>
+				<th>access-mode</th>
+                <th>Description</th>
+            </tr>
+		</thead>
+        <tbody>
+			<tr>
+				<td><code>"t"</code></td>
+				<td>Text - Default value. Text mode.</td>
+			</tr>
+			<tr>
+				<td><code>"b"</code></td>
+				<td>- Binary - Binary mode (e.g. images)</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<div class="row"> 
+	<div class="col-md-6">
+		<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">fileptr = open("myfile.txt","r")  
+if fileptr:  
+    print("file is opened successfully with read mode only") </code></pre></div>
+	</div>
+    <div class="col-md-6">
+		<div class="alert alert-warning"><b>Output:</b><pre><code class="language-python">file is opened successfully with read mode only</code></pre></div></div></div>
+<div class="row"> 
+	<div class="col-md-6">
+		<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">fileptr = open("myfile1.txt","x")  
+if fileptr:  
+    print("new file was created successfully") </code></pre></div>
+	</div>
+    <div class="col-md-6">
+		<div class="alert alert-warning"><b>Output:</b><pre><code class="language-python">new file was created successfully</code></pre></div></div></div>
+
+<h2>File Built-in Methods</h2>
+<p>Python supports file handling and allows users to handle files i.e., to read and write files, along with many other file handling options, to operate on files. For this, python provides following built–in functions, those are</p>
+<strong><ul>
+	<li>close()</li>
+	<li>read()</li>
+	<li>readline()</li>
+	<li>write()</li>
+	<li>writelines()</li>
+	<li>tell()</li>
+	<li>seek()</li>
+</ul></strong>
+<h3>&#9758; close()</h3>
+<p>The close() method used to close the currently opened file, after which no more writing or Reading can be done.<br>
+Python automatically closes a file when the reference object of a file is reassigned to another file. It is a good practice to use the close() method to close a file.</p>  
+<em><mark>Syntax:</mark></em>
+<pre><code class="language-python">Fileobject.close()</code></pre><br>				
+<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">f = open("myfile.txt", "r")
+f.close()</code></pre></div>
+<h3>&#9758; read()</h3>
+<p>The read () method is used to read the content from file. To read a file in Python, we must open the file in reading mode.</p>
+<em><mark>Syntax:</mark></em>
+<pre><code class="language-python">Fileobject.read([size])</code></pre>
+<p>Where ‘size’ specifies number of bytes to be read.</p>
+<div class="row"> 
+	<div class="col-md-6">
+		<div class="alert alert-info"><b>myfile.txt</b><pre><code class="language-python">function open() to open a file.
+method read() to read a file.
+</code></pre></div>
+	<div class="alert alert-info"><b>Example:</b><pre><code class="language-python"># Opening a file with read mode
+fileptr = open("myfile.txt","r")
+if fileptr:
+	print("file is opened successfully")
+	content = fileptr.read(5)  #read 5 characters
+	print(content)
+	content = fileptr.read()  #read all characters
+	print(content)
+else:
+	print("file not opened ")
+fileptr.close();</code></pre></div>
+	</div>
+    <div class="col-md-6">
+		<div class="alert alert-warning"><b>Output:</b><pre><code class="language-python">file is opened successfully
+funct
+ion open() to open a file.
+method read() to read a file.</code></pre></div> </div></div>
+<h3>&#9758; readline()</h3>
+<p>Python facilitates us to read the file line by line by using a function readline(). The readline() method reads the lines of the file from the beginning, i.e., if we use the readline() method two times, then we can get the first two lines of the file.</p>
+<em><mark>Syntax:</mark></em>
+<pre><code class="language-python">Fileobject.readline()</code></pre><br>
+<div class="row"> 
+	<div class="col-md-6">
+		<div class="alert alert-info"><b>myfile.txt</b><pre><code class="language-python">function open() to open a file.
+method read() to read a file.
+</code></pre></div>
+	<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">fileptr = open("myfile.txt","r")
+if fileptr:
+	print("file is opened successfully")
+	content=fileptr.readline()
+	print(content)
+	content=fileptr.readline()
+	print(content)
+fileptr.close();</code></pre></div>
+	</div>
+    <div class="col-md-6">
+		<div class="alert alert-warning"><b>Output:</b><pre><code class="language-python">file is opened successfully
+function open() to open a file.
+method read() to read a file.</code></pre></div> </div></div>
+<h3>&#9758; write()</h3>
+<p>The write () method is used to write the content into file. To write some text to a file, we need to open the file using the open method with one of the following access modes.</p>
+<p>w: It will overwrite the file if any file exists. The file pointer point at the beginning of the file in this mode.</p>
+<em><mark>Syntax:</mark></em>
+<pre><code class="language-python">Fileobject.write(content)</code></pre><br>
+<div class="row"> 
+	<div class="col-md-6">
+		<div class="alert alert-info"><b>myfile.txt</b><pre><code class="language-python">function open() to open a file.
+method read() to read a file.
+</code></pre></div>
+	<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">fileptr = open("myfile.txt","w");   
+#appending the content to the file  
+fileptr.write("Python is the modern day language.")  
+#closing the opened file   
+fileptr.close();</code></pre></div>
+	</div>
+    <div class="col-md-6">
+		<div class="alert alert-warning"><b>myfile.txt:</b><pre><code class="language-python">Python is the modern day language.</code></pre></div> </div></div>
+		<p>a: It will append the existing file. The file pointer point at the end of the file.</p>
+<div class="row"> 
+	<div class="col-md-6">
+		<div class="alert alert-info"><b>myfile.txt</b><pre><code class="language-python">function open() to open a file.
+method read() to read a file.</code></pre></div>
+	<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">fileptr = open("myfile.txt","a");   
+#appending the content to the file  
+fileptr.write ("Python is the modern day language.")  
+#closing the opened file   
+fileptr.close(); </code></pre></div>
+	</div>
+    <div class="col-md-6">
+		<div class="alert alert-warning"><b>myfile.txt:</b><pre><code class="language-python">function open() to open a file.
+method read() to read a file.
+Python is the modern day language.</code></pre></div></div></div>
+<p>Now, we can see that the content of the file is modified.</p>
+<h3>&#9758; writelines()</h3>
+<p>The writelines () method is used to write multiple lines of content into file. To write some lines to a file</p>
+<em><mark>Syntax:</mark></em>
+<pre><code class="language-python">Fileobject.writelines(list)</code></pre>
+<p>list − This is the Sequence of the strings.</p>
+<div class="row"> 
+	<div class="col-md-6">
+	<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">f = open("myfile.txt", "w")
+f.writelines(["Python supports Files \n", "python supports Strings."])
+f.close()</code></pre></div>
+	</div>
+    <div class="col-md-6">
+		<div class="alert alert-warning"><b>myfile.txt:</b><pre><code class="language-python">Python supports Files
+python supports Strings.</code></pre></div></div></div>
+<h2>File Positions</h2>
+<p>Methods that set or modify the current position within the file</p>
+<h3>&#9758; tell()</h3>
+<p>The tell() method returns the current file position in a file stream.  You can change the current file position with the seek() method.</p>
+<em><mark>Syntax:</mark></em>
+<pre><code class="language-python">Fileobject.tell()</code></pre><br>
+<div class="row"> 
+	<div class="col-md-6">
+	<div class="alert alert-info"><b>myfile.txt</b><pre><code class="language-python">function open() to open a file.
+method read() to read a file.
+</code></pre></div>
+	<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">f = open("myfile.txt", "r")
+print(f.readline())
+print(f.tell())
+f.close();</code></pre></div>
+	</div>
+    <div class="col-md-6">
+		<div class="alert alert-warning"><b>Output:</b><pre><code class="language-python">33</code></pre></div></div></div>
+<p>In the fist line of file that is "function open() to open a file." with 32 charecters so the output is 33</p>
+<h3>&#9758; seek()</h3>
+<p>The seek() method sets and returns the current file position in a file stream.</p>  
+<em><mark>Syntax:</mark></em>
+<pre><code class="language-python">Fileobject.seek(offset)</code></pre><br>	
+<div class="row"> 
+	<div class="col-md-6">
+	<div class="alert alert-info"><b>myfile.txt</b><pre><code class="language-python">function open() to open a file.
+method read() to read a file.
+</code></pre></div>
+	<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">f = open("myfile.txt", "r")
+print(f.seek(9))
+print(f.read())
+f.close();</code></pre></div>
+	</div>
+    <div class="col-md-6">
+		<div class="alert alert-warning"><b>Output:</b><pre><code class="language-python">open() to open a file.
+method read() to read a file.</code></pre></div></div></div>
+<p>First We moved 9bytes with seek function and then started reading</p>
+
+<h2>File Built-in Attributes</h2>
+<p>Python Supports following built-in attributes, those are</p>
+<ul>
+	<li><strong>file.name</strong> -	returns the name of the file which is already opened.</li>
+	<li><strong>file.mode</strong> -	returns the access mode of opened file.</li>
+	<li><strong>file.closed</strong> -	returns true, if the file closed, otherwise false.</li>
+</ul>
+<div class="row"> 
+	<div class="col-md-6">
+	<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">f = open ("myfile.txt", "r")
+print(f.name)
+print(f.mode)
+print(f.closed)
+f.close()
+print(f.closed)</code></pre></div>
+	</div>
+    <div class="col-md-6">
+		<div class="alert alert-warning"><b>Output:</b><pre><code class="language-python">myfile.txt
+r
+False
+True</code></pre></div></div></div>
+
+<p><strong>Python program to print number of lines, words and characters in given file.</strong></p>
+<div class="row"> 
+	<div class="col-md-6">
+	<div class="alert alert-info"><b>myfile.txt</b><pre><code class="language-python">function open() to open a file.
+method read() to read a file.
+Python is the modern day language.
+Python supports Files 
+python supports Strings	</code></pre></div>
+	<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">fname = input("Enter file name: ")
+num_lines = 0
+num_words = 0					
+num_chars = 0
+try:
+	fp=open(fname,"r")
+	for i in fp:
+		# i contains each line of the file   
+		words = i.split()
+		num_lines += 1
+		num_words += len(words)
+		num_chars += len(i)
+	print("Lines = ",num_lines)
+	print("Words = ",num_words)
+	print("Characters = ",num_chars)
+ fp.close()
+except Exception:
+	print("Enter valid filename")</code></pre></div>
+	</div>
+    <div class="col-md-6">
+		<div class="alert alert-warning"><b>Output: Case 1</b><pre><code class="language-python">Enter file name: myfile.txt
+Lines =  5
+Words =  24
+Characters =  144</code></pre></div>
+<div class="alert alert-warning"><b>Output: Case 2</b><pre><code class="language-python">Enter file name: gh
+Enter valid filename</code></pre></div></div></div>
+<hr>
+			<span class="nextbtn">Next Topic :</span><a href="command-line.html" class="anext"><strong>Command-Line Arguments in Python</strong></a>
+        </div>
+    </div>
+	<!-- end panel body -->
+</div>
+</div>
+<!-- end content -->
+</div>
+ </div>
+ <!--end body container-->
+    <!--footer-->
+    <!-- Google Ad Multiflex1 <div class="container">
+        <div class="row">
+		<div class="col-sm-12
+<!-- Google Ad Multiflex1 Start
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8096140274719176"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-8096140274719176"
+     data-ad-slot="3158072222"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+</div></div>
+END-->
+ <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>About</h6>
+	          <p class="text-justify">Study Glance provides Tutorials , Power point Presentations(ppts), Lecture Notes, Important & previously asked questions, Objective Type questions, Laboratory programs and we provide Syllabus of various subjects.</p>
+          </div>
+		<div class="col-xs-6 col-md-3" style="padding-left:100px;">
+            <h6>Categories</h6>
+            <ul class="footer-links">
+              <li><a href="../Tutorialindex.html">Tutorials</a></li>
+              <li><a href="../ppts/index.html">PPTs</a></li>
+              <li><a href="../lecturenotes/index.html">Lecture Notes</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-6 col-md-3" style="padding-left:100px;">
+            <h6></h6><br>
+            <ul class="footer-links">
+              
+              <li><a href="../questions/index.html">Questions</a></li>
+              <li><a href="../labprograms/index.html">Lab Programs</a></li>
+              <li><a href="../syllabus/index.html">Syllabus</a></li>
+            </ul>
+          </div>
+
+          
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by 
+         <a href="#">StudyGlance</a>.
+            </p>
+            <p><!-- hitwebcounter Code START -->
+
+<img src="https://hitwebcounter.com/counter/counter.php?page=7760160&amp;style=0007&amp;nbdigits=5&amp;type=ip&amp;initCount=0" Alt=""   border="0" />    </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+            </ul>
+          </div>
+        </div>
+      </div>
+</footer>  </body>
+
+<!-- Mirrored from studyglance.in/python/files.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 28 May 2025 03:41:17 GMT -->
+</html>

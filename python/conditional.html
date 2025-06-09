@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+  
+<!-- Mirrored from studyglance.in/python/conditional.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 28 May 2025 03:41:16 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>Conditional Statements if, if-else, elif | Study Glance</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="description" content="Conditional Statements if, if-else, elif int python " />
+	<meta name="keywords" content="python, conditional statments, if statements,if else, elif,  Tutorials, Power Point Presentations, Lecture Notes, Important Questions, Objective Questions, Lab Programs , Syllabus of Various Subjects, studyglance, fully loaded notes, jntuh, "/>
+   	<meta name="robots" content="index,follow" />
+	<meta property="og:title" content="Conditional Statements if, if-else, elif | Study Glance" />
+	<meta property="og:description" content="Conditional Statements if, if-else, elif int python" />
+	<meta property="og:url" content="index-2.html" />
+
+
+    <link rel="icon" href="../images/logo1.png" type="image/x-icon"/>
+    <link rel="bookmark" href="../images/logo1.png"/>
+    <!-- site css -->
+     <link rel="stylesheet" href="../dist/css/style.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700,400italic,600italic,700italic,800italic,300italic" rel="stylesheet" type="text/css">
+    <!-- <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'> -->
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="../dist/js/site.min.js"></script>
+	<script type="text/javascript" src="../dist/js/prism.js"></script>
+	<script>
+		function myFunction() {
+		var x = document.getElementById("myTopnav");
+		if (x.className === "topnav") {
+			x.className += " responsive";
+		} else {
+			x.className = "topnav";
+		}
+		}
+	</script>
+  </head>
+<body>
+<!--nav-->
+<link rel="stylesheet" href="../dist/css/site.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700,400italic,600italic,700italic,800italic,300italic" rel="stylesheet" type="text/css">
+    <!-- <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'> -->
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="../dist/js/site.min.js"></script>
+	 <script type="text/javascript" src="../dist/js/prism.js"></script>
+	<script>
+			function myFunction() {
+		var x = document.getElementById("myTopnav");
+		if (x.className === "topnav") {
+			x.className += " responsive";
+		} else {
+			x.className = "topnav";
+		}
+		}
+	</script>
+	<script async src="../../pagead2.googlesyndication.com/pagead/js/f9b65.txt?client=ca-pub-8096140274719176"
+     crossorigin="anonymous"></script>
+  </head>
+<body>    
+<nav role="navigation" class="navbar">
+	<!-- logo -->
+	<center><img src="../images/logo4.png" height="90" border="0" alt="" style="padding-left:5px;padding-top:2px;padding-bottom:5px;"></center>
+	<!-- main menu-->   
+	<div class="topnav" id="myTopnav">
+	<a href="../index-2.html" class="">Home</a>
+	<div class="mdropdown">
+    <button class="mdropbtn">Tutorials
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="mdropdown-content">
+	  <a href="../c/index.html" class="">C - Programming</a>
+	<a href="../ds/index.html" class="" >Data Structure</a>
+      <a href="../html/index.html" class="">HTML</a>
+	  <a href="../php/index.html" class="">PHP</a>
+	  <a href="../xml/index.html" class="" >XML</a>
+	  <a href="../servlet/index.html" class="" >SERVLET</a>
+     <a href="index.html" class="active" >PYTHON</a>
+     <a href="../dbms/index.html" class="" >DBMS</a>
+     <a href="../dm/index.html" class="" >Data Mining</a>
+     <a href="../daa/index.html" class="" >DAA</a>
+	 <a href="../nn/index.html" class="" >Neural Networks</a>
+	 <a href="../dl/index.html" class="" >Deep Learning</a>
+      <!--<a href="#php" class="">PHP</a>-->
+    </div>
+  </div>
+
+<!--
+	<a href="html/index.php" class="">HTML</a>
+	<a href="python/index.php" class="active">PYTHON</a>
+	<a href="#php" class="">PHP</a>-->
+	<a href="../ppts/index.html" class="">PPTs</a>
+	<a href="../lecturenotes/index.html" class="">Lecture Notes</a>
+	<!--<a href="../questions/index.php" class="">Questions</a>-->
+	<a href="../objquestions/index.html" class="">Objective Questions</a>
+	<a href="../labprograms/index.html" class="">Lab Programs</a>
+	<!--<a href="../syllabus/index.php" class="">Syllabus</a>-->
+	<a href="../blog/index.html" class="">Blog</a>
+	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+	<i class="fa fa-bars"></i>
+	</a>
+	</div>
+	<!-- end main menu-->
+</nav>
+	<!-- end main menu-->
+</nav>
+<!--nav end -->
+<!--body container-->
+    <div class="container-fluid">
+    <div class="row row-offcanvas row-offcanvas-left">
+<!-- Side Menu-->
+	<div class="col-xs-6 col-sm-3 sidebar-offcanvas" role="navigation" id="non-printable">
+    <ul class="list-group panel">
+		<li class="list-group-item" "><img src="images/python.png" width="20"alt="">&nbsp;&nbsp; <b>PYTHON BASICS </b></li>
+        <!--<li class="list-group-item"><input type="text" class="form-control search-query" placeholder="Search Something"></li>-->
+        <li class="list-group-item "><a href="introduction.html"><i class="fa  fa-chevron-circle-right"></i>Introduction</a></li>
+		<li class="list-group-item "><a href="installation.html"><i class="fa  fa-chevron-circle-right"></i>Python Installation</a></li>
+        <!-- <li class="list-group-item"><a href="icons.html"><i class="fa  fa-chevron-circle-right"></i>Icons </a></li> -->
+		<li class="list-group-item "><a href="comments.html"><i class="fa  fa-chevron-circle-right"></i>Comments</a></li>
+		<li class="list-group-item "><a href="iooperations.html"><i class="fa  fa-chevron-circle-right"></i>IO Operations</a></li>
+		<li class="list-group-item "><a href="variables.html"><i class="fa  fa-chevron-circle-right"></i>Variables</a></li>
+		<li class="list-group-item "><a href="datatypes.html"><i class="fa  fa-chevron-circle-right"></i>Data Types</a></li>
+		<li class="list-group-item "><a href="typecasting.html"><i class="fa  fa-chevron-circle-right"></i>Typecasting</a></li>
+		<li class="list-group-item "><a href="operator.html"><i class="fa  fa-chevron-circle-right"></i>Operators</a></li>
+		<li class="list-group-item active"><a href="conditional.html"><i class="fa  fa-chevron-circle-right"></i>Conditional Statements </a></li>
+		<li class="list-group-item "><a href="loops.html"><i class="fa  fa-chevron-circle-right"></i>Loop Statements </a></li>
+		<li class="list-group-item "><a href="break.html"><i class="fa  fa-chevron-circle-right"></i>Break Continue </a></li>
+
+		<li class="list-group-item" "><img src="images/python.png" width="20"alt="">&nbsp;&nbsp; <b>PYTHON SEQUENCES </b></li>
+		<li class="list-group-item "><a href="string.html"><i class="fa  fa-chevron-circle-right"></i>String</a></li>
+		<li class="list-group-item "><a href="list.html"><i class="fa  fa-chevron-circle-right"></i>List</a></li>
+		<li class="list-group-item "><a href="tuple.html"><i class="fa  fa-chevron-circle-right"></i>Tuple</a></li>
+		<li class="list-group-item "><a href="set.html"><i class="fa  fa-chevron-circle-right"></i>Set</a></li>
+		<li class="list-group-item "><a href="dictionary.html"><i class="fa  fa-chevron-circle-right"></i>Dictionary</a></li>
+
+		<li class="list-group-item" "><img src="images/python.png" width="20"alt="">&nbsp;&nbsp; <b> FILES IN PYTHON </b></li>
+		<li class="list-group-item "><a href="files.html"><i class="fa  fa-chevron-circle-right"></i>Files Function & Methods</a></li>
+		<li class="list-group-item "><a href="command-line.html"><i class="fa  fa-chevron-circle-right"></i>Command-Line Arguments</a></li>
+		<li class="list-group-item "><a href="file-system.html"><i class="fa  fa-chevron-circle-right"></i>File System</a></li>
+		
+		<li class="list-group-item" "><img src="images/python.png" width="20"alt="">&nbsp;&nbsp; <b> PYTHON EXCEPTIONS </b></li>
+		<li class="list-group-item "><a href="exceptions.html"><i class="fa  fa-chevron-circle-right"></i>Exceptions</a></li>
+		<li class="list-group-item "><a href="ex-handling.html"><i class="fa  fa-chevron-circle-right"></i>Exception handling</a></li>
+		<li class="list-group-item "><a href="raise-assert.html"><i class="fa  fa-chevron-circle-right"></i>Raise &amp; Assert Statement</a></li>
+
+
+		<li class="list-group-item" "><img src="images/python.png" width="20"alt="">&nbsp;&nbsp; <b> PYTHON MODULES </b></li>
+		<li class="list-group-item "><a href="functions.html"><i class="fa  fa-chevron-circle-right"></i>Functions</a></li>
+		<li class="list-group-item "><a href="module.html"><i class="fa  fa-chevron-circle-right"></i>Modules</a></li>
+		<li class="list-group-item "><a href="namespaces.html"><i class="fa  fa-chevron-circle-right"></i>Namespaces</a></li>
+		<li class="list-group-item "><a href="packages.html"><i class="fa  fa-chevron-circle-right"></i>Packages</a></li>
+
+		
+		<li class="list-group-item" "><img src="images/python.png" width="20"alt="">&nbsp;&nbsp; <b> PYTHON REG-EXPS </b></li>
+		<li class="list-group-item "><a href="regex.html"><i class="fa  fa-chevron-circle-right"></i>Regular Expressions</a></li>
+		<li class="list-group-item "><a href="regex-module.html"><i class="fa  fa-chevron-circle-right"></i>RegEx Module</a></li>
+    </ul>
+</div><!-- End side Menu-->
+<!-- content -->
+<div class="col-xs-12 col-sm-9">
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h3 class="panel-title"><a href="javascript:void(0);" class="toggle-sidebar" ><span class="fa fa-angle-double-left" data-toggle="offcanvas" title="Maximize Panel"></span></a> Python Menu</h3>
+    </div>
+	<!--panel-Body-->
+    <div class="panel-body">
+		<div class="content-row">
+			<center><h1>Conditional Statements in Python</h1></center><hr>
+<p>Conditional Statements in Python performs different computations or actions depending on conditions.<br><br>
+In python, the following are conditional statements</p>
+<strong><ul>
+	<li>if</li>
+	<li>if – else</li>
+	<li>if – elif –else</li>
+</ul></strong>
+
+<h1>Indentation in Python:</h1>
+<p>For the ease of programming and to achieve simplicity, python doesn't allow the use of parentheses for the block level code. In Python, <strong>indentation</strong> is used to declare a block. If two statements are at the same indentation level, then they are the part of the same block.<br><br>
+Generally, four spaces are given to indent the statements which are a typical amount of indentation in python.<br>
+Indentation is the most used part of the python language since it declares the block of code. All the statements of one block are intended at the same level indentation.</p> 
+
+<h1>If statement in Python</h1>
+<p>The if statement is used to test a specific condition. If the condition is true, a block of code (if-block) will be executed.</p>
+<em><mark>Syntax:</mark></em><br>
+<pre><code class="language-python">if expression:  
+    statement </code></pre><br>
+<h1><span style='font-size:34px;'>&#9971;</span>&nbsp;Python Example Program - Simple If Statement</h1><br>
+<div class="row"> 
+	<div class="col-md-6">
+		<div class="alert alert-info "><b>Example:</b><pre><code class="language-python">a = 33
+b = 200
+if b > a: 
+    print ("b is greater than a")</code></pre></div>
+	</div>
+	<div class="col-md-6">
+		<div class="alert alert-warning "><b>Output:</b><pre><code class="language-python">b is greater than a</code></pre></div>
+	</div>
+</div>
+
+<h1>If – else statement in Python</h1>
+<p>The if-else statement provides an else block combined with the if statement which is executed in the false case of the condition.<br>
+If the condition is true, then the if-block is executed. Otherwise, the else-block is executed.</p>
+<em><mark>Syntax:</mark></em><br>
+<pre><code class="language-python">if expression:  
+    #block of statements   
+else:   
+    #another block of statements </code></pre><br>
+<h1><span style='font-size:34px;'>&#9971;</span>&nbsp;Python Example Program - If-Else Statement</h1><br>
+<div class="row"> 
+	<div class="col-md-6">
+		<div class="alert alert-info "><b>Example:</b><pre><code class="language-python">age = int (input("Enter your age : "))  
+if age >= 18:  
+    print("You are eligible to vote !!")  
+else:  
+    print("Sorry! you have to wait !!")</code></pre></div>
+	</div>
+	<div class="col-md-6">
+		<div class="alert alert-warning "><b>Output:</b><pre><code class="language-python">Enter your age: 19
+You are eligible to vote!!</code></pre></div>
+	</div>
+</div>
+
+
+<h1>If – elif - else statement in Python</h1>
+<p>The elif statement enables us to check multiple conditions and execute the specific block of statements depending upon the true condition among them.<br> 
+We can have any number of elif statements in our program depending upon our need. However, using elif is optional.</p>
+<em><mark>Syntax:</mark></em><br>
+<pre><code class="language-python">if expression 1:   
+    # block of statements   
+  
+elif expression 2:   
+    # block of statements   
+  
+elif expression 3:   
+    # block of statements   
+  
+else:   
+    # block of statements</code></pre><br>  
+<h1><span style='font-size:34px;'>&#9971;</span>&nbsp;Python Example Program - If-Else-If Statement</h1><br>
+<div class="row"> 
+	<div class="col-md-6">
+		<div class="alert alert-info "><b>Example:</b><pre><code class="language-python">marks = int(input("Enter the marks :"))  
+if marks > 85 and marks <= 100:  
+   print("Congrats! you scored grade A..")  
+elif marks > 60 and marks <= 85:  
+   print("You scored grade B + ..")  
+elif marks > 40 and marks <= 60:  
+   print("You scored grade B ..")  
+elif (marks > 30 and marks <= 40):  
+   print("You scored grade C ..")  
+else:  
+   print("Sorry you are fail ?")</code></pre></div>
+	</div>
+	<div class="col-md-6">
+		<div class="alert alert-warning "><b>Output:</b><pre><code class="language-python">Enter the marks: 70
+You scored grade B +..</code></pre></div>
+	</div>
+</div>
+<h1><span style='font-size:34px;'>&#9971;</span>&nbsp;Python Example Program - To find maximum between three numbers</h1><br/>
+<div class="row"> 
+	<div class="col-md-6">
+		<div class="alert alert-info "><b>Example:</b><pre><code class="language-python">a=int(input("Enter a value : "))
+b=int(input("Enter b value : "))
+c=int(input("Enter c value : "))
+if (a>b) and (a>c):
+	print("Maximum value is :",a)
+elif (b>c):
+	print("Maximum value is :",b)
+else:
+	print("Maximum value is :",c)</code></pre></div>
+	</div>
+	<div class="col-md-6">
+		<div class="alert alert-warning "><b>Output:</b><pre><code class="language-python">Enter a value: 10
+Enter b value: 14
+Enter c value: 9
+Maximum value is: 14</code></pre></div>
+	</div>
+</div>
+<hr>			<span class="nextbtn">Next Topic :</span><a href="loops.html" class="anext"><strong>Loop Statements in Python</strong></a>
+        </div>
+    </div>
+	<!-- end panel body -->
+</div>
+</div>
+<!-- end content -->
+</div>
+ </div>
+ <!--end body container-->
+    <!--footer-->
+     <!-- Google Ad Multiflex1 <div class="container">
+        <div class="row">
+		<div class="col-sm-12
+<!-- Google Ad Multiflex1 Start
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8096140274719176"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-8096140274719176"
+     data-ad-slot="3158072222"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+</div></div>
+END-->
+ <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>About</h6>
+	          <p class="text-justify">Study Glance provides Tutorials , Power point Presentations(ppts), Lecture Notes, Important & previously asked questions, Objective Type questions, Laboratory programs and we provide Syllabus of various subjects.</p>
+          </div>
+		<div class="col-xs-6 col-md-3" style="padding-left:100px;">
+            <h6>Categories</h6>
+            <ul class="footer-links">
+              <li><a href="../Tutorialindex.html">Tutorials</a></li>
+              <li><a href="../ppts/index.html">PPTs</a></li>
+              <li><a href="../lecturenotes/index.html">Lecture Notes</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-6 col-md-3" style="padding-left:100px;">
+            <h6></h6><br>
+            <ul class="footer-links">
+              
+              <li><a href="../questions/index.html">Questions</a></li>
+              <li><a href="../labprograms/index.html">Lab Programs</a></li>
+              <li><a href="../syllabus/index.html">Syllabus</a></li>
+            </ul>
+          </div>
+
+          
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by 
+         <a href="#">StudyGlance</a>.
+            </p>
+            <p><!-- hitwebcounter Code START -->
+
+<img src="https://hitwebcounter.com/counter/counter.php?page=7760160&amp;style=0007&amp;nbdigits=5&amp;type=ip&amp;initCount=0" Alt=""   border="0" />    </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+            </ul>
+          </div>
+        </div>
+      </div>
+</footer>  </body>
+
+<!-- Mirrored from studyglance.in/python/conditional.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 28 May 2025 03:41:16 GMT -->
+</html>

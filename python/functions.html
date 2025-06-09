@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+  
+<!-- Mirrored from studyglance.in/python/functions.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 28 May 2025 03:41:19 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>Functions in python, Built in Functions, methods | Study Glance</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="description" content="Functions in python, Built in Functions, methods in python " />
+	<meta name="keywords" content="Functions in python, Built in Functions, methods in python,bin(),hex(),oct(),ord(),eval(),chr(),abs(),int(),float(),str(),list(),tuple(),set(),len(),max(),min(),sum(),sorted(),input(),range(),type(), studyglance, fully loaded notes, jntuh, "/>
+   	<meta name="robots" content="index,follow" />
+	<meta property="og:title" content="Functions in python, Built in Functions, methods | Study Glance" />
+	<meta property="og:description" content="Functions in python, Built in Functions, methods in python" />
+	<meta property="og:url" content="index-2.html" />
+
+
+    <link rel="icon" href="../images/logo1.png" type="image/x-icon"/>
+    <link rel="bookmark" href="../images/logo1.png"/>
+    <!-- site css -->
+     <link rel="stylesheet" href="../dist/css/style.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700,400italic,600italic,700italic,800italic,300italic" rel="stylesheet" type="text/css">
+    <!-- <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'> -->
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="../dist/js/site.min.js"></script>
+	<script type="text/javascript" src="../dist/js/prism.js"></script>
+
+	<script>
+		function myFunction() {
+		var x = document.getElementById("myTopnav");
+		if (x.className === "topnav") {
+			x.className += " responsive";
+		} else {
+			x.className = "topnav";
+		}
+		}
+	</script>
+  </head>
+<body>
+<!--nav-->
+<link rel="stylesheet" href="../dist/css/site.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700,400italic,600italic,700italic,800italic,300italic" rel="stylesheet" type="text/css">
+    <!-- <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'> -->
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="../dist/js/site.min.js"></script>
+	 <script type="text/javascript" src="../dist/js/prism.js"></script>
+	<script>
+			function myFunction() {
+		var x = document.getElementById("myTopnav");
+		if (x.className === "topnav") {
+			x.className += " responsive";
+		} else {
+			x.className = "topnav";
+		}
+		}
+	</script>
+	<script async src="../../pagead2.googlesyndication.com/pagead/js/f9b65.txt?client=ca-pub-8096140274719176"
+     crossorigin="anonymous"></script>
+  </head>
+<body>    
+<nav role="navigation" class="navbar">
+	<!-- logo -->
+	<center><img src="../images/logo4.png" height="90" border="0" alt="" style="padding-left:5px;padding-top:2px;padding-bottom:5px;"></center>
+	<!-- main menu-->   
+	<div class="topnav" id="myTopnav">
+	<a href="../index-2.html" class="">Home</a>
+	<div class="mdropdown">
+    <button class="mdropbtn">Tutorials
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="mdropdown-content">
+	  <a href="../c/index.html" class="">C - Programming</a>
+	<a href="../ds/index.html" class="" >Data Structure</a>
+      <a href="../html/index.html" class="">HTML</a>
+	  <a href="../php/index.html" class="">PHP</a>
+	  <a href="../xml/index.html" class="" >XML</a>
+	  <a href="../servlet/index.html" class="" >SERVLET</a>
+     <a href="index.html" class="active" >PYTHON</a>
+     <a href="../dbms/index.html" class="" >DBMS</a>
+     <a href="../dm/index.html" class="" >Data Mining</a>
+     <a href="../daa/index.html" class="" >DAA</a>
+	 <a href="../nn/index.html" class="" >Neural Networks</a>
+	 <a href="../dl/index.html" class="" >Deep Learning</a>
+      <!--<a href="#php" class="">PHP</a>-->
+    </div>
+  </div>
+
+<!--
+	<a href="html/index.php" class="">HTML</a>
+	<a href="python/index.php" class="active">PYTHON</a>
+	<a href="#php" class="">PHP</a>-->
+	<a href="../ppts/index.html" class="">PPTs</a>
+	<a href="../lecturenotes/index.html" class="">Lecture Notes</a>
+	<!--<a href="../questions/index.php" class="">Questions</a>-->
+	<a href="../objquestions/index.html" class="">Objective Questions</a>
+	<a href="../labprograms/index.html" class="">Lab Programs</a>
+	<!--<a href="../syllabus/index.php" class="">Syllabus</a>-->
+	<a href="../blog/index.html" class="">Blog</a>
+	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+	<i class="fa fa-bars"></i>
+	</a>
+	</div>
+	<!-- end main menu-->
+</nav>
+	<!-- end main menu-->
+</nav>
+<!--nav end -->
+<!--body container-->
+    <div class="container-fluid">
+    <div class="row row-offcanvas row-offcanvas-left">
+<!-- Side Menu-->
+	<div class="col-xs-6 col-sm-3 sidebar-offcanvas" role="navigation" id="non-printable">
+    <ul class="list-group panel">
+		<li class="list-group-item" "><img src="images/python.png" width="20"alt="">&nbsp;&nbsp; <b>PYTHON BASICS </b></li>
+        <!--<li class="list-group-item"><input type="text" class="form-control search-query" placeholder="Search Something"></li>-->
+        <li class="list-group-item "><a href="introduction.html"><i class="fa  fa-chevron-circle-right"></i>Introduction</a></li>
+		<li class="list-group-item "><a href="installation.html"><i class="fa  fa-chevron-circle-right"></i>Python Installation</a></li>
+        <!-- <li class="list-group-item"><a href="icons.html"><i class="fa  fa-chevron-circle-right"></i>Icons </a></li> -->
+		<li class="list-group-item "><a href="comments.html"><i class="fa  fa-chevron-circle-right"></i>Comments</a></li>
+		<li class="list-group-item "><a href="iooperations.html"><i class="fa  fa-chevron-circle-right"></i>IO Operations</a></li>
+		<li class="list-group-item "><a href="variables.html"><i class="fa  fa-chevron-circle-right"></i>Variables</a></li>
+		<li class="list-group-item "><a href="datatypes.html"><i class="fa  fa-chevron-circle-right"></i>Data Types</a></li>
+		<li class="list-group-item "><a href="typecasting.html"><i class="fa  fa-chevron-circle-right"></i>Typecasting</a></li>
+		<li class="list-group-item "><a href="operator.html"><i class="fa  fa-chevron-circle-right"></i>Operators</a></li>
+		<li class="list-group-item "><a href="conditional.html"><i class="fa  fa-chevron-circle-right"></i>Conditional Statements </a></li>
+		<li class="list-group-item "><a href="loops.html"><i class="fa  fa-chevron-circle-right"></i>Loop Statements </a></li>
+		<li class="list-group-item "><a href="break.html"><i class="fa  fa-chevron-circle-right"></i>Break Continue </a></li>
+
+		<li class="list-group-item" "><img src="images/python.png" width="20"alt="">&nbsp;&nbsp; <b>PYTHON SEQUENCES </b></li>
+		<li class="list-group-item "><a href="string.html"><i class="fa  fa-chevron-circle-right"></i>String</a></li>
+		<li class="list-group-item "><a href="list.html"><i class="fa  fa-chevron-circle-right"></i>List</a></li>
+		<li class="list-group-item "><a href="tuple.html"><i class="fa  fa-chevron-circle-right"></i>Tuple</a></li>
+		<li class="list-group-item "><a href="set.html"><i class="fa  fa-chevron-circle-right"></i>Set</a></li>
+		<li class="list-group-item "><a href="dictionary.html"><i class="fa  fa-chevron-circle-right"></i>Dictionary</a></li>
+
+		<li class="list-group-item" "><img src="images/python.png" width="20"alt="">&nbsp;&nbsp; <b> FILES IN PYTHON </b></li>
+		<li class="list-group-item "><a href="files.html"><i class="fa  fa-chevron-circle-right"></i>Files Function & Methods</a></li>
+		<li class="list-group-item "><a href="command-line.html"><i class="fa  fa-chevron-circle-right"></i>Command-Line Arguments</a></li>
+		<li class="list-group-item "><a href="file-system.html"><i class="fa  fa-chevron-circle-right"></i>File System</a></li>
+		
+		<li class="list-group-item" "><img src="images/python.png" width="20"alt="">&nbsp;&nbsp; <b> PYTHON EXCEPTIONS </b></li>
+		<li class="list-group-item "><a href="exceptions.html"><i class="fa  fa-chevron-circle-right"></i>Exceptions</a></li>
+		<li class="list-group-item "><a href="ex-handling.html"><i class="fa  fa-chevron-circle-right"></i>Exception handling</a></li>
+		<li class="list-group-item "><a href="raise-assert.html"><i class="fa  fa-chevron-circle-right"></i>Raise &amp; Assert Statement</a></li>
+
+
+		<li class="list-group-item" "><img src="images/python.png" width="20"alt="">&nbsp;&nbsp; <b> PYTHON MODULES </b></li>
+		<li class="list-group-item active"><a href="functions.html"><i class="fa  fa-chevron-circle-right"></i>Functions</a></li>
+		<li class="list-group-item "><a href="module.html"><i class="fa  fa-chevron-circle-right"></i>Modules</a></li>
+		<li class="list-group-item "><a href="namespaces.html"><i class="fa  fa-chevron-circle-right"></i>Namespaces</a></li>
+		<li class="list-group-item "><a href="packages.html"><i class="fa  fa-chevron-circle-right"></i>Packages</a></li>
+
+		
+		<li class="list-group-item" "><img src="images/python.png" width="20"alt="">&nbsp;&nbsp; <b> PYTHON REG-EXPS </b></li>
+		<li class="list-group-item "><a href="regex.html"><i class="fa  fa-chevron-circle-right"></i>Regular Expressions</a></li>
+		<li class="list-group-item "><a href="regex-module.html"><i class="fa  fa-chevron-circle-right"></i>RegEx Module</a></li>
+    </ul>
+</div><!-- End side Menu-->
+<!-- content -->
+<div class="col-xs-12 col-sm-9">
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h3 class="panel-title"><a href="javascript:void(0);" class="toggle-sidebar" ><span class="fa fa-angle-double-left" data-toggle="offcanvas" title="Maximize Panel"></span></a> Python Menu</h3>
+    </div>
+	<!--panel-Body-->
+    <div class="panel-body">
+		<div class="content-row">
+			<center><h1>Functions in Python</h1></center><hr>
+<p>A function can be defined as the organized block of reusable code which can be called whenever required.
+In other words, Python allows us to divide a large program into the basic building blocks known as function.<br><br>
+Python provide us various inbuilt functions like range() or print(). Although, the user can able to create functions which can be called user-defined functions.</p>
+<h2>Creating Function</h2>
+<p>In python, a function can be created by using def keyword.</p>
+<em><mark>Syntax:</mark></em><br>
+<pre><code class="language-python">def my_function():  
+    Statements   
+    return statement</code></pre><br>
+<p>The function block is started with the colon (:) and all the same level block statements remain at the same indentation.</p>
+<div class="row"> 
+	<div class="col-md-6">
+<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">def sample():  		#function definition
+	print ("Hello world")
+
+sample()  	#function calling</code></pre></div></div>
+<div class="col-md-6">
+<div class="alert alert-warning"><b>Output:</b><pre><code class="language-python">Hello world</code></pre></div></div></div>
+
+<p>The information into the functions can be passed as the parameters. The parameters are specified in the parentheses. We can give any number of parameters, but we have to separate them with a comma.</p><br>
+<div class="row"> 
+	<div class="col-md-6">
+<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">def welcome(name):
+	print("function with one parameter")
+	print("welcome : ",name)
+welcome("Guest")</code></pre></div></div>
+<div class="col-md-6">
+<div class="alert alert-warning"><b>Output:</b><pre><code class="language-python">function with one parameter
+Welcome : Guest</code></pre></div></div></div>
+<div class="row"> 
+	<div class="col-md-6">
+<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">def sum (a,b):  
+    return a+b;  
+  
+#taking values from the user  
+a = int(input("Enter a: "))  
+b = int(input("Enter b: "))  
+#printing the sum of a and b  
+print("Sum = ",sum(a,b))</code></pre></div></div>
+<div class="col-md-6">
+<div class="alert alert-warning"><b>Output:</b><pre><code class="language-python">Enter a: 10
+Enter b: 15
+Sum = 25</code></pre></div></div></div>
+
+<h2>Built-in Functions in Python</h2>
+<p>The Python supports several built-in functions, those are</p>
+<strong>
+<div class="row"> 
+	<div class="col-md-6">
+<ul>
+	<li>bin()</li>
+	<li>hex()</li>
+	<li>oct()</li>
+	<li>ord()</li>
+	<li>eval()</li>
+	<li>chr()</li>
+	<li>abs()</li>
+	<li>int()</li>
+	<li>float()</li>
+	<li>str()</li>
+</ul>
+</div>
+<div class="col-md-6">
+<ul>
+	<li>list()</li>
+	<li>tuple()</li>
+	<li>set()</li>
+	<li>len()</li>
+	<li>max()</li>
+	<li>min()</li>
+	<li>sum()</li>
+	<li>sorted()</li>
+	<li>input()</li>
+	<li>range()</li>
+	<li>type()</li>
+</ul>
+</div>
+</div>
+</strong>
+<h3>&#9758; bin()</h3>
+<p>In python bin() function is used to return the binary representation of a specified integer. A result always starts with the prefix 0b.</p>
+<em><mark>Syntax:</mark></em><br>
+<pre><code class="language-python">bin (num)</code></pre><br>
+<div class="row"> 
+	<div class="col-md-6">
+<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">x =  14  
+y =  bin(x)  
+print (y)</code></pre></div></div>
+<div class="col-md-6">
+<div class="alert alert-warning"><b>Output:</b><pre><code class="language-python">0b1110</code></pre></div></div></div>
+<h3>&#9758; hex()</h3>
+<p>In python hex() function is used to return the hexadecimal representation of a specified integer. A result always starts with the prefix 0x.</p>
+<em><mark>Syntax:</mark></em><br>
+<pre><code class="language-python">hex (num)</code></pre><br>
+<div class="row"> 
+	<div class="col-md-6">
+<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">x =  14  
+y =  hex(x)  
+print (y)</code></pre></div></div>
+<div class="col-md-6">
+<div class="alert alert-warning"><b>Output:</b><pre><code class="language-python">0xe</code></pre></div></div></div>
+<h3>&#9758; oct()</h3>
+<p>In python oct() function is used to return the octal representation of a specified integer. A result always starts with the prefix 0o</p>.
+<em><mark>Syntax:</mark></em><br>
+<pre><code class="language-python">oct (num)</code></pre><br>
+<div class="row"> 
+	<div class="col-md-6">
+<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">x =  14  
+y =  oct(x)  
+print (y)</code></pre></div></div>
+<div class="col-md-6">
+<div class="alert alert-warning"><b>Output:</b><pre><code class="language-python">0o16</code></pre></div></div></div>
+
+<h3>&#9758; ord()</h3>
+<p>In python ord() function is used to return the ASCII( American Standard Code for Information Interchange) value of a specified character.</p> 
+<em><mark>Syntax:</mark></em><br>
+<pre><code class="language-python">ord (character)</code></pre><br>
+<div class="row"> 
+	<div class="col-md-6">
+<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">print("ASCII value of A :",ord('A'))
+print("ASCII value of a :",ord('a'))
+print("ASCII value of 1 :",ord('1')) </code></pre></div></div>
+<div class="col-md-6">
+<div class="alert alert-warning"><b>Output:</b><pre><code class="language-python">ASCII value of A : 65
+ASCII value of a : 97
+ASCII value of 1 : 49</code></pre></div></div></div>
+<h3>&#9758; chr()</h3>
+<p>In python chr() function is used to return the character of a specified ASCII( American Standard Code for Information Interchange) value.</p> 
+<em><mark>Syntax:</mark></em><br>
+<pre><code class="language-python">chr (num)</code></pre><br>
+<div class="row"> 
+	<div class="col-md-6">
+<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">print("Character value of 65 :",chr(65))
+print("Character value of 97 :",chr(97))
+print("Character value of 50 :",chr(50))</code></pre></div></div>
+<div class="col-md-6">
+<div class="alert alert-warning"><b>Output:</b><pre><code class="language-python">Character value of 65 : A
+Character value of 97 : a
+Character value of 50 : 2</code></pre></div></div></div>
+<h3>&#9758; eval()</h3>
+<p>In python eval() function is used to evaluate given expression. The expression must in quotes.</p>
+<em><mark>Syntax:</mark></em><br>
+<pre><code class="language-python">eval(expression</code></pre><br>
+<div class="row"> 
+	<div class="col-md-6">
+<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">x=int(input("Enter x :"))
+y=int(input("Enter y :"))
+print(eval('x+y'))</code></pre></div></div>
+<div class="col-md-6">
+<div class="alert alert-warning"><b>Output:</b><pre><code class="language-python">Enter x :13
+Enter y :33
+46</code></pre></div></div></div>
+<h3>&#9758; abs()</h3>
+<p>In python abs() function is used to return absolute value of given number.</p>
+<em><mark>Syntax:</mark></em><br>
+<pre><code class="language-python">abs(num)</code></pre><br>
+<div class="row"> 
+	<div class="col-md-6">
+<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">x=-13
+y=-22.15
+print("Absolute value of x :",abs(x))
+print("Absolute value of y :",abs(y))</code></pre></div></div>
+<div class="col-md-6">
+<div class="alert alert-warning"><b>Output:</b><pre><code class="language-python">Absolute value of x : 13
+Absolute value of y : 22.15</code></pre></div></div></div>
+<hr>			<span class="nextbtn">Next Topic :</span><a href="module.html" class="anext"><strong>Modules in Python</strong></a>
+        </div>
+    </div>
+	<!-- end panel body -->
+</div>
+</div>
+<!-- end content -->
+</div>
+ </div>
+ <!--end body container-->
+    <!--footer-->
+    <!-- Google Ad Multiflex1 <div class="container">
+        <div class="row">
+		<div class="col-sm-12
+<!-- Google Ad Multiflex1 Start
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8096140274719176"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-8096140274719176"
+     data-ad-slot="3158072222"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+</div></div>
+END-->
+ <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>About</h6>
+	          <p class="text-justify">Study Glance provides Tutorials , Power point Presentations(ppts), Lecture Notes, Important & previously asked questions, Objective Type questions, Laboratory programs and we provide Syllabus of various subjects.</p>
+          </div>
+		<div class="col-xs-6 col-md-3" style="padding-left:100px;">
+            <h6>Categories</h6>
+            <ul class="footer-links">
+              <li><a href="../Tutorialindex.html">Tutorials</a></li>
+              <li><a href="../ppts/index.html">PPTs</a></li>
+              <li><a href="../lecturenotes/index.html">Lecture Notes</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-6 col-md-3" style="padding-left:100px;">
+            <h6></h6><br>
+            <ul class="footer-links">
+              
+              <li><a href="../questions/index.html">Questions</a></li>
+              <li><a href="../labprograms/index.html">Lab Programs</a></li>
+              <li><a href="../syllabus/index.html">Syllabus</a></li>
+            </ul>
+          </div>
+
+          
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by 
+         <a href="#">StudyGlance</a>.
+            </p>
+            <p><!-- hitwebcounter Code START -->
+
+<img src="https://hitwebcounter.com/counter/counter.php?page=7760160&amp;style=0007&amp;nbdigits=5&amp;type=ip&amp;initCount=0" Alt=""   border="0" />    </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+            </ul>
+          </div>
+        </div>
+      </div>
+</footer>  </body>
+
+<!-- Mirrored from studyglance.in/python/functions.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 28 May 2025 03:41:19 GMT -->
+</html>

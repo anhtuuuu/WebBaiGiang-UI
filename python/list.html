@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html>
+  
+<!-- Mirrored from studyglance.in/python/list.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 28 May 2025 03:41:17 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>List in python, List Index, List Operations, List Functions | Study Glance</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="description" content=" " />
+	<meta property="og:title" content="List in python, List Index, List Operations, List Functions | Study Glance" />
+	<meta property="og:description" content="" />
+	<meta property="og:url" content="index-2.html" />
+
+
+    <link rel="icon" href="../images/logo1.png" type="image/x-icon"/>
+    <link rel="bookmark" href="../images/logo1.png"/>
+    <!-- site css -->
+     <link rel="stylesheet" href="../dist/css/style.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700,400italic,600italic,700italic,800italic,300italic" rel="stylesheet" type="text/css">
+    <!-- <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'> -->
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="../dist/js/site.min.js"></script>
+	<script type="text/javascript" src="../dist/js/prism.js"></script>
+
+	<script>
+		function myFunction() {
+		var x = document.getElementById("myTopnav");
+		if (x.className === "topnav") {
+			x.className += " responsive";
+		} else {
+			x.className = "topnav";
+		}
+		}
+	</script>
+  </head>
+<body>
+<!--nav-->
+<link rel="stylesheet" href="../dist/css/site.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700,400italic,600italic,700italic,800italic,300italic" rel="stylesheet" type="text/css">
+    <!-- <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'> -->
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="../dist/js/site.min.js"></script>
+	 <script type="text/javascript" src="../dist/js/prism.js"></script>
+	<script>
+			function myFunction() {
+		var x = document.getElementById("myTopnav");
+		if (x.className === "topnav") {
+			x.className += " responsive";
+		} else {
+			x.className = "topnav";
+		}
+		}
+	</script>
+	<script async src="../../pagead2.googlesyndication.com/pagead/js/f9b65.txt?client=ca-pub-8096140274719176"
+     crossorigin="anonymous"></script>
+  </head>
+<body>    
+<nav role="navigation" class="navbar">
+	<!-- logo -->
+	<center><img src="../images/logo4.png" height="90" border="0" alt="" style="padding-left:5px;padding-top:2px;padding-bottom:5px;"></center>
+	<!-- main menu-->   
+	<div class="topnav" id="myTopnav">
+	<a href="../index-2.html" class="">Home</a>
+	<div class="mdropdown">
+    <button class="mdropbtn">Tutorials
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="mdropdown-content">
+	  <a href="../c/index.html" class="">C - Programming</a>
+	<a href="../ds/index.html" class="" >Data Structure</a>
+      <a href="../html/index.html" class="">HTML</a>
+	  <a href="../php/index.html" class="">PHP</a>
+	  <a href="../xml/index.html" class="" >XML</a>
+	  <a href="../servlet/index.html" class="" >SERVLET</a>
+     <a href="index.html" class="active" >PYTHON</a>
+     <a href="../dbms/index.html" class="" >DBMS</a>
+     <a href="../dm/index.html" class="" >Data Mining</a>
+     <a href="../daa/index.html" class="" >DAA</a>
+	 <a href="../nn/index.html" class="" >Neural Networks</a>
+	 <a href="../dl/index.html" class="" >Deep Learning</a>
+      <!--<a href="#php" class="">PHP</a>-->
+    </div>
+  </div>
+
+<!--
+	<a href="html/index.php" class="">HTML</a>
+	<a href="python/index.php" class="active">PYTHON</a>
+	<a href="#php" class="">PHP</a>-->
+	<a href="../ppts/index.html" class="">PPTs</a>
+	<a href="../lecturenotes/index.html" class="">Lecture Notes</a>
+	<!--<a href="../questions/index.php" class="">Questions</a>-->
+	<a href="../objquestions/index.html" class="">Objective Questions</a>
+	<a href="../labprograms/index.html" class="">Lab Programs</a>
+	<!--<a href="../syllabus/index.php" class="">Syllabus</a>-->
+	<a href="../blog/index.html" class="">Blog</a>
+	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+	<i class="fa fa-bars"></i>
+	</a>
+	</div>
+	<!-- end main menu-->
+</nav>
+	<!-- end main menu-->
+</nav>
+<!--nav end -->
+<!--body container-->
+    <div class="container-fluid">
+    <div class="row row-offcanvas row-offcanvas-left">
+<!-- Side Menu-->
+	<div class="col-xs-6 col-sm-3 sidebar-offcanvas" role="navigation" id="non-printable">
+    <ul class="list-group panel">
+		<li class="list-group-item" "><img src="images/python.png" width="20"alt="">&nbsp;&nbsp; <b>PYTHON BASICS </b></li>
+        <!--<li class="list-group-item"><input type="text" class="form-control search-query" placeholder="Search Something"></li>-->
+        <li class="list-group-item "><a href="introduction.html"><i class="fa  fa-chevron-circle-right"></i>Introduction</a></li>
+		<li class="list-group-item "><a href="installation.html"><i class="fa  fa-chevron-circle-right"></i>Python Installation</a></li>
+        <!-- <li class="list-group-item"><a href="icons.html"><i class="fa  fa-chevron-circle-right"></i>Icons </a></li> -->
+		<li class="list-group-item "><a href="comments.html"><i class="fa  fa-chevron-circle-right"></i>Comments</a></li>
+		<li class="list-group-item "><a href="iooperations.html"><i class="fa  fa-chevron-circle-right"></i>IO Operations</a></li>
+		<li class="list-group-item "><a href="variables.html"><i class="fa  fa-chevron-circle-right"></i>Variables</a></li>
+		<li class="list-group-item "><a href="datatypes.html"><i class="fa  fa-chevron-circle-right"></i>Data Types</a></li>
+		<li class="list-group-item "><a href="typecasting.html"><i class="fa  fa-chevron-circle-right"></i>Typecasting</a></li>
+		<li class="list-group-item "><a href="operator.html"><i class="fa  fa-chevron-circle-right"></i>Operators</a></li>
+		<li class="list-group-item "><a href="conditional.html"><i class="fa  fa-chevron-circle-right"></i>Conditional Statements </a></li>
+		<li class="list-group-item "><a href="loops.html"><i class="fa  fa-chevron-circle-right"></i>Loop Statements </a></li>
+		<li class="list-group-item "><a href="break.html"><i class="fa  fa-chevron-circle-right"></i>Break Continue </a></li>
+
+		<li class="list-group-item" "><img src="images/python.png" width="20"alt="">&nbsp;&nbsp; <b>PYTHON SEQUENCES </b></li>
+		<li class="list-group-item "><a href="string.html"><i class="fa  fa-chevron-circle-right"></i>String</a></li>
+		<li class="list-group-item active"><a href="list.html"><i class="fa  fa-chevron-circle-right"></i>List</a></li>
+		<li class="list-group-item "><a href="tuple.html"><i class="fa  fa-chevron-circle-right"></i>Tuple</a></li>
+		<li class="list-group-item "><a href="set.html"><i class="fa  fa-chevron-circle-right"></i>Set</a></li>
+		<li class="list-group-item "><a href="dictionary.html"><i class="fa  fa-chevron-circle-right"></i>Dictionary</a></li>
+
+		<li class="list-group-item" "><img src="images/python.png" width="20"alt="">&nbsp;&nbsp; <b> FILES IN PYTHON </b></li>
+		<li class="list-group-item "><a href="files.html"><i class="fa  fa-chevron-circle-right"></i>Files Function & Methods</a></li>
+		<li class="list-group-item "><a href="command-line.html"><i class="fa  fa-chevron-circle-right"></i>Command-Line Arguments</a></li>
+		<li class="list-group-item "><a href="file-system.html"><i class="fa  fa-chevron-circle-right"></i>File System</a></li>
+		
+		<li class="list-group-item" "><img src="images/python.png" width="20"alt="">&nbsp;&nbsp; <b> PYTHON EXCEPTIONS </b></li>
+		<li class="list-group-item "><a href="exceptions.html"><i class="fa  fa-chevron-circle-right"></i>Exceptions</a></li>
+		<li class="list-group-item "><a href="ex-handling.html"><i class="fa  fa-chevron-circle-right"></i>Exception handling</a></li>
+		<li class="list-group-item "><a href="raise-assert.html"><i class="fa  fa-chevron-circle-right"></i>Raise &amp; Assert Statement</a></li>
+
+
+		<li class="list-group-item" "><img src="images/python.png" width="20"alt="">&nbsp;&nbsp; <b> PYTHON MODULES </b></li>
+		<li class="list-group-item "><a href="functions.html"><i class="fa  fa-chevron-circle-right"></i>Functions</a></li>
+		<li class="list-group-item "><a href="module.html"><i class="fa  fa-chevron-circle-right"></i>Modules</a></li>
+		<li class="list-group-item "><a href="namespaces.html"><i class="fa  fa-chevron-circle-right"></i>Namespaces</a></li>
+		<li class="list-group-item "><a href="packages.html"><i class="fa  fa-chevron-circle-right"></i>Packages</a></li>
+
+		
+		<li class="list-group-item" "><img src="images/python.png" width="20"alt="">&nbsp;&nbsp; <b> PYTHON REG-EXPS </b></li>
+		<li class="list-group-item "><a href="regex.html"><i class="fa  fa-chevron-circle-right"></i>Regular Expressions</a></li>
+		<li class="list-group-item "><a href="regex-module.html"><i class="fa  fa-chevron-circle-right"></i>RegEx Module</a></li>
+    </ul>
+</div><!-- End side Menu-->
+<!-- content -->
+<div class="col-xs-12 col-sm-9">
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h3 class="panel-title"><a href="javascript:void(0);" class="toggle-sidebar" ><span class="fa fa-angle-double-left" data-toggle="offcanvas" title="Maximize Panel"></span></a> Python Menu</h3>
+    </div>
+	<!--panel-Body-->
+    <div class="panel-body">
+		<div class="content-row">
+			<center><h1>List Sequence in Python</h1></center><hr>
+ <p>In python, a list can be defined as a collection of values or items of different types. The items in the list are separated with the comma (,) and enclosed with the square brackets [].
+</p><br>
+<em><mark>Syntax:</mark></em><br>
+<pre><code class="language-python">List = [value1, value2, value3,….]</code></pre>
+<h1><span style='font-size:34px;'>&#9971;</span>&nbsp;Python Example Program - List in Python</h1>
+<div class="row"> 
+	<div class="col-md-6">
+		<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">L0 = []		#creates empty list
+L1 = [123,"python", 3.7]  
+L2 = [1, 2, 3, 4, 5, 6]  
+L3 = ["C Programing","Java","Python"] 
+print(L0)
+print(L1)
+print(L2)
+print(L3)</code></pre></div>
+	</div>
+    <div class="col-md-6">
+		<div class="alert alert-warning"><b>Output:</b><pre><code class="language-python">[]
+[123, 'python', 3.7]
+[1, 2, 3, 4, 5, 6].
+['C Programing','Java','Python']</code></pre></div>                      
+	</div>
+</div>
+<h1>Python List indexing</h1>
+<p>The indexing are processed in the same way as it happens with the strings. The elements of the list can be accessed by using the slice operator [].</p>
+<p>The index starts from 0, the first element of the list is stored at the 0th index, the second element of the list is stored at the 1st index, and so on.</p><br>
+
+<center><img src="images/list.jpg" width="425" height="100" border="0" alt="list indexing"></center>
+<br><br>
+<p>Python provides us the flexibility to use the negative indexing also. The negative indices are counted from the right. The last element (right most) of the list has the index -1, its adjacent left element is present at the index -2 and so on until the left most element is encountered.</p>
+<h1>Python List Operators</h1>
+<div class="table-responsive">
+	<table class="table table-bordered table-striped">
+		<colgroup>
+			<col class="col-xs-1">
+			<col class="col-xs-6">
+		</colgroup>
+		<thead>
+			<tr>
+				<th>Operator</th>
+                <th>Description</th>
+            </tr>
+		</thead>
+        <tbody>
+			<tr>
+				<td><code>+</code></td>
+				<td>It is known as concatenation operator used to concatenate two lists</td>
+			</tr>
+			<tr>
+				<td><code>*</code></td>
+				<td>It is known as repetition operator. It concatenates the multiple copies of the same list.</td>
+			</tr>
+			<tr>
+				<td><code>[ ]</code></td>
+				<td>It is known as slice operator. It is used to access the list item from list.</td>
+			</tr>
+			<tr>
+				<td><code>[ : ]</code></td>
+				<td>It is known as range slice operator. It is used to access the range of list items from list.</td>
+			</tr>
+			<tr>
+				<td><code>in</code></td>
+				<td>It is known as membership operator. It returns if a particular item is present in the specified list.</td>
+			</tr>
+			<tr>
+				<td><code>not in</code></td>
+				<td>It is also a membership operator and It returns true if a particular list item is not present in the list.</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<h1><span style='font-size:34px;'>&#9971;</span>&nbsp;Python Example Program - List Operators in Python</h1>
+<div class="row"> 
+	<div class="col-md-6">
+		<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">num=[1,2,3,4,5]
+lang=['python','c','java','php']
+print(num+lang)
+print(num*2)
+print(lang[2])
+print(lang[1:4])
+print('cpp' in lang)
+print(6 not in num)</code></pre></div>
+	</div>
+    <div class="col-md-6">
+		<div class="alert alert-warning"><b>Output:</b><pre><code class="language-python">[1, 2, 3, 4, 5, 'python', 'c', 'java', 'php']
+[1, 2, 3, 4, 5, 1, 2, 3, 4, 5]
+java
+['c', 'java', 'php']
+False
+True</code></pre></div>                      
+	</div>
+</div>
+
+<h2>How to add or change elements to a list?</h2>
+<p>Python allows us to modify the list items by using the slice and assignment operator.</p>
+<p>We can use assignment operator (=) to change an item or a range of items.</p>
+<h1><span style='font-size:34px;'>&#9971;</span>&nbsp;Python Example Program - to add or change elements to a python list</h1>
+<div class="row"> 
+	<div class="col-md-6">
+		<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">num=[1,2,3,4,5]
+print(num)
+num[2]=30
+print(num)
+num[1:3]=[25,36]
+print(num)
+num[4]="Python"
+print(num)</code></pre></div>
+	</div>
+    <div class="col-md-6">
+		<div class="alert alert-warning"><b>Output:</b><pre><code class="language-python">[1, 2, 3, 4, 5]
+[1, 2, 30, 4, 5]
+[1, 25, 36, 4, 5]
+[1, 25, 36, 4, 'Python']</code></pre></div>                      
+	</div>
+</div>
+<h2>How to delete or remove elements from a list?</h2>
+<p>Python allows us to delete one or more items in a list by using the <strong>del</strong> keyword.</p>
+<h1><span style='font-size:34px;'>&#9971;</span>&nbsp;Python Example Program - to delete or remove elements from a python list</h1>
+<div class="row"> 
+	<div class="col-md-6">
+		<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">num=[1,2,3,4,5]
+print(num)
+del num[1]
+print(num)
+del num[1:3]
+print(num)</code></pre></div>
+	</div>
+    <div class="col-md-6">
+		<div class="alert alert-warning"><b>Output:</b><pre><code class="language-python">[1, 2, 3, 4, 5]
+[1, 3, 4, 5]
+[1, 5]</code></pre></div>                      
+	</div>
+</div>
+<h1>Python List Functions</h1>
+<p>Python provides the following built-in functions which can be used with the lists.</p>
+<strong><ul>
+	<li>len()</li>
+	<li>max()</li>
+	<li>min()</li>
+	<li>list()</li>
+	<li>sum()</li>
+	<li>sorted()</li>
+	<li>append()</li>
+	<li>remove()</li>
+	<li>sort()</li>
+	<li>reverse()</li>
+	<li>count()</li>
+	<li>index()</li>
+	<li>insert()</li>
+	<li>pop()</li>
+	<li>clear()</li>
+</ul></strong>
+<h1>&#9758; len()</h1>
+<p>In Python len() is used to find the length of list,i.e it returns the number of items in the list.</p> 
+<em><mark>Syntax:</mark></em>
+<pre><code class="language-python">len(list)</code></pre>
+<h1><span style='font-size:32px;'>&#9971;</span>&nbsp;Python Example Program - len() in python list</h1>
+<div class="row"> 
+	<div class="col-md-6">
+		<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">num=[1,2,3,4,5,6]
+print(“length of list :”,len(num))</code></pre></div>
+	</div>
+    <div class="col-md-6">
+		<div class="alert alert-warning"><b>Output:</b><pre><code class="language-python">length of list : 6</code></pre></div>                      
+	</div>
+</div>
+<h1>&#9758; max()</h1>
+<p>In Python max() is used to find maximum value in the list</p>
+<em><mark>Syntax:</mark></em>
+<pre><code class="language-python">max(list)</code></pre>
+<h1><span style='font-size:32px;'>&#9971;</span>&nbsp;Python Example Program - max() in python list</h1>
+<div class="row"> 
+	<div class="col-md-6">
+		<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">num=[1,2,3,4,5,6]
+lang=['java','c','python','cpp']
+print("Max of list :",max(num))
+print("Max of list :",max(lang))</code></pre></div>
+	</div>
+    <div class="col-md-6">
+		<div class="alert alert-warning"><b>Output:</b><pre><code class="language-python">Max of list : 6
+Max of list : python</code></pre></div>                      
+	</div>
+</div>
+<h1>&#9758; min()</h1>
+<p>In Python min() is used to find minimum value in the list</p>
+<em><mark>Syntax:</mark></em>
+<pre><code class="language-python">min(list)</code></pre>
+<h1><span style='font-size:32px;'>&#9971;</span>&nbsp;Python Example Program - min() in python list</h1>
+<div class="row"> 
+	<div class="col-md-6">
+		<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">num=[1,2,3,4,5,6]
+lang=['java','c','python','cpp']
+print("Min of list :",min(num))
+print("Min of list :",min(lang))</code></pre></div>
+	</div>
+    <div class="col-md-6">
+		<div class="alert alert-warning"><b>Output:</b><pre><code class="language-python">Min of list : 1
+Min of list : c</code></pre></div>                      
+	</div>
+</div>
+<h1>&#9758; sum()</h1>
+<p>In python, sum(list) function returns sum of all values in the list. List values must in number type.</p>
+<em><mark>Syntax:</mark></em>
+<pre><code class="language-python">sum(list)</code></pre>
+<h1><span style='font-size:32px;'>&#9971;</span>&nbsp;Python Example Program - sum() in python list</h1>
+<div class="row"> 
+	<div class="col-md-6">
+		<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">num=[1,2,3,4,5,6]
+print(“sum of list items :”,sum(num))</code></pre></div>
+	</div>
+    <div class="col-md-6">
+		<div class="alert alert-warning"><b>Output:</b><pre><code class="language-python">sum of list items: 21</code></pre></div>                      
+	</div>
+</div>
+<h1>&#9758; sorted()</h1>
+<p>In python, sorted(list) function is used to sort all items of list in an ascending order.</p>
+<em><mark>Syntax:</mark></em>
+<pre><code class="language-python">sorted(list)</code></pre>
+<h1><span style='font-size:32px;'>&#9971;</span>&nbsp;Python Example Program - sorted() in python list</h1>
+<div class="row"> 
+	<div class="col-md-6">
+		<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">num=[1,3,2,4,6,5]
+lang=['java','c','python','cpp']
+print(sorted(num))
+print(sorted(lang))</code></pre></div>
+	</div>
+    <div class="col-md-6">
+		<div class="alert alert-warning"><b>Output:</b><pre><code class="language-python">[1, 2, 3, 4, 5, 6]
+['c', 'cpp', 'java', 'python']</code></pre></div>                      
+	</div>
+</div>
+<h1>&#9758; list()</h1>
+<p>The list() method takes sequence types and converts them to lists. This is used to convert a given string or tuple into list.</p>
+<em><mark>Syntax:</mark></em>
+<pre><code class="language-python">list(sequence)</code></pre>
+<h1><span style='font-size:32px;'>&#9971;</span>&nbsp;Python Example Program - list() in python list</h1>
+<div class="row"> 
+	<div class="col-md-6">
+		<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">str="python"
+list1=list(str)
+print(list1)</code></pre></div>
+	</div>
+    <div class="col-md-6">
+		<div class="alert alert-warning"><b>Output:</b><pre><code class="language-python">['p', 'y', 't', 'h', 'o', 'n']</code></pre></div>                      
+	</div>
+</div>
+<h1>&#9758; append()</h1>
+<p>In python append() method adds an item to the end of the list.</p>
+<em><mark>Syntax:</mark></em>
+<pre><code class="language-python">list.append(item)</code></pre><p>-item may be number,string,list and etc</p>
+<h1><span style='font-size:32px;'>&#9971;</span>&nbsp;Python Example Program - append() in python list</h1>
+<div class="row"> 
+	<div class="col-md-6">
+		<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">num=[1,2,3,4,5]
+lang=['python','c','java','php']
+num.append(6)
+print(num)
+lang.append("cpp")
+print(lang)</code></pre></div>
+	</div>
+    <div class="col-md-6">
+		<div class="alert alert-warning"><b>Output:</b><pre><code class="language-python">[1, 2, 3, 4, 5, 6]
+['python', 'c', 'java', 'php', 'cpp']</code></pre></div>                      
+	</div>
+</div>
+<h1>&#9758; remove()</h1>
+<p>In python remove() method removes the first item from the list which is equal to the passed value. It throws an error if the item is not present in the list.</p>
+<em><mark>Syntax:</mark></em>
+<pre><code class="language-python">list.remove(item)</code></pre><p>
+ -item may be number,string,list and etc</p>
+ <h1><span style='font-size:32px;'>&#9971;</span>&nbsp;Python Example Program - remove() in python list</h1>
+<div class="row"> 
+	<div class="col-md-6">
+		<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">num=[1,2,3,4,5]
+lang=['python','c','java','php','c']
+num.remove(2)
+print(num)
+lang.remove("c") # first occurence will remove
+print(lang)
+lang.remove("cpp")
+print(lang)</code></pre></div>
+	</div>
+    <div class="col-md-6">
+		<div class="alert alert-warning"><b>Output:</b><pre><code class="language-python">[1, 3, 4, 5]
+['python', 'java', 'php', 'c']
+ValueError:list.remove(x):x not in list</code></pre></div>                      
+	</div>
+</div>
+<h1>&#9758; sort()</h1>
+<p>In python sort() method sorts the list elements. It also sorts the items into descending and ascending order. It takes an optional parameter 'reverse' which sorts the list into descending order. By default, list sorts the elements into ascending order.</p>
+<em><mark>Syntax:</mark></em>
+<pre><code class="language-python">list.sort ([reverse=true])</code></pre><p>
+ -reverse, which displays items in descending</p>
+ <h1><span style='font-size:32px;'>&#9971;</span>&nbsp;Python Example Program - sort() in python list</h1>
+<div class="row"> 
+	<div class="col-md-6">
+		<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">lang = ['p', 'y', 't', 'h', 'o','n'] # Char list  
+even = [6,8,2,4,10] # int list  
+print(lang)  
+print(even)  
+lang.sort()  
+even.sort()  
+print("\nAfter Sorting:\n")
+print(lang)  
+print(even) 
+print("In Descending Order :\n")
+even.sort(reverse=True)
+print(even) </code></pre></div>
+	</div>
+    <div class="col-md-6">
+		<div class="alert alert-warning"><b>Output:</b><pre><code class="language-python">['p', 'y', 't', 'h', 'o', 'n']
+[6, 8, 2, 4, 10]
+After Sorting:
+['h', 'n', 'o', 'p', 't', 'y']
+[2, 4, 6, 8, 10]
+In Descending Order :
+[10, 8, 6, 4, 2]</code></pre></div>                      
+	</div>
+</div>
+<h1>&#9758; reverse()</h1>
+<p>In python reverse() method reverses elements of the list. If the list is empty, it simply returns an empty list. After reversing the last index value of the list will be present at 0 index.</p>
+<em><mark>Syntax:</mark></em>
+<pre><code class="language-python">list. reverse ()</code></pre>
+<h1><span style='font-size:32px;'>&#9971;</span>&nbsp;Python Example Program - reverse() in python list</h1>
+<div class="row"> 
+	<div class="col-md-6">
+		<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">lang = ['p', 'y', 't', 'h', 'o','n']
+lang = ['p', 'y', 't', 'h', 'o','n'] 
+print("After reverse")
+lang.reverse()
+print(lang) </code></pre></div>
+	</div>
+    <div class="col-md-6">
+		<div class="alert alert-warning"><b>Output:</b><pre><code class="language-python">After reverse
+['n', 'o', 'h', 't', 'y', 'p']</code></pre></div>                      
+	</div>
+</div>
+<h1>&#9758; count()</h1>
+<p>In python count() method returns the number of times element appears in the list. If the element is not present in the list, it returns 0.</p> 
+<em><mark>Syntax:</mark></em>
+<pre><code class="language-python">list.count(item)</code></pre>
+<h1><span style='font-size:32px;'>&#9971;</span>&nbsp;Python Example Program - count() in python list</h1>
+<div class="row"> 
+	<div class="col-md-6">
+		<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">num=[1,2,3,4,3,2,2,1,3,4,5,7,8]
+cnt=num.count(2)	
+print("Count of 2 is:",cnt)
+cnt=num.count(10)	
+print("Count of 10 is:",cnt) </code></pre></div>
+	</div>
+    <div class="col-md-6">
+		<div class="alert alert-warning"><b>Output:</b><pre><code class="language-python">Count of 2 is: 3
+Count of 10 is : 0</code></pre></div>                      
+	</div>
+</div>
+<h1>&#9758; index()</h1>
+<p>In python index () method returns index of the passed element. This method takes an argument and returns index of it. If the element is not present, it raises a ValueError.<br>
+If list contains duplicate elements, it returns index of first occurred element.<br>
+This method takes two more optional parameters start and end which are used to search index within a limit.</p>
+<em><mark>Syntax:</mark></em>
+<pre><code class="language-python">list.index(x[, start[, end]])</code></pre>
+<h1><span style='font-size:32px;'>&#9971;</span>&nbsp;Python Example Program - index() in python list</h1>
+<div class="row"> 
+	<div class="col-md-6">
+		<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">lang = ['p', 'y', 't', 'h', 'o', 'n', 'p','r','o','g','r','a','m'] 
+print("index of t is:",lang.index('t'))
+print("index of p is:",lang.index('p'))
+print("index of p is:",lang.index('p',3,10))
+print("index of p is:",lang.index('z'))</code></pre></div>
+	</div>
+    <div class="col-md-6">
+		<div class="alert alert-warning"><b>Output:</b><pre><code class="language-python">index of t is: 2
+index of p is: 0
+index of p is: 6
+ValueError: 'z' is not in list</code></pre></div>                      
+	</div>
+</div>
+<h1>&#9758; insert()</h1>
+<p>In python insert() method inserts the element at the specified index in the list. The first argument is the index of the element before which to insert the element.</p>
+<em><mark>Syntax:</mark></em>
+<pre><code class="language-python">list.insert(i,x)</code></pre>
+<p>i : index at which element would be inserted.<br>
+x : element to be inserted.</p>
+<h1><span style='font-size:32px;'>&#9971;</span>&nbsp;Python Example Program - insert() in python list</h1>
+<div class="row"> 
+	<div class="col-md-6">
+		<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">num=[10,20,30,40,50]
+num.insert(4,60)
+print("updated list is :",num)
+num.insert(7,70)
+print("updated list is :",num)</code></pre></div>
+	</div>
+    <div class="col-md-6">
+		<div class="alert alert-warning"><b>Output:</b><pre><code class="language-python">updated list is : [10, 20, 30, 40, 60, 50]
+updated list is : [10, 20, 30, 40, 60, 50, 70]</code></pre></div>                      
+	</div>
+</div>
+<h1>&#9758; pop()</h1>
+<p>In python pop() element removes an element present at specified index from the list. It returns the popped element.</p>
+<em><mark>Syntax:</mark></em>
+<pre><code class="language-python">list.pop([i])</code></pre>
+<h1><span style='font-size:32px;'>&#9971;</span>&nbsp;Python Example Program - pop() in python list</h1>
+<div class="row"> 
+	<div class="col-md-6">
+		<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">num=[10,20,30,40,50]
+num.pop()
+print("updated list is :",num)
+num.pop(2)
+print("updated list is :",num)
+num.pop(7)
+print("updated list is :",num)</code></pre></div>
+	</div>
+    <div class="col-md-6">
+		<div class="alert alert-warning"><b>Output:</b><pre><code class="language-python">updated list is : [10, 20, 30, 40]
+updated list is : [10, 20, 40]
+IndexError: pop index out of range</code></pre></div>                      
+	</div>
+</div>
+<h1>&#9758; clear()</h1>
+<p>In python clear() method removes all the elements from the list. It clears the list completely and returns nothing.</p>
+<em><mark>Syntax:</mark></em>
+<pre><code class="language-python">list.clear()</code></pre>
+<h1><span style='font-size:32px;'>&#9971;</span>&nbsp;Python Example Program - clear() in python list</h1>
+<div class="row"> 
+	<div class="col-md-6">
+		<div class="alert alert-info"><b>Example:</b><pre><code class="language-python">num=[10,20,30,40,50]
+num.clear()
+print("After clearing ",num)</code></pre></div>
+	</div>
+    <div class="col-md-6">
+		<div class="alert alert-warning"><b>Output:</b><pre><code class="language-python">After clearing [ ]</code></pre></div>                      
+	</div>
+</div>
+<hr>			<span class="nextbtn">Next Topic :</span><a href="tuple.html" class="anext"><strong>Tuple sequence in Python</strong></a>
+        </div>
+    </div>
+	<!-- end panel body -->
+</div>
+</div>
+<!-- end content -->
+</div>
+ </div>
+ <!--end body container-->
+    <!--footer-->
+     <!-- Google Ad Multiflex1 <div class="container">
+        <div class="row">
+		<div class="col-sm-12
+<!-- Google Ad Multiflex1 Start
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8096140274719176"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-8096140274719176"
+     data-ad-slot="3158072222"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+</div></div>
+END-->
+ <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>About</h6>
+	          <p class="text-justify">Study Glance provides Tutorials , Power point Presentations(ppts), Lecture Notes, Important & previously asked questions, Objective Type questions, Laboratory programs and we provide Syllabus of various subjects.</p>
+          </div>
+		<div class="col-xs-6 col-md-3" style="padding-left:100px;">
+            <h6>Categories</h6>
+            <ul class="footer-links">
+              <li><a href="../Tutorialindex.html">Tutorials</a></li>
+              <li><a href="../ppts/index.html">PPTs</a></li>
+              <li><a href="../lecturenotes/index.html">Lecture Notes</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-6 col-md-3" style="padding-left:100px;">
+            <h6></h6><br>
+            <ul class="footer-links">
+              
+              <li><a href="../questions/index.html">Questions</a></li>
+              <li><a href="../labprograms/index.html">Lab Programs</a></li>
+              <li><a href="../syllabus/index.html">Syllabus</a></li>
+            </ul>
+          </div>
+
+          
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by 
+         <a href="#">StudyGlance</a>.
+            </p>
+            <p><!-- hitwebcounter Code START -->
+
+<img src="https://hitwebcounter.com/counter/counter.php?page=7760160&amp;style=0007&amp;nbdigits=5&amp;type=ip&amp;initCount=0" Alt=""   border="0" />    </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+            </ul>
+          </div>
+        </div>
+      </div>
+</footer>  </body>
+
+<!-- Mirrored from studyglance.in/python/list.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 28 May 2025 03:41:17 GMT -->
+</html>

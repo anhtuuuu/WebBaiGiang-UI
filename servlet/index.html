@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+  
+<!-- Mirrored from studyglance.in/servlet/index.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 28 May 2025 03:36:46 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>Servlet Tutorial | Study Glance</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="description" content=" " />
+	<meta property="og:title" content="Servlet Introduction | Study Glance" />
+	<meta property="og:description" content="" />
+	<meta property="og:url" content="index-2.html" />
+    <link rel="icon" href="../images/logo1.png" type="image/x-icon"/>
+    <link rel="bookmark" href="../images/logo1.png"/>
+    <!-- site css -->
+    
+<!--nav-->
+<link rel="stylesheet" href="../dist/css/site.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700,400italic,600italic,700italic,800italic,300italic" rel="stylesheet" type="text/css">
+    <!-- <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'> -->
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="../dist/js/site.min.js"></script>
+	 <script type="text/javascript" src="../dist/js/prism.js"></script>
+	<script>
+			function myFunction() {
+		var x = document.getElementById("myTopnav");
+		if (x.className === "topnav") {
+			x.className += " responsive";
+		} else {
+			x.className = "topnav";
+		}
+		}
+	</script>
+	<script async src="../../pagead2.googlesyndication.com/pagead/js/f9b65.txt?client=ca-pub-8096140274719176"
+     crossorigin="anonymous"></script>
+  </head>
+<body>    
+<nav role="navigation" class="navbar">
+	<!-- logo -->
+	<center><img src="../images/logo4.png" height="90" border="0" alt="" style="padding-left:5px;padding-top:2px;padding-bottom:5px;"></center>
+	<!-- main menu-->   
+	<div class="topnav" id="myTopnav">
+	<a href="../index-2.html" class="">Home</a>
+	<div class="mdropdown">
+    <button class="mdropbtn">Tutorials
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="mdropdown-content">
+	  <a href="../c/index.html" class="">C - Programming</a>
+	<a href="../ds/index.html" class="" >Data Structure</a>
+      <a href="../html/index.html" class="">HTML</a>
+	  <a href="../php/index.html" class="">PHP</a>
+	  <a href="../xml/index.html" class="" >XML</a>
+	  <a href="index.html" class="active" >SERVLET</a>
+     <a href="../python/index.html" class="" >PYTHON</a>
+     <a href="../dbms/index.html" class="" >DBMS</a>
+     <a href="../dm/index.html" class="" >Data Mining</a>
+     <a href="../daa/index.html" class="" >DAA</a>
+	 <a href="../nn/index.html" class="" >Neural Networks</a>
+	 <a href="../dl/index.html" class="" >Deep Learning</a>
+      <!--<a href="#php" class="">PHP</a>-->
+    </div>
+  </div>
+
+<!--
+	<a href="html/index.php" class="">HTML</a>
+	<a href="python/index.php" class="">PYTHON</a>
+	<a href="#php" class="">PHP</a>-->
+	<a href="../ppts/index.html" class="">PPTs</a>
+	<a href="../lecturenotes/index.html" class="">Lecture Notes</a>
+	<!--<a href="../questions/index.php" class="">Questions</a>-->
+	<a href="../objquestions/index.html" class="">Objective Questions</a>
+	<a href="../labprograms/index.html" class="">Lab Programs</a>
+	<!--<a href="../syllabus/index.php" class="">Syllabus</a>-->
+	<a href="../blog/index.html" class="">Blog</a>
+	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+	<i class="fa fa-bars"></i>
+	</a>
+	</div>
+	<!-- end main menu-->
+</nav>
+<!--nav end -->
+<!--body container-->
+    <div class="container-fluid">
+    <div class="row row-offcanvas row-offcanvas-left">
+<!-- Side Menu-->
+	<div class="col-xs-6 col-sm-3 sidebar-offcanvas" role="navigation">
+		<ul class="list-group panel" id="non-printable">
+		<!--<li class="list-group-item"><img src="../images/clogo.png" width="40"alt="">&nbsp;&nbsp; <b> TUTORIAL</b></li>-->
+				<li class="list-group-item" style="text-transform: uppercase;text-align: left;" active"><img src="images/clogo.html" width="30"alt="">&nbsp;&nbsp; <b>Basics </b></li>
+			<li class="list-group-item " ><a href="displayf6d0.html?tno=1&amp;topic=Introduction"><i class="fa  fa-chevron-circle-right"></i>Introduction</a></li>
+		<li class="list-group-item " ><a href="display9aba.html?tno=2&amp;topic=CGI"><i class="fa  fa-chevron-circle-right"></i>CGI</a></li>
+		<li class="list-group-item " ><a href="display86d1.html?tno=3&amp;topic=CGI-vs-Servlet"><i class="fa  fa-chevron-circle-right"></i>CGI vs Servlet</a></li>
+		<li class="list-group-item " ><a href="displaya738.html?tno=4&amp;topic=Servlet-Life-Cycle"><i class="fa  fa-chevron-circle-right"></i>Servlet Life Cycle</a></li>
+		<li class="list-group-item " ><a href="display384c.html?tno=5&amp;topic=Servlet-API"><i class="fa  fa-chevron-circle-right"></i>Servlet API</a></li>
+		<li class="list-group-item " ><a href="display486b.html?tno=6&amp;topic=Servlet-Example"><i class="fa  fa-chevron-circle-right"></i>Servlet Example</a></li>
+		<li class="list-group-item " ><a href="display8eb7.html?tno=7&amp;topic=Reading-Servlet-parameters"><i class="fa  fa-chevron-circle-right"></i>Reading Servlet parameters</a></li>
+		<li class="list-group-item " ><a href="display05ef.html?tno=8&amp;topic=Reading-Initialization-Paraeters"><i class="fa  fa-chevron-circle-right"></i>Reading Initialization Paraeters</a></li>
+		<li class="list-group-item " ><a href="display3d54.html?tno=9&amp;topic=Session-Tracking"><i class="fa  fa-chevron-circle-right"></i>Session Tracking</a></li>
+		<li class="list-group-item " ><a href="displayaf1f.html?tno=10&amp;topic=Cookies"><i class="fa  fa-chevron-circle-right"></i>Cookies</a></li>
+		<li class="list-group-item " ><a href="display27aa.html?tno=11&amp;topic=HTTPSession"><i class="fa  fa-chevron-circle-right"></i>HTTPSession</a></li>
+		<!--
+        <li class="list-group-item " ><a href="display.php?tno=1&topic=Introduction-in-PHP"><i class="fa  fa-chevron-circle-right"></i>Introduction</a></li>
+
+        <li class="list-group-item "><a href="display.php?tno=2&topic=Comments-in-PHP"><i class="fa  fa-chevron-circle-right"></i>Comments</a></li>
+
+		<li class="list-group-item "><a href="display.php?tno=3&topic=Variables-Declaration-in-PHP"><i class="fa  fa-chevron-circle-right"></i>Variables</a></li>
+
+        <li class="list-group-item " ><a href="display.php?tno=4&topic=Datatypes-in-PHP"><i class="fa  fa-chevron-circle-right"></i>Datatypes</a></li>
+
+		<li class="list-group-item "><a href="display.php?tno=5&topic=Operators-in-PHP"><i class="fa  fa-chevron-circle-right"></i>Operators</a></li>
+
+		<li class="list-group-item "><a href="display.php?tno=6&topic=Control-Structures-in-PHP"><i class="fa  fa-chevron-circle-right"></i>Control Structures</a></li>
+
+        <li class="list-group-item "><a href="display.php?tno=7&topic=Arrays-in-PHP"><i class="fa  fa-chevron-circle-right"></i>Arrays</a></li>
+
+		<li class="list-group-item "><a href="display.php?tno=8&topic=Functions-in-PHP"><i class="fa  fa-chevron-circle-right"></i>Functions</a></li>
+
+		<li class="list-group-item "><a href="display.php?tno=9&topic=Strings-in-PHP"><i class="fa  fa-chevron-circle-right"></i>Strings</a></li>
+
+		<li class="list-group-item "><a href="display.php?tno=10&topic=Form-Handing-in-PHP"><i class="fa  fa-chevron-circle-right"></i>Form Handing</a></li>
+
+		<li class="list-group-item "><a href="display.php?tno=11&topic=File Uploading-in-PHP"><i class="fa  fa-chevron-circle-right"></i>File Uploading</a></li>
+
+		<li class="list-group-item "><a href="display.php?tno=12&topic=Database-Programming-in-PHP"><i class="fa  fa-chevron-circle-right"></i>Database Programming</a></li>
+
+		<li class="list-group-item "><a href="display.php?tno=13&topic=Sessions-in-PHP"><i class="fa  fa-chevron-circle-right"></i>Sessions</a></li>
+
+		<li class="list-group-item "><a href="display.php?tno=14&topic=Cookies-in-PHP"><i class="fa  fa-chevron-circle-right"></i>Cookies</a></li>
+
+		<li class="list-group-item "><a href="display.php?tno=15&topic=File-Handling-in-PHP"><i class="fa  fa-chevron-circle-right"></i>File Handling</a></li>-->
+	</ul>
+	    </div>
+<!-- End side Menu-->
+<!-- content -->
+<div class="col-xs-12 col-sm-9">
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h3 class="panel-title"><a href="javascript:void(0);" class="toggle-sidebar" ><span class="fa fa-angle-double-left" data-toggle="offcanvas" title="Maximize Panel"></span></a>Servlet Menu</h3>
+    </div>
+	<!--panel-Body-->
+    <div class="panel-body">
+		<div class="content-row">
+			<center><h1>SERVLET Tutorial</h1></center>
+<hr>
+<p>A Servlet is the Java technology used to extend and improve Web server functionality. Servlets are able to provide a platform independent way to build web-based applications founded upon components without the performance limitations.</p> 
+<p>Servlets idea was propsed by <strong>James Gosling</strong> in 1995. <strong>Servlet API</strong> was developed by <strong>James Duncan Davidson</strong> with the first release of the <strong>Java Web Servlet Development Kit (JWSDK)</strong> in June of 1997, and the Java Servlet API 2.1. It was the first used Servlets with Sun&acute;s Java Web Server to develop a website. </p>
+
+<p>Java servlets are a key component of server-side Java development. A servlet is a small, pluggable extension to a server that enhances the server&acute;s functionality. Servlets allow developers to extend and customize any Java-enabled server-a web server, a mail server, an application server, or any custom server-with a hitherto unknown degree of portability, flexibility, and ease.</p>
+
+
+<br>
+<div class="row"> 
+	<div class="col-md-5"><br>
+		<a href="index.html"><img src="images/servlet-logo.jpg" width="50%"></img></a>
+	</div>
+	<div class="col-md-5" style="border:1px #ffcc99 solid;border-radius:10px;">
+	<h4>List of other Tutorials:</h4>
+	<ul>
+	<li><a href="../python/index.html" class="anext">Python Programming tutorial</a></li>
+	<li><a href="../html/index.html" class="anext">Hyper Text Markup Language (HTML) tutorial</a></li>
+	<li><a href="../xml/index.html" class="anext">eXtensible Markup Language(XML) tutorial</a></li>
+	<li><a href="../js/index.html" class="anext">Java Script tutorial</a></li>
+	</ul>
+	</div>
+</div>
+<br>
+ <h2 style="color:#ff9900;"><img src="images/servlet-logo.jpg" width="40"alt="">&nbsp;Tutorial Index :</h2><br>
+<div class="row"> 
+<div class="col-md-6" style="padding-left:10px;">
+<!--<img src="../images/php.png" width="40"alt="">&nbsp;&nbsp; <b>PHP TUTORIAL</b>-->
+
+<ul>
+				<li class="list-group-item"><img src="images/xml-logo.html" width="20"alt="">&nbsp;&nbsp; <b>Basics </b></li>
+			<li><a href="displayf6d0.html?tno=1&amp;topic=Introduction" class="atopic">Introduction</a></li>
+		<li><a href="display9aba.html?tno=2&amp;topic=CGI" class="atopic">CGI</a></li>
+		<li><a href="display86d1.html?tno=3&amp;topic=CGI-vs-Servlet" class="atopic">CGI vs Servlet</a></li>
+		<li><a href="displaya738.html?tno=4&amp;topic=Servlet-Life-Cycle" class="atopic">Servlet Life Cycle</a></li>
+		<li><a href="display384c.html?tno=5&amp;topic=Servlet-API" class="atopic">Servlet API</a></li>
+		<li><a href="display486b.html?tno=6&amp;topic=Servlet-Example" class="atopic">Servlet Example</a></li>
+		<li><a href="display8eb7.html?tno=7&amp;topic=Reading-Servlet-parameters" class="atopic">Reading Servlet parameters</a></li>
+		<li><a href="display05ef.html?tno=8&amp;topic=Reading-Initialization-Paraeters" class="atopic">Reading Initialization Paraeters</a></li>
+		<li><a href="display3d54.html?tno=9&amp;topic=Session-Tracking" class="atopic">Session Tracking</a></li>
+		<li><a href="displayaf1f.html?tno=10&amp;topic=Cookies" class="atopic">Cookies</a></li>
+		<li><a href="display27aa.html?tno=11&amp;topic=HTTPSession" class="atopic">HTTPSession</a></li>
+		</ul>
+</div>
+<div class="col-md-6" style="padding-left:10px;">
+<!--<img src="../images/php.png" width="40"alt="">&nbsp;&nbsp; <b>PHP TUTORIAL</b>-->
+</div>
+</div>
+			<hr>
+			<span class="nextbtn">Next Topic :</span><a href="displayf6d0.html?tno=1&amp;topic=Introduction" class="anext"><strong>Introduction</strong></a>
+        </div>
+    </div>
+	<!-- end panel body -->
+</div>
+</div>
+<!-- end content -->
+</div>
+ <!-- Google Ad Multiflex1 <div class="container">
+        <div class="row">
+		<div class="col-sm-12
+<!-- Google Ad Multiflex1 Start
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8096140274719176"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-8096140274719176"
+     data-ad-slot="3158072222"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+</div></div>
+END-->
+ <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>About</h6>
+	          <p class="text-justify">Study Glance provides Tutorials , Power point Presentations(ppts), Lecture Notes, Important & previously asked questions, Objective Type questions, Laboratory programs and we provide Syllabus of various subjects.</p>
+          </div>
+		<div class="col-xs-6 col-md-3" style="padding-left:100px;">
+            <h6>Categories</h6>
+            <ul class="footer-links">
+              <li><a href="../Tutorialindex.html">Tutorials</a></li>
+              <li><a href="../ppts/index.html">PPTs</a></li>
+              <li><a href="../lecturenotes/index.html">Lecture Notes</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-6 col-md-3" style="padding-left:100px;">
+            <h6></h6><br>
+            <ul class="footer-links">
+              
+              <li><a href="../questions/index.html">Questions</a></li>
+              <li><a href="../labprograms/index.html">Lab Programs</a></li>
+              <li><a href="../syllabus/index.html">Syllabus</a></li>
+            </ul>
+          </div>
+
+          
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by 
+         <a href="#">StudyGlance</a>.
+            </p>
+            <p><!-- hitwebcounter Code START -->
+
+<img src="https://hitwebcounter.com/counter/counter.php?page=7760160&amp;style=0007&amp;nbdigits=5&amp;type=ip&amp;initCount=0" Alt=""   border="0" />    </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+            </ul>
+          </div>
+        </div>
+      </div>
+</footer> </div>
+ <!--end body container-->
+    <!--footer
+    <div class="site-footer">
+      <div class="container">
+       </div>
+    </div>-->
+  </body>
+
+<!-- Mirrored from studyglance.in/servlet/index.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 28 May 2025 03:36:50 GMT -->
+</html>

@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html>
+  
+<!-- Mirrored from studyglance.in/python/regex.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 28 May 2025 03:41:20 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>Regular Expressions or RegEx in python | Study Glance</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="description" content=" " />
+	<meta property="og:title" content="Regular Expressions or RegEx in python | Study Glance" />
+	<meta property="og:description" content="" />
+	<meta property="og:url" content="index-2.html" />
+
+
+    <link rel="icon" href="../images/logo1.png" type="image/x-icon"/>
+    <link rel="bookmark" href="../images/logo1.png"/>
+    <!-- site css -->
+     <link rel="stylesheet" href="../dist/css/style.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700,400italic,600italic,700italic,800italic,300italic" rel="stylesheet" type="text/css">
+    <!-- <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'> -->
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="../dist/js/site.min.js"></script>
+	<script type="text/javascript" src="../dist/js/prism.js"></script>
+
+	<script>
+		function myFunction() {
+		var x = document.getElementById("myTopnav");
+		if (x.className === "topnav") {
+			x.className += " responsive";
+		} else {
+			x.className = "topnav";
+		}
+		}
+	</script>
+  </head>
+<body>
+<!--nav-->
+<link rel="stylesheet" href="../dist/css/site.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700,400italic,600italic,700italic,800italic,300italic" rel="stylesheet" type="text/css">
+    <!-- <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'> -->
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="../dist/js/site.min.js"></script>
+	 <script type="text/javascript" src="../dist/js/prism.js"></script>
+	<script>
+			function myFunction() {
+		var x = document.getElementById("myTopnav");
+		if (x.className === "topnav") {
+			x.className += " responsive";
+		} else {
+			x.className = "topnav";
+		}
+		}
+	</script>
+	<script async src="../../pagead2.googlesyndication.com/pagead/js/f9b65.txt?client=ca-pub-8096140274719176"
+     crossorigin="anonymous"></script>
+  </head>
+<body>    
+<nav role="navigation" class="navbar">
+	<!-- logo -->
+	<center><img src="../images/logo4.png" height="90" border="0" alt="" style="padding-left:5px;padding-top:2px;padding-bottom:5px;"></center>
+	<!-- main menu-->   
+	<div class="topnav" id="myTopnav">
+	<a href="../index-2.html" class="">Home</a>
+	<div class="mdropdown">
+    <button class="mdropbtn">Tutorials
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="mdropdown-content">
+	  <a href="../c/index.html" class="">C - Programming</a>
+	<a href="../ds/index.html" class="" >Data Structure</a>
+      <a href="../html/index.html" class="">HTML</a>
+	  <a href="../php/index.html" class="">PHP</a>
+	  <a href="../xml/index.html" class="" >XML</a>
+	  <a href="../servlet/index.html" class="" >SERVLET</a>
+     <a href="index.html" class="active" >PYTHON</a>
+     <a href="../dbms/index.html" class="" >DBMS</a>
+     <a href="../dm/index.html" class="" >Data Mining</a>
+     <a href="../daa/index.html" class="" >DAA</a>
+	 <a href="../nn/index.html" class="" >Neural Networks</a>
+	 <a href="../dl/index.html" class="" >Deep Learning</a>
+      <!--<a href="#php" class="">PHP</a>-->
+    </div>
+  </div>
+
+<!--
+	<a href="html/index.php" class="">HTML</a>
+	<a href="python/index.php" class="active">PYTHON</a>
+	<a href="#php" class="">PHP</a>-->
+	<a href="../ppts/index.html" class="">PPTs</a>
+	<a href="../lecturenotes/index.html" class="">Lecture Notes</a>
+	<!--<a href="../questions/index.php" class="">Questions</a>-->
+	<a href="../objquestions/index.html" class="">Objective Questions</a>
+	<a href="../labprograms/index.html" class="">Lab Programs</a>
+	<!--<a href="../syllabus/index.php" class="">Syllabus</a>-->
+	<a href="../blog/index.html" class="">Blog</a>
+	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+	<i class="fa fa-bars"></i>
+	</a>
+	</div>
+	<!-- end main menu-->
+</nav>
+	<!-- end main menu-->
+</nav>
+<!--nav end -->
+<!--body container-->
+    <div class="container-fluid">
+    <div class="row row-offcanvas row-offcanvas-left">
+<!-- Side Menu-->
+	<div class="col-xs-6 col-sm-3 sidebar-offcanvas" role="navigation" id="non-printable">
+    <ul class="list-group panel">
+		<li class="list-group-item" "><img src="images/python.png" width="20"alt="">&nbsp;&nbsp; <b>PYTHON BASICS </b></li>
+        <!--<li class="list-group-item"><input type="text" class="form-control search-query" placeholder="Search Something"></li>-->
+        <li class="list-group-item "><a href="introduction.html"><i class="fa  fa-chevron-circle-right"></i>Introduction</a></li>
+		<li class="list-group-item "><a href="installation.html"><i class="fa  fa-chevron-circle-right"></i>Python Installation</a></li>
+        <!-- <li class="list-group-item"><a href="icons.html"><i class="fa  fa-chevron-circle-right"></i>Icons </a></li> -->
+		<li class="list-group-item "><a href="comments.html"><i class="fa  fa-chevron-circle-right"></i>Comments</a></li>
+		<li class="list-group-item "><a href="iooperations.html"><i class="fa  fa-chevron-circle-right"></i>IO Operations</a></li>
+		<li class="list-group-item "><a href="variables.html"><i class="fa  fa-chevron-circle-right"></i>Variables</a></li>
+		<li class="list-group-item "><a href="datatypes.html"><i class="fa  fa-chevron-circle-right"></i>Data Types</a></li>
+		<li class="list-group-item "><a href="typecasting.html"><i class="fa  fa-chevron-circle-right"></i>Typecasting</a></li>
+		<li class="list-group-item "><a href="operator.html"><i class="fa  fa-chevron-circle-right"></i>Operators</a></li>
+		<li class="list-group-item "><a href="conditional.html"><i class="fa  fa-chevron-circle-right"></i>Conditional Statements </a></li>
+		<li class="list-group-item "><a href="loops.html"><i class="fa  fa-chevron-circle-right"></i>Loop Statements </a></li>
+		<li class="list-group-item "><a href="break.html"><i class="fa  fa-chevron-circle-right"></i>Break Continue </a></li>
+
+		<li class="list-group-item" "><img src="images/python.png" width="20"alt="">&nbsp;&nbsp; <b>PYTHON SEQUENCES </b></li>
+		<li class="list-group-item "><a href="string.html"><i class="fa  fa-chevron-circle-right"></i>String</a></li>
+		<li class="list-group-item "><a href="list.html"><i class="fa  fa-chevron-circle-right"></i>List</a></li>
+		<li class="list-group-item "><a href="tuple.html"><i class="fa  fa-chevron-circle-right"></i>Tuple</a></li>
+		<li class="list-group-item "><a href="set.html"><i class="fa  fa-chevron-circle-right"></i>Set</a></li>
+		<li class="list-group-item "><a href="dictionary.html"><i class="fa  fa-chevron-circle-right"></i>Dictionary</a></li>
+
+		<li class="list-group-item" "><img src="images/python.png" width="20"alt="">&nbsp;&nbsp; <b> FILES IN PYTHON </b></li>
+		<li class="list-group-item "><a href="files.html"><i class="fa  fa-chevron-circle-right"></i>Files Function & Methods</a></li>
+		<li class="list-group-item "><a href="command-line.html"><i class="fa  fa-chevron-circle-right"></i>Command-Line Arguments</a></li>
+		<li class="list-group-item "><a href="file-system.html"><i class="fa  fa-chevron-circle-right"></i>File System</a></li>
+		
+		<li class="list-group-item" "><img src="images/python.png" width="20"alt="">&nbsp;&nbsp; <b> PYTHON EXCEPTIONS </b></li>
+		<li class="list-group-item "><a href="exceptions.html"><i class="fa  fa-chevron-circle-right"></i>Exceptions</a></li>
+		<li class="list-group-item "><a href="ex-handling.html"><i class="fa  fa-chevron-circle-right"></i>Exception handling</a></li>
+		<li class="list-group-item "><a href="raise-assert.html"><i class="fa  fa-chevron-circle-right"></i>Raise &amp; Assert Statement</a></li>
+
+
+		<li class="list-group-item" "><img src="images/python.png" width="20"alt="">&nbsp;&nbsp; <b> PYTHON MODULES </b></li>
+		<li class="list-group-item "><a href="functions.html"><i class="fa  fa-chevron-circle-right"></i>Functions</a></li>
+		<li class="list-group-item "><a href="module.html"><i class="fa  fa-chevron-circle-right"></i>Modules</a></li>
+		<li class="list-group-item "><a href="namespaces.html"><i class="fa  fa-chevron-circle-right"></i>Namespaces</a></li>
+		<li class="list-group-item "><a href="packages.html"><i class="fa  fa-chevron-circle-right"></i>Packages</a></li>
+
+		
+		<li class="list-group-item" "><img src="images/python.png" width="20"alt="">&nbsp;&nbsp; <b> PYTHON REG-EXPS </b></li>
+		<li class="list-group-item active"><a href="regex.html"><i class="fa  fa-chevron-circle-right"></i>Regular Expressions</a></li>
+		<li class="list-group-item "><a href="regex-module.html"><i class="fa  fa-chevron-circle-right"></i>RegEx Module</a></li>
+    </ul>
+</div><!-- End side Menu-->
+<!-- content -->
+<div class="col-xs-12 col-sm-9">
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h3 class="panel-title"><a href="javascript:void(0);" class="toggle-sidebar" ><span class="fa fa-angle-double-left" data-toggle="offcanvas" title="Maximize Panel"></span></a> Python Menu</h3>
+    </div>
+	<!--panel-Body-->
+    <div class="panel-body">
+		<div class="content-row">
+			<center><h1>Regular Expressions in Python</h1></center><hr>
+<p>A regular expression in a programming language is a special text string used for describing a search pattern. It is extremely useful for extracting information from text such as code, files, log, spreadsheets or even documents.</p><br>
+<p>The most common uses of regular expressions are:</p>
+<ul>
+	<li>Search a string (search and match)</li>
+	<li>Finding a string (findall)</li>
+	<li>Break string into a sub strings (split)</li>
+	<li>Replace part of a string (sub)</li>
+</ul>
+<h2>Special Symbols and MetaCharacters</h2>
+<p>A regular expression can be formed by using the mix of meta-characters and special sequences.</p>
+<h2>MetaCharacters </h2>
+<p>Metacharacters are characters that are interpreted in a special way by a RegEx engine. Here's a list of metacharacters:</p>
+<p>Metacharacter is a character with the specified meaning.</p>
+<div class="table-responsive">
+	<table class="table table-bordered table-striped">
+		<colgroup>
+			<col class="col-xs-1">
+			<col class="col-xs-6">
+		</colgroup>
+		<thead>
+			<tr>
+				<th>Metacharacter</th>
+                <th>Description</th>
+            </tr>
+		</thead>
+        <tbody>
+			<tr>
+				<td><code>[]</code></td>
+				<td>It represents the set of characters.</td>
+			</tr>
+			<tr>
+				<td><code>.</code></td>
+				<td>It represents any character except new line character.</td>
+			</tr>
+			<tr>
+				<td><code>^</code></td>
+				<td>It represents characters at the beginning of the string.</td>
+			</tr>
+			<tr>
+				<td><code>$</code></td>
+				<td>It represents characters at the ending of the string.</td>
+			</tr>
+			<tr>
+				<td><code>*</code></td>
+				<td>It represents zero or more occurrences of a pattern in the string.</td>
+			</tr>
+			<tr>
+				<td><code>+</code></td>
+				<td>It represents one or more occurrences of a pattern in the string.</td>
+			</tr>
+			<tr>
+				<td><code>{ }</code></td>
+				<td>It represents exactly the specified number of occurrences.</td>
+			</tr>
+			<tr>
+				<td><code>|</code></td>
+				<td>It represents either this or that character is present.</td>
+			</tr>
+			<tr>
+				<td><code>( )</code></td>
+				<td>Capture and group(i.e group sub-patterns)</td>
+			</tr>
+			<tr>
+				<td><code>\</code></td>
+				<td>It represents the special sequence.</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<h3>&#9758; <font color="#ff6600">[ ]</font> - Square brackets</h3>
+<p>Square brackets specify a set of characters you wish to match.</p>
+<p>Here, [abc] will match if the string you are trying to match contains any of the a, b or c.</p>
+<p>You can also specify a range of characters using - inside square brackets.</p>
+<p><strong>[a-e]</strong> is the same as [abcde]	<br>
+<strong>[1-4]</strong> is the same as [1234]<br>
+<strong>[0-39]</strong> is the same as [01239]</p>
+<p>You can complement (invert) the character set by using caret ^ symbol at the start of a square-bracket.</p>
+<p><strong>[^abc]</strong> means any character except a or b or c.<br>
+<strong>[^0-9]</strong> means any non-digit character.</p>
+<h3>&#9758; <font color="#ff6600">.</font> - Period</h3>
+<p>A period matches any single character (except newline '\n').</p>
+<pre>Expression	String		Matched?
+ a...n		abn		No match
+		alian		Match
+		abysn		Match
+		Alian		No match
+		An abacus	No match</pre>
+<h3>&#9758; <font color="#ff6600">^</font> - Caret</h3>
+<p>The caret symbol ^ is used to check if a string starts with a certain character.</p>
+<p>Expression	String	Matched?</p>
+<pre>^a	a	Match
+	abc	Match
+	bac	No match
+^ab	abc	match
+	acb	No match (starts with a, not followed by b)</pre>
+<h3>&#9758; <font color="#ff6600">$ </font>- Dollar</h3>
+<p>The dollar symbol $ is used to check if a string ends with a certain character.</p>
+<p>Expression	String	Matched?</p>
+<pre>
+a$	a		match
+	formula		match
+	cab		No match</pre>
+<h3>&#9758; <font color="#ff6600">* </font>- Star</h3>
+<p>The star symbol * matches zero or more occurrences of the pattern left to it.</p>
+<p>Expression	String	Matched?</p>
+<pre>
+ma*n	mn	Match
+	man	Match
+	maaan	Match
+	main	No match (a is not followed by n)
+	woman	Match</pre>
+
+<h3>&#9758; <font color="#ff6600">+</font> - Plus</h3>
+<p>The plus symbol + matches one or more occurrences of the pattern left to it.</p>
+<p>Expression	String	Matched?</p>
+<pre>
+ma+n	mn	No match (no a character)
+	man	Match
+	maaan	Match
+	main	No match (a is not followed by n)
+	woman	Match</pre>
+<h3>&#9758; <font color="#ff6600">{ }</font> - Braces</h3>
+<p>Consider this code: {n,m}. This means at least n, and at most m repetitions of the pattern left to it.</p>
+<p>Expression	String	Matched?</p>
+<pre>
+a{2,3}	abc dat		No match
+	abc daat	1 match (at daat)
+	aabc daaat	2 matches (at aabc and daaat)
+	aabc daaaat	2 matches (at aabc and daaaat)</pre>
+<h3>&#9758; <font color="#ff6600">| </font>- Alternation</h3>
+<p>Vertical bar | is used for alternation (or operator).</p>
+<p>Expression	String	Matched?</p>
+<pre>
+a|b	cde	No match
+	ade	1 match (match at ade)
+	acdbea	3 matches (at acdbea)</pre>
+<p>Here, a|b match any string that contains either a or b</p>
+<h3>&#9758; <font color="#ff6600">( )</font> - Group</h3>
+<p>Parentheses () is used to group sub-patterns. For example, (a|b|c)xz match any string that matches either a or b or c followed by xz</p>
+<p>Expression	String	Matched?</p>
+<pre>
+(a|b|c)xz	ab xz		No match
+		abxz		1 match (match at abxz)
+		axz cabxz	2 matches (at axzbc cabxz)</pre>
+<h3>&#9758;<font color="#ff6600"> \</font> - Backslash</h3>
+<p>Backlash \ is used to escape various characters including all metacharacters.</p> 
+<p>For example,	<br>
+\$a match if a string contains $ followed by a. Here, $ is not interpreted by a RegEx engine in a special way.</p>
+<p>If you are unsure if a character has special meaning or not, you can put \ in front of it. This makes sure the character is not treated in a special way.</p>
+
+<h2>Special Sequences</h2>
+<p>A special sequence is a \ followed by one of the characters in the list below, and has a special meaning:</p>
+<div class="table-responsive">
+	<table class="table table-bordered table-striped">
+		<colgroup>
+			<col class="col-xs-1">
+			<col class="col-xs-6">
+		</colgroup>
+		<thead>
+			<tr>
+				<th>Character</th>
+                <th>Description</th>
+            </tr>
+		</thead>
+        <tbody>
+			<tr>
+				<td><code>\A</code></td>
+				<td>It returns a match if the specified characters are present at the beginning of the string.</td>
+			</tr>
+			<tr>
+				<td><code>\d</code></td>
+				<td>It returns a match if the string contains digits [0-9].</td>
+			</tr>
+			<tr>
+				<td><code>\D</code></td>
+				<td>It returns a match if the string doesn't contain the digits [0-9].</td>
+			</tr>
+			<tr>
+				<td><code>\s</code></td>
+				<td>It returns a match if the string contains any white space character.</td>
+			</tr>
+			<tr>
+				<td><code>\S</code></td>
+				<td>It returns a match if the string doesn't contain any white space character.</td>
+			</tr>
+			<tr>
+				<td><code>\w</code></td>
+				<td>It returns a match if the string contains any word characters.</td>
+			</tr>
+			<tr>
+				<td><code>\W</code></td>
+				<td>It returns a match if the string doesn't contain any word.</td>
+			</tr>
+			<tr>
+				<td><code>\Z</code></td>
+				<td>Returns a match if the specified characters are at the end of the string.</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p><h2>&#9758; \A </h2> - Matches if the specified characters are at the start of a string.</p>
+<p>Expression	String	Matched?</p>
+<pre>
+\Athe	the sun		Match
+	In the sun	No match</pre><br>
+
+<p><h2>&#9758; \d</h2> - Matches any decimal digit. Equivalent to [0-9]</p>
+<p>Expression	String	Matched?</p>
+<pre>
+\d	12abc3		3 matches (at 12abc3)
+	Python		No match</pre><br>
+<p><h2>&#9758; \D</h2> - Matches any non-decimal digit. Equivalent to [^0-9]</p>
+<p>Expression	String	Matched?</p>
+<pre>
+\D	1ab34"50	3 matches (at 1ab34"50)
+	1345		No match</pre><br>
+<p><h2>&#9758; \s</h2> - Matches where a string contains any whitespace character. Equivalent to [ \t\n\r\f\v].</p>
+<p>Expression	String	Matched?</p>
+<pre>
+\s	Python RegEx		1 match
+	PythonRegEx		No match</pre><br>
+<p><h2>&#9758; \S</h2> - Matches where a string contains any non-whitespace character. Equivalent to [^ \t\n\r\f\v].</p>
+<p>Expression	String	Matched?</p>
+<pre>
+\S	a b		2 matches (at a b)
+			No match</pre><br>
+<p><h2>&#9758; \w</h2> - Matches any alphanumeric character (digits and alphabets). Equivalent to [a-zA-Z0-9_]. By the way, underscore _ is also considered an alphanumeric character.</p>
+<p>Expression	String	Matched?</p>
+<pre>
+\w	12&": ;c	3 matches (at 12&": ;c)
+	%"> !		No match</pre><br>
+<p><h2>&#9758; \W</h2> - Matches any non-alphanumeric character. Equivalent to [^a-zA-Z0-9_]</p>
+<p>Expression	String	Matched?</p>
+<pre>
+\W	1a2%c		1 match (at 1a2%c)
+	Python		No match</pre><br>
+<p><h2>&#9758; \Z</h2> - Matches if the specified characters are at the end of a string.</p>
+<p>Expression	String	Matched?</p>
+<pre>
+\ZPython	I like Python		1 match
+		I like Python.		No match
+		Python is fun.		No match</pre>
+<br>
+<hr>			<span class="nextbtn">Next Topic :</span><a href="regex-module.html" class="anext"><strong>RegEx Module(re module) in Python</strong></a>
+        </div>
+    </div>
+	<!-- end panel body -->
+</div>
+</div>
+<!-- end content -->
+</div>
+ </div>
+ <!--end body container-->
+    <!--footer-->
+    <!-- Google Ad Multiflex1 <div class="container">
+        <div class="row">
+		<div class="col-sm-12
+<!-- Google Ad Multiflex1 Start
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8096140274719176"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-8096140274719176"
+     data-ad-slot="3158072222"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+</div></div>
+END-->
+ <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>About</h6>
+	          <p class="text-justify">Study Glance provides Tutorials , Power point Presentations(ppts), Lecture Notes, Important & previously asked questions, Objective Type questions, Laboratory programs and we provide Syllabus of various subjects.</p>
+          </div>
+		<div class="col-xs-6 col-md-3" style="padding-left:100px;">
+            <h6>Categories</h6>
+            <ul class="footer-links">
+              <li><a href="../Tutorialindex.html">Tutorials</a></li>
+              <li><a href="../ppts/index.html">PPTs</a></li>
+              <li><a href="../lecturenotes/index.html">Lecture Notes</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-6 col-md-3" style="padding-left:100px;">
+            <h6></h6><br>
+            <ul class="footer-links">
+              
+              <li><a href="../questions/index.html">Questions</a></li>
+              <li><a href="../labprograms/index.html">Lab Programs</a></li>
+              <li><a href="../syllabus/index.html">Syllabus</a></li>
+            </ul>
+          </div>
+
+          
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by 
+         <a href="#">StudyGlance</a>.
+            </p>
+            <p><!-- hitwebcounter Code START -->
+
+<img src="https://hitwebcounter.com/counter/counter.php?page=7760160&amp;style=0007&amp;nbdigits=5&amp;type=ip&amp;initCount=0" Alt=""   border="0" />    </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+            </ul>
+          </div>
+        </div>
+      </div>
+</footer>  </body>
+
+<!-- Mirrored from studyglance.in/python/regex.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 28 May 2025 03:41:20 GMT -->
+</html>
