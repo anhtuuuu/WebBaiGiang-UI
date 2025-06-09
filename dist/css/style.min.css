@@ -256,7 +256,7 @@ blockquote{border-left:3px solid #CCD1D9}.img-rounded{-webkit-border-radius:4px;
 }
 
 /* Style the dropdown button to fit inside the topnav */
-.mdropdown .mdropbtn {
+.mdropdown . {
   font-size: 16px;
   border: none;
   outline: none;
@@ -289,8 +289,8 @@ blockquote{border-left:3px solid #CCD1D9}.img-rounded{-webkit-border-radius:4px;
 }
 
 /* Add a dark background on topnav links and the dropdown button on hover */
-.topnav a:hover, .mdropdown:hover .mdropbtn {
-  background-color: #6137ae;
+.topnav a:hover, .mdropdown:hover . {
+  background-color: orangered;
   color: white;
 }
 
@@ -308,7 +308,7 @@ blockquote{border-left:3px solid #CCD1D9}.img-rounded{-webkit-border-radius:4px;
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
-  .topnav a:not(:first-child), .mdropdown .mdropbtn {
+  .topnav a:not(:first-child), .mdropdown . {
     display: none;
   }
   .topnav a.icon {
@@ -332,7 +332,7 @@ blockquote{border-left:3px solid #CCD1D9}.img-rounded{-webkit-border-radius:4px;
   }
   .topnav.responsive .mdropdown {float: none;}
   .topnav.responsive .mdropdown-content {position: relative;}
-  .topnav.responsive .mdropdown .mdropbtn {
+  .topnav.responsive .mdropdown . {
     display: block;
     width: 100%;
     text-align: left;
@@ -579,7 +579,7 @@ page-break-inside:auto;
   cursor: pointer;
 }
 .buttoncss:hover {
-  background: #6137ae;
+  background: orangered;
 }
 #printable { display: none; }
 @media print {

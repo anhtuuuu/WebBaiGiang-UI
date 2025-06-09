@@ -49,42 +49,44 @@
 
 <body>
 	<nav role="navigation" class="">
-		<div class="row px-5 position-relative">
+		<div class="row px-3 px-md-5 position-relative">
 			<!-- tìm kiếm -->
-			<div class="col-4 position-absolute search">
-				<form method="post row p-0">
-					<input name="txtsearch" placeholder="Search Here..." class="textboxcss m-0 col-8" value="" list="subnames"
-						required></input>
-					<button type="submit" name="btnsearch" class="buttoncss m-0 col-3">Tìm kiếm</button>
+			<div class="col-5 col-md-3 position-absolute search p-0">
+				<form method="post row p-0 position-relative">
+					<input name="txtsearch" placeholder="Tìm kiếm..." class="textboxcss m-0 w-100" value=""
+						list="subnames" required></input>
+					<button type="submit" name="btnsearch"
+						class="buttoncss m-0 text-lghtgoldyellow position-absolute end-0 "><i
+							class="fa fa-search"></i></button>
 				</form>
 			</div>
 
 			<!-- logo -->
-			<div>
-				<div class="d-flex justify-content-center">
-					<img src="../images/logo4.png" height="90" alt=""
-						style="padding-left:5px;padding-top:2px;padding-bottom:5px;">
-				</div>
+
+			<div class="d-flex justify-content-end justify-content-md-center p-0">
+				<img src="../images/logo4.png" height="90" alt=""
+					style="padding-left:5px;padding-top:2px;padding-bottom:5px;">
 			</div>
+
 
 		</div>
 
 		<!-- main menu-->
 		<div class="topnav d-flex justify-content-between" id="myTopnav">
 			<div class="leftNav">
-				<a href="../index-2.html" class="">Trang chủ</a>
+				<a href="../index-2.html" class="text-lghtgoldyellow">Trang chủ</a>
 				<div class="mdropdown">
-					<button class="mdropbtn">Khoa
+					<button class="mdropbtn text-lghtgoldyellow">Khoa
 						<i class="fa fa-caret-down"></i>
 					</button>
 					<div class="mdropdown-content">
-						<a href="index.html" class="active">Công nghệ thông tin</a>
+						<a href="index.html" class="text-dark">Công nghệ thông tin</a>
 					</div>
 				</div>
-				<a href="../ppts/index.html" class="">Lớp học phần</a>
+				<a href="../ppts/index.html" class="text-lghtgoldyellow">Lớp học phần</a>
 			</div>
 			<div class="rightNav">
-				<a href="../account-manager.html" class="">Quản lý tài khoản</a>
+				<a href="../account-manager.html" class="text-lghtgoldyellow">Quản lý tài khoản</a>
 			</div>
 			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
 				<i class="fa fa-bars"></i>
@@ -358,7 +360,7 @@
 							</div>
 
 							<div class="d-flex justify-content-center">
-								<button class="btn btn-primary px-4 py-2"><b>Nộp Bài</b></button>
+								<button class="btn px-4 py-2 btn-bgr"><b>Nộp Bài</b></button>
 							</div>
 
 						</div>
