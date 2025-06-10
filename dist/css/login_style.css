@@ -1,3 +1,7 @@
+:root{
+    --avocado: #2c6151;
+    --orange: #fea600;
+}
 
   @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
 
@@ -14,14 +18,14 @@ body{
     min-height: 80vh;
     font-family: 'Kanit', sans-serif;
     position: relative;
-    background-color: black;
+    background-color: var(--avocado);
 }
 .box1{
     position: absolute;
     border-radius: 15px;
     width: 60px;
     height: 60px;
-    background-color: pink;
+    background-color: var(--orange);
     animation: change 10s linear infinite;
    filter: blur(2px);
 }
@@ -30,7 +34,7 @@ body{
     border-radius: 5px;
     width: 30px;
     height: 30px;
-    background-color: pink;
+    background-color: var(--orange);
     animation: change 12s linear infinite;
     left: 25%; 
     filter: blur(2px);
@@ -40,7 +44,7 @@ body{
     border-radius: 15px;
     width: 80px;
     height: 80px;
-    background-color: pink;
+    background-color: var(--orange);
     animation: change 18s linear infinite;
     right: 20%; 
 }
@@ -49,7 +53,7 @@ body{
     border-radius: 5px;
     width: 20px;
     height: 20px;
-    background-color: pink;
+    background-color: var(--orange);
     animation: change 8s linear infinite;
     right: 35%; 
     filter: blur(2px);
@@ -59,11 +63,20 @@ body{
     border-radius: 15px;
     width: 100px;
     height: 100px;
-    background-color: pink;
+    background-color: var(--orange);
     animation: change 25s linear infinite;
    
 }
-
+.box6{
+    position: absolute;
+    border-radius: 15px;
+    width: 50px;
+    height: 50px;
+    right: 61%;
+    background-color: var(--orange);
+    animation: change 7s linear infinite;
+   
+}
 @keyframes change {
     0%{
         bottom: -20%;
@@ -80,12 +93,12 @@ form{
     z-index: 2;
     width: 300px;
     height: 350px;
-    border: 1px solid pink;
+    border: 1px solid var(--orange);
     border-radius: 15px;
     padding: 1rem;
     background-color: rgb(252, 251, 251);
     opacity: .95;
-    box-shadow: 0px 0px 20px 0px pink;
+    box-shadow: 0px 0px 20px 0px var(--orange);
 }
 
 form h1{
@@ -119,7 +132,7 @@ form .fill label{
     
 }
 form .fill input:focus{
-    border: 2px solid pink;
+    border: 2px solid var(--orange);
     border-radius: 3px;
 }
 form .fill input:focus~label, form .fill input:valid~label{
@@ -127,13 +140,13 @@ form .fill input:focus~label, form .fill input:valid~label{
     font-size: 12px;
     background-color: #fff;
     padding: 0 2px;
-    color: pink;
+    color: var(--orange);
 }
 
 form .btn button
 {
     cursor: pointer;
-    background-color: pink;
+    background-color: var(--orange);
     border: none;
     font-size: 15px;
     font-weight: bold;
@@ -161,6 +174,6 @@ footer .remember input{
 
 footer a{
     text-decoration: none;
-    color: palevioletred;
+    color: var(--orange);
     font-weight: 400;
 }
