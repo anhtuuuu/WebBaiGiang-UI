@@ -211,30 +211,8 @@
                                         </select>
                                     </div>
 
-                                    <div class="form-group search_title">
-                                        Số bài viết hiển thị
-                                    </div>
-                                    <div class="form-group search_input">
-                                        <select class="form-control input-sm" name="per_page">
-                                            <?php
-                                $records_in_page = 10;
-                                for ($i = 1; $i <= 10; $i++) {
-                                    $per_page = $i * $records_in_page;
-                                    ?>
-                                            <?php if (isset($get['per_page']) && $get['per_page'] == $per_page) : ?>
-                                            <option selected="selected" value="<?php echo $per_page; ?>">
-                                                <?php echo $per_page; ?>
-                                            </option>
-                                            <?php else : ?>
-                                            <option value="<?php echo $per_page; ?>">
-                                                <?php echo $per_page; ?>
-                                            </option>
-                                            <?php endif; ?>
-                                            <?php
-                                }
-                                ?>
-                                        </select>
-                                    </div>
+                                    
+                                    
 
                                     <div class="form-group search_title">
                                         Từ khóa tìm kiếm
@@ -249,8 +227,7 @@
                                         <button type="submit" class="btn btn-primary btn-sm">Tìm kiếm</button>
                                     </div>
                                     <br>
-                                    <label><em>Từ khóa tìm kiếm không ít hơn 3 ký tự, không lớn hơn 64 ký tự, không dùng
-                                            các mã html</em></label>
+                                    
                                 </div>
                             </div>
                         </nav>
@@ -262,7 +239,7 @@
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                     <div class="box box-primary">
                         <div class="box-header with-border">
-                            <h3 class="box-title"><em class="fa fa-table">&nbsp;</em>Danh sách bài viết</h3>
+                            <h3 class="box-title"><em class="fa fa-table">&nbsp;</em><b>Quản lý tài khoản</b></h3>
                             <a class="btn btn-success pull-right"
                                 href="<?php echo get_admin_url($module_slug . '/' . 'content'); ?>"><i
                                     class="fa fa-plus"></i> Thêm</a>
@@ -279,15 +256,17 @@
                                                     <input class="flat-blue check-all" name="check_all[]"
                                                         type="checkbox" value="yes">
                                                 </th> -->
-                                                <th class="text-center" style="width: 80px;">Sắp xếp</th>
-                                                <th style="width:40px">&nbsp;</th>
-                                                <th>Tên bài viết</th>
-                                                <th class="text-center">Thời gian đăng</th>
-                                                <th class="text-center">Lượt xem</th>
-                                                <th class="text-center">Hiện trang chủ</th>
+                                                <th class="text-center" style="width: 20px">Sắp xếp</th>
+                                                <th class="text-center" style="width:120px">Ảnh đại diện</th>
+                                                <th class="text-center" style="width:auto">Họ tên</th>
+                                                <th class="text-center">Email</th>
+                                                <th class="text-center">Vai trò</th>                                                
+                                                <th class="text-center">Trạng thái kích hoạt</th>
+                                                <th class="text-center" style="width: 160px;">Chức năng</th>
                                                 <!-- <th class="text-center">Nổi bật</th>
                                         <th class="text-center">Mới nhất</th> -->
-                                                <th class="text-center" style="width: 160px;">Chức năng</th>
+                                                <!-- <th class="text-center">Chức năng</th> -->
+                                            
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -302,7 +281,7 @@
                                                         value="<?php echo $row['id']; ?>" name="idcheck[]">
                                                 </td> -->
                                                 <td class="text-center">
-                                                    <input style="width: 80px;" class="text-right form-control"
+                                                    <input style="width: 50px;" class="text-right form-control"
                                                         name="order[]" type="text" value="<?php echo $row['order']; ?>">
                                                     <input class="text-right form-control" name="ids[]" type="hidden"
                                                         value="<?php echo $row['id']; ?>">
@@ -314,29 +293,18 @@
                                                             alt="<?php echo $row['homeimgalt']; ?>"
                                                             src="<?php echo $src_img; ?>"></a>
                                                 </td>
-                                                <td>
-                                                    <p><a target="_blank" href="<?php echo $link; ?>">
-                                                            <?php echo $row['title']; ?>
-                                                        </a></p>
-                                                    <div class="product-info">
-                                                        Cập nhật: <span class="other">
-                                                            <?php echo display_date($row['edittime']); ?>
-                                                        </span> |
-                                                        Người tạo: <span class="other">
-                                                            <?php echo $row['full_name']; ?>
-                                                        </span>
-                                                    </div>
+                                                <td class="text-center">
+                                                    Nguyễn Thị Tuyết Nhật Tuyết Nhật
                                                 </td>
                                                 <td class="text-center">
-                                                    <?php echo display_date($row['addtime']); ?>
+                                                    0306221453@caothang.edu.vn
                                                 </td>
                                                 <td class="text-center">
                                                     <p class='text-bold text-primary'>
-                                                    <p class='text-bold text-primary'>
-                                                        <?php echo formatRice($row['hitstotal']); ?>
+                                                        Admin
                                                     </p>
                                                 </td>
-                                                <td class="text-center">
+                                                <td class="text-center" style="width: 150px">
                                                     <input type="checkbox" name="inhome[]"
                                                         class="change-inhome flat-blue"
                                                         value="<?php echo $row['id']; ?>" <?php if ($row['inhome']==1)
@@ -350,11 +318,301 @@
                                             </td> -->
                                                 <td class="text-center">
                                                     <em class="fa fa-edit fa-lg">&nbsp;</em> <a
-                                                        href="<?php echo get_admin_url($module_slug . '/content/' . $row['id']); ?>">Sửa</a>
+                                                        href="<?php echo get_admin_url($module_slug . '/content/' . $row['id']); ?>"><b>Sửa</b></a>
                                                     &nbsp;-&nbsp;
                                                     <em class="fa fa-trash-o fa-lg">&nbsp;</em> <a
                                                         href="<?php echo get_admin_url($module_slug . '/delete?id=' . $row['id']); ?>"
-                                                        class="delete_bootbox">Xóa</a>
+                                                        class="delete_bootbox"><b>Xóa</b></a>
+                                                </td>
+                                            </tr>
+                                            <?php
+                                    }
+                                    ?>
+                                    <?php
+                                    foreach ($rows as $row) {
+                                        $link = site_url($row['cat_alias'] . '/' . $row['alias'] . '-' . $row['id']);
+                                        $src_img = base_url('uploads/posts/' . $row['homeimgfile']);
+                                        ?>
+                                            <tr>
+                                                <!-- <td class="text-center">
+                                                    <input type="checkbox" class="flat-blue check"
+                                                        value="<?php echo $row['id']; ?>" name="idcheck[]">
+                                                </td> -->
+                                                <td class="text-center">
+                                                    <input style="width: 50px;" class="text-right form-control"
+                                                        name="order[]" type="text" value="<?php echo $row['order']; ?>">
+                                                    <input class="text-right form-control" name="ids[]" type="hidden"
+                                                        value="<?php echo $row['id']; ?>">
+                                                </td>
+                                                <td>
+                                                    <a class="img-fancybox" href="<?php echo $src_img; ?>"
+                                                        title="<?php echo $row['title']; ?>"><img width="40"
+                                                            class="img-rounded img-responsive"
+                                                            alt="<?php echo $row['homeimgalt']; ?>"
+                                                            src="<?php echo $src_img; ?>"></a>
+                                                </td>
+                                                <td class="text-center">
+                                                    Nguyễn Thị Tuyết Nhật
+                                                </td>
+                                                <td class="text-center">
+                                                    0306221453@caothang.edu.vn
+                                                </td>
+                                                <td class="text-center">
+                                                    <p class='text-bold text-primary'>
+                                                        Admin
+                                                    </p>
+                                                </td>
+                                                <td class="text-center" style="width: 150px">
+                                                    <input type="checkbox" name="inhome[]"
+                                                        class="change-inhome flat-blue"
+                                                        value="<?php echo $row['id']; ?>" <?php if ($row['inhome']==1)
+                                                        echo ' checked="checked"' ; ?> 
+                                                </td>
+                                                <!-- <td class="text-center">
+                                                <input type="checkbox" name="is_featured[]" class="change-is-featured flat-blue" value="<?php echo $row['id']; ?>"<?php if ($row['is_featured'] == 1) echo ' checked="checked"'; ?> />
+                                            </td>
+                                            <td class="text-center">
+                                                <input type="checkbox" name="is_new[]" class="change-is-new flat-blue" value="<?php echo $row['id']; ?>"<?php if ($row['is_new'] == 1) echo ' checked="checked"'; ?> />
+                                            </td> -->
+                                                <td class="text-center">
+                                                    <em class="fa fa-edit fa-lg">&nbsp;</em> <a
+                                                        href="<?php echo get_admin_url($module_slug . '/content/' . $row['id']); ?>"><b>Sửa</b></a>
+                                                    &nbsp;-&nbsp;
+                                                    <em class="fa fa-trash-o fa-lg">&nbsp;</em> <a
+                                                        href="<?php echo get_admin_url($module_slug . '/delete?id=' . $row['id']); ?>"
+                                                        class="delete_bootbox"><b>Xóa</b></a>
+                                                </td>
+                                            </tr>
+                                            <?php
+                                    }
+                                    ?>
+                                    <?php
+                                    foreach ($rows as $row) {
+                                        $link = site_url($row['cat_alias'] . '/' . $row['alias'] . '-' . $row['id']);
+                                        $src_img = base_url('uploads/posts/' . $row['homeimgfile']);
+                                        ?>
+                                            <tr>
+                                                <!-- <td class="text-center">
+                                                    <input type="checkbox" class="flat-blue check"
+                                                        value="<?php echo $row['id']; ?>" name="idcheck[]">
+                                                </td> -->
+                                                <td class="text-center">
+                                                    <input style="width: 50px;" class="text-right form-control"
+                                                        name="order[]" type="text" value="<?php echo $row['order']; ?>">
+                                                    <input class="text-right form-control" name="ids[]" type="hidden"
+                                                        value="<?php echo $row['id']; ?>">
+                                                </td>
+                                                <td>
+                                                    <a class="img-fancybox" href="<?php echo $src_img; ?>"
+                                                        title="<?php echo $row['title']; ?>"><img width="40"
+                                                            class="img-rounded img-responsive"
+                                                            alt="<?php echo $row['homeimgalt']; ?>"
+                                                            src="<?php echo $src_img; ?>"></a>
+                                                </td>
+                                                <td class="text-center">
+                                                    Nguyễn Thị Tuyết Nhật
+                                                </td>
+                                                <td class="text-center">
+                                                    0306221453@caothang.edu.vn
+                                                </td>
+                                                <td class="text-center">
+                                                    <p class='text-bold text-primary'>
+                                                        Admin
+                                                    </p>
+                                                </td>
+                                                <td class="text-center" style="width: 150px">
+                                                    <input type="checkbox" name="inhome[]"
+                                                        class="change-inhome flat-blue"
+                                                        value="<?php echo $row['id']; ?>" <?php if ($row['inhome']==1)
+                                                        echo ' checked="checked"' ; ?> 
+                                                </td>
+                                                <!-- <td class="text-center">
+                                                <input type="checkbox" name="is_featured[]" class="change-is-featured flat-blue" value="<?php echo $row['id']; ?>"<?php if ($row['is_featured'] == 1) echo ' checked="checked"'; ?> />
+                                            </td>
+                                            <td class="text-center">
+                                                <input type="checkbox" name="is_new[]" class="change-is-new flat-blue" value="<?php echo $row['id']; ?>"<?php if ($row['is_new'] == 1) echo ' checked="checked"'; ?> />
+                                            </td> -->
+                                                <td class="text-center">
+                                                    <em class="fa fa-edit fa-lg">&nbsp;</em> <a
+                                                        href="<?php echo get_admin_url($module_slug . '/content/' . $row['id']); ?>"><b>Sửa</b></a>
+                                                    &nbsp;-&nbsp;
+                                                    <em class="fa fa-trash-o fa-lg">&nbsp;</em> <a
+                                                        href="<?php echo get_admin_url($module_slug . '/delete?id=' . $row['id']); ?>"
+                                                        class="delete_bootbox"><b>Xóa</b></a>
+                                                </td>
+                                            </tr>
+                                            <?php
+                                    }
+                                    ?>
+                                    <?php
+                                    foreach ($rows as $row) {
+                                        $link = site_url($row['cat_alias'] . '/' . $row['alias'] . '-' . $row['id']);
+                                        $src_img = base_url('uploads/posts/' . $row['homeimgfile']);
+                                        ?>
+                                            <tr>
+                                                <!-- <td class="text-center">
+                                                    <input type="checkbox" class="flat-blue check"
+                                                        value="<?php echo $row['id']; ?>" name="idcheck[]">
+                                                </td> -->
+                                                <td class="text-center">
+                                                    <input style="width: 50px;" class="text-right form-control"
+                                                        name="order[]" type="text" value="<?php echo $row['order']; ?>">
+                                                    <input class="text-right form-control" name="ids[]" type="hidden"
+                                                        value="<?php echo $row['id']; ?>">
+                                                </td>
+                                                <td>
+                                                    <a class="img-fancybox" href="<?php echo $src_img; ?>"
+                                                        title="<?php echo $row['title']; ?>"><img width="40"
+                                                            class="img-rounded img-responsive"
+                                                            alt="<?php echo $row['homeimgalt']; ?>"
+                                                            src="<?php echo $src_img; ?>"></a>
+                                                </td>
+                                                <td class="text-center">
+                                                    Nguyễn Thị Tuyết Nhật
+                                                </td>
+                                                <td class="text-center">
+                                                    0306221453@caothang.edu.vn
+                                                </td>
+                                                <td class="text-center">
+                                                    <p class='text-bold text-primary'>
+                                                        Admin
+                                                    </p>
+                                                </td>
+                                                <td class="text-center" style="width: 150px">
+                                                    <input type="checkbox" name="inhome[]"
+                                                        class="change-inhome flat-blue"
+                                                        value="<?php echo $row['id']; ?>" <?php if ($row['inhome']==1)
+                                                        echo ' checked="checked"' ; ?> 
+                                                </td>
+                                                <!-- <td class="text-center">
+                                                <input type="checkbox" name="is_featured[]" class="change-is-featured flat-blue" value="<?php echo $row['id']; ?>"<?php if ($row['is_featured'] == 1) echo ' checked="checked"'; ?> />
+                                            </td>
+                                            <td class="text-center">
+                                                <input type="checkbox" name="is_new[]" class="change-is-new flat-blue" value="<?php echo $row['id']; ?>"<?php if ($row['is_new'] == 1) echo ' checked="checked"'; ?> />
+                                            </td> -->
+                                                <td class="text-center">
+                                                    <em class="fa fa-edit fa-lg">&nbsp;</em> <a
+                                                        href="<?php echo get_admin_url($module_slug . '/content/' . $row['id']); ?>"><b>Sửa</b></a>
+                                                    &nbsp;-&nbsp;
+                                                    <em class="fa fa-trash-o fa-lg">&nbsp;</em> <a
+                                                        href="<?php echo get_admin_url($module_slug . '/delete?id=' . $row['id']); ?>"
+                                                        class="delete_bootbox"><b>Xóa</b></a>
+                                                </td>
+                                            </tr>
+                                            <?php
+                                    }
+                                    ?>
+                                    <?php
+                                    foreach ($rows as $row) {
+                                        $link = site_url($row['cat_alias'] . '/' . $row['alias'] . '-' . $row['id']);
+                                        $src_img = base_url('uploads/posts/' . $row['homeimgfile']);
+                                        ?>
+                                            <tr>
+                                                <!-- <td class="text-center">
+                                                    <input type="checkbox" class="flat-blue check"
+                                                        value="<?php echo $row['id']; ?>" name="idcheck[]">
+                                                </td> -->
+                                                <td class="text-center">
+                                                    <input style="width: 50px;" class="text-right form-control"
+                                                        name="order[]" type="text" value="<?php echo $row['order']; ?>">
+                                                    <input class="text-right form-control" name="ids[]" type="hidden"
+                                                        value="<?php echo $row['id']; ?>">
+                                                </td>
+                                                <td>
+                                                    <a class="img-fancybox" href="<?php echo $src_img; ?>"
+                                                        title="<?php echo $row['title']; ?>"><img width="40"
+                                                            class="img-rounded img-responsive"
+                                                            alt="<?php echo $row['homeimgalt']; ?>"
+                                                            src="<?php echo $src_img; ?>"></a>
+                                                </td>
+                                                <td class="text-center">
+                                                    Nguyễn Thị Tuyết Nhật
+                                                </td>
+                                                <td class="text-center">
+                                                    0306221453@caothang.edu.vn
+                                                </td>
+                                                <td class="text-center">
+                                                    <p class='text-bold text-primary'>
+                                                        Admin
+                                                    </p>
+                                                </td>
+                                                <td class="text-center" style="width: 150px">
+                                                    <input type="checkbox" name="inhome[]"
+                                                        class="change-inhome flat-blue"
+                                                        value="<?php echo $row['id']; ?>" <?php if ($row['inhome']==1)
+                                                        echo ' checked="checked"' ; ?> 
+                                                </td>
+                                                <!-- <td class="text-center">
+                                                <input type="checkbox" name="is_featured[]" class="change-is-featured flat-blue" value="<?php echo $row['id']; ?>"<?php if ($row['is_featured'] == 1) echo ' checked="checked"'; ?> />
+                                            </td>
+                                            <td class="text-center">
+                                                <input type="checkbox" name="is_new[]" class="change-is-new flat-blue" value="<?php echo $row['id']; ?>"<?php if ($row['is_new'] == 1) echo ' checked="checked"'; ?> />
+                                            </td> -->
+                                                <td class="text-center">
+                                                    <em class="fa fa-edit fa-lg">&nbsp;</em> <a
+                                                        href="<?php echo get_admin_url($module_slug . '/content/' . $row['id']); ?>"><b>Sửa</b></a>
+                                                    &nbsp;-&nbsp;
+                                                    <em class="fa fa-trash-o fa-lg">&nbsp;</em> <a
+                                                        href="<?php echo get_admin_url($module_slug . '/delete?id=' . $row['id']); ?>"
+                                                        class="delete_bootbox"><b>Xóa</b></a>
+                                                </td>
+                                            </tr>
+                                            <?php
+                                    }
+                                    ?>
+                                    <?php
+                                    foreach ($rows as $row) {
+                                        $link = site_url($row['cat_alias'] . '/' . $row['alias'] . '-' . $row['id']);
+                                        $src_img = base_url('uploads/posts/' . $row['homeimgfile']);
+                                        ?>
+                                            <tr>
+                                                <!-- <td class="text-center">
+                                                    <input type="checkbox" class="flat-blue check"
+                                                        value="<?php echo $row['id']; ?>" name="idcheck[]">
+                                                </td> -->
+                                                <td class="text-center">
+                                                    <input style="width: 50px;" class="text-right form-control"
+                                                        name="order[]" type="text" value="<?php echo $row['order']; ?>">
+                                                    <input class="text-right form-control" name="ids[]" type="hidden"
+                                                        value="<?php echo $row['id']; ?>">
+                                                </td>
+                                                <td>
+                                                    <a class="img-fancybox" href="<?php echo $src_img; ?>"
+                                                        title="<?php echo $row['title']; ?>"><img width="40"
+                                                            class="img-rounded img-responsive"
+                                                            alt="<?php echo $row['homeimgalt']; ?>"
+                                                            src="<?php echo $src_img; ?>"></a>
+                                                </td>
+                                                <td class="text-center">
+                                                    Nguyễn Thị Tuyết Nhật
+                                                </td>
+                                                <td class="text-center">
+                                                    0306221453@caothang.edu.vn
+                                                </td>
+                                                <td class="text-center">
+                                                    <p class='text-bold text-primary'>
+                                                        Admin
+                                                    </p>
+                                                </td>
+                                                <td class="text-center" style="width: 150px">
+                                                    <input type="checkbox" name="inhome[]"
+                                                        class="change-inhome flat-blue"
+                                                        value="<?php echo $row['id']; ?>" <?php if ($row['inhome']==1)
+                                                        echo ' checked="checked"' ; ?> 
+                                                </td>
+                                                <!-- <td class="text-center">
+                                                <input type="checkbox" name="is_featured[]" class="change-is-featured flat-blue" value="<?php echo $row['id']; ?>"<?php if ($row['is_featured'] == 1) echo ' checked="checked"'; ?> />
+                                            </td>
+                                            <td class="text-center">
+                                                <input type="checkbox" name="is_new[]" class="change-is-new flat-blue" value="<?php echo $row['id']; ?>"<?php if ($row['is_new'] == 1) echo ' checked="checked"'; ?> />
+                                            </td> -->
+                                                <td class="text-center">
+                                                    <em class="fa fa-edit fa-lg">&nbsp;</em> <a
+                                                        href="<?php echo get_admin_url($module_slug . '/content/' . $row['id']); ?>"><b>Sửa</b></a>
+                                                    &nbsp;-&nbsp;
+                                                    <em class="fa fa-trash-o fa-lg">&nbsp;</em> <a
+                                                        href="<?php echo get_admin_url($module_slug . '/delete?id=' . $row['id']); ?>"
+                                                        class="delete_bootbox"><b>Xóa</b></a>
                                                 </td>
                                             </tr>
                                             <?php
@@ -379,6 +637,8 @@
                                             </tr>
                                         </tfoot> -->
                                     </table>
+                                    
+                                    
                                 </div>
                             </form>
                             <?php else: ?>
