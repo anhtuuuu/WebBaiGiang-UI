@@ -30,7 +30,7 @@
                                 <img src="https://th.bing.com/th/id/OIP.uzGed-nXH0q-PqTfZqgEDQAAAA?w=218&h=219&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
                                     class="user-image" alt="<?php echo $full_name; ?>" />
                                 <span class="hidden-xs">
-                                    aaaaa<i class="caret"></i>
+                                    Admin<i class="caret"></i>
                                 </span>
                             </a>
                             <ul class="dropdown-menu">
@@ -38,7 +38,7 @@
                                     <img src="https://th.bing.com/th/id/OIP.uzGed-nXH0q-PqTfZqgEDQAAAA?w=218&h=219&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
                                         class="img-circle" alt="<?php echo $full_name; ?>" />
                                     <p>
-                                        aaaaa
+                                        Admin
                                         <small>Tham gia từ
                                             aaaa
                                         </small>
@@ -68,7 +68,7 @@
                             class="img-circle" alt="User Image" />
                     </div>
                     <div class="pull-left info">
-                        <p>Chào aaaa!</p>
+                        <p>Chào Admin!</p>
                         <!-- <a href="#"><i class="fa fa-circle text-success"></i> Online</a> -->
                     </div>
                 </div>
@@ -93,80 +93,148 @@
                         </ul>
                     </li>
                     <li class="treeview">
-                        <a href="<?php echo get_admin_url('images'); ?>"><i class="fa fa-photo"></i> Hình ảnh</a>
-                    </li>
-                    <li class="treeview">
-                        <a href="#">
-                            <i class="fa fa-phone"></i>
-                            <span>Thông tin</span>
+                        <a href="<?php echo get_admin_url('settings'); ?>">
+                            <i class="fa fa-cogs"></i> <span>Quản lý lớp học phần</span>
                             <i class="fa fa-angle-left pull-right"></i>
                         </a>
                         <ul class="treeview-menu">
-                            <li><a href="<?php echo get_admin_url('info'); ?>"><i class="fa fa-angle-double-right"></i>
-                                    Danh sách thông tin</a></li>
-                            <li><a href="<?php echo get_admin_url('info/content'); ?>"><i
-                                        class="fa fa-angle-double-right"></i> Thêm thông tin</a></li>
+                            <li><a href="<?php echo get_admin_url('settings'); ?>"><i
+                                        class="fa fa-angle-double-right"></i> Cấu hình chung</a></li>
+                            <li><a href="<?php echo get_admin_url('settings/main'); ?>"><i
+                                        class="fa fa-angle-double-right"></i> Cấu hình site</a></li>
                         </ul>
                     </li>
                     <li class="treeview">
-                        <a href="#">
-                            <i class="fa fa-envelope-o"></i>
-                            <span>Email</span>
+                        <a href="<?php echo get_admin_url('settings'); ?>">
+                            <i class="fa fa-cogs"></i> <span>Quản lý bài giảng</span>
                             <i class="fa fa-angle-left pull-right"></i>
                         </a>
                         <ul class="treeview-menu">
-                            <li><a href="<?php echo get_admin_url('emails'); ?>"><i
-                                        class="fa fa-angle-double-right"></i> Cấu hình mặc định</a></li>
+                            <li><a href="<?php echo get_admin_url('settings'); ?>"><i
+                                        class="fa fa-angle-double-right"></i> Cấu hình chung</a></li>
+                            <li><a href="<?php echo get_admin_url('settings/main'); ?>"><i
+                                        class="fa fa-angle-double-right"></i> Cấu hình site</a></li>
                         </ul>
                     </li>
                     <li class="treeview">
-                        <a href="#">
-                            <i class="fa fa-bars"></i>
-                            <span>Menu</span>
+                        <a href="<?php echo get_admin_url('settings'); ?>">
+                            <i class="fa fa-cogs"></i> <span>Quản lý chương</span>
                             <i class="fa fa-angle-left pull-right"></i>
                         </a>
                         <ul class="treeview-menu">
-                            <li><a href="<?php echo get_admin_url('menu'); ?>"><i class="fa fa-angle-double-right"></i>
-                                    Các menu</a></li>
-                            <li><a href="<?php echo get_admin_url('menu/content'); ?>"><i
-                                        class="fa fa-angle-double-right"></i> Thêm menu</a></li>
+                            <li><a href="<?php echo get_admin_url('settings'); ?>"><i
+                                        class="fa fa-angle-double-right"></i> Cấu hình chung</a></li>
+                            <li><a href="<?php echo get_admin_url('settings/main'); ?>"><i
+                                        class="fa fa-angle-double-right"></i> Cấu hình site</a></li>
                         </ul>
                     </li>
                     <li class="treeview">
-                        <a href="<?php echo get_admin_url('pages'); ?>"><i class="fa fa-file"></i> Trang tĩnh</a>
-                    </li>
-                    <li class="treeview">
-                        <a href="#">
-                            <i class="fa fa-edit"></i>
-                            <span>Nội dung</span>
+                        <a href="<?php echo get_admin_url('settings'); ?>">
+                            <i class="fa fa-cogs"></i> <span>Quản lý bài</span>
                             <i class="fa fa-angle-left pull-right"></i>
                         </a>
                         <ul class="treeview-menu">
-                            <li><a href="<?php echo get_admin_url('posts/cat'); ?>"><i
-                                        class="fa fa-angle-double-right"></i> Chủ đề</a></li>
-                            <li><a href="<?php echo get_admin_url('posts'); ?>"><i class="fa fa-angle-double-right"></i>
-                                    Bài viết</a></li>
+                            <li><a href="<?php echo get_admin_url('settings'); ?>"><i
+                                        class="fa fa-angle-double-right"></i> Cấu hình chung</a></li>
+                            <li><a href="<?php echo get_admin_url('settings/main'); ?>"><i
+                                        class="fa fa-angle-double-right"></i> Cấu hình site</a></li>
                         </ul>
                     </li>
                     <li class="treeview">
-                        <a href="#">
-                            <i class="fa fa-cubes"></i> <span>Sự kiện</span>
+                        <a href="<?php echo get_admin_url('settings'); ?>">
+                            <i class="fa fa-cogs"></i> <span>Quản lý tài khoản</span>
                             <i class="fa fa-angle-left pull-right"></i>
                         </a>
                         <ul class="treeview-menu">
-                            <li><a href="<?php echo get_admin_url('projects/cat'); ?>"><i
-                                        class="fa fa-angle-double-right"></i> Chủ đề sự kiện</a></li>
-                            <li><a href="<?php echo get_admin_url('projects'); ?>"><i
-                                        class="fa fa-angle-double-right"></i> Danh sách sự kiện</a></li>
-                            <li><a href="<?php echo get_admin_url('projects/content'); ?>"><i
-                                        class="fa fa-angle-double-right"></i> Thêm sự kiện</a></li>
-                            <li><a href="<?php echo get_admin_url('projects/setting'); ?>"><i
-                                        class="fa fa-angle-double-right"></i> Cài đặt sự kiện</a></li>
+                            <li><a href="<?php echo get_admin_url('settings'); ?>"><i
+                                        class="fa fa-angle-double-right"></i> Cấu hình chung</a></li>
+                            <li><a href="<?php echo get_admin_url('settings/main'); ?>"><i
+                                        class="fa fa-angle-double-right"></i> Cấu hình site</a></li>
                         </ul>
                     </li>
                     <li class="treeview">
-                        <a href="<?php echo get_admin_url('newsletter'); ?>"><i class="fa fa-envelope-o"></i> Đăng
-                            ký tư vấn</a>
+                        <a href="<?php echo get_admin_url('settings'); ?>">
+                            <i class="fa fa-cogs"></i> <span>Quản lý khoa</span>
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="<?php echo get_admin_url('settings'); ?>"><i
+                                        class="fa fa-angle-double-right"></i> Cấu hình chung</a></li>
+                            <li><a href="<?php echo get_admin_url('settings/main'); ?>"><i
+                                        class="fa fa-angle-double-right"></i> Cấu hình site</a></li>
+                        </ul>
+                    </li>
+                    <li class="treeview">
+                        <a href="<?php echo get_admin_url('settings'); ?>">
+                            <i class="fa fa-cogs"></i> <span>Quản lý bộ môn</span>
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="<?php echo get_admin_url('settings'); ?>"><i
+                                        class="fa fa-angle-double-right"></i> Cấu hình chung</a></li>
+                            <li><a href="<?php echo get_admin_url('settings/main'); ?>"><i
+                                        class="fa fa-angle-double-right"></i> Cấu hình site</a></li>
+                        </ul>
+                    </li>
+                    <li class="treeview">
+                        <a href="<?php echo get_admin_url('settings'); ?>">
+                            <i class="fa fa-cogs"></i> <span>Quản lý học phần</span>
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="<?php echo get_admin_url('settings'); ?>"><i
+                                        class="fa fa-angle-double-right"></i> Cấu hình chung</a></li>
+                            <li><a href="<?php echo get_admin_url('settings/main'); ?>"><i
+                                        class="fa fa-angle-double-right"></i> Cấu hình site</a></li>
+                        </ul>
+                    </li>
+                    <li class="treeview">
+                        <a href="<?php echo get_admin_url('settings'); ?>">
+                            <i class="fa fa-cogs"></i> <span>Quản lý sinh viên</span>
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="<?php echo get_admin_url('settings'); ?>"><i
+                                        class="fa fa-angle-double-right"></i> Cấu hình chung</a></li>
+                            <li><a href="<?php echo get_admin_url('settings/main'); ?>"><i
+                                        class="fa fa-angle-double-right"></i> Cấu hình site</a></li>
+                        </ul>
+                    </li>
+                    <li class="treeview">
+                        <a href="<?php echo get_admin_url('settings'); ?>">
+                            <i class="fa fa-cogs"></i> <span>Quản lý giảng viên</span>
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="<?php echo get_admin_url('settings'); ?>"><i
+                                        class="fa fa-angle-double-right"></i> Cấu hình chung</a></li>
+                            <li><a href="<?php echo get_admin_url('settings/main'); ?>"><i
+                                        class="fa fa-angle-double-right"></i> Cấu hình site</a></li>
+                        </ul>
+                    </li>
+                    <li class="treeview">
+                        <a href="<?php echo get_admin_url('settings'); ?>">
+                            <i class="fa fa-cogs"></i> <span>Quản lý đánh giá</span>
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="<?php echo get_admin_url('settings'); ?>"><i
+                                        class="fa fa-angle-double-right"></i> Cấu hình chung</a></li>
+                            <li><a href="<?php echo get_admin_url('settings/main'); ?>"><i
+                                        class="fa fa-angle-double-right"></i> Cấu hình site</a></li>
+                        </ul>
+                    </li>
+                    <li class="treeview">
+                        <a href="<?php echo get_admin_url('settings'); ?>">
+                            <i class="fa fa-cogs"></i> <span>Quản lý bài kiểm tra</span>
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="<?php echo get_admin_url('settings'); ?>"><i
+                                        class="fa fa-angle-double-right"></i> Cấu hình chung</a></li>
+                            <li><a href="<?php echo get_admin_url('settings/main'); ?>"><i
+                                        class="fa fa-angle-double-right"></i> Cấu hình site</a></li>
+                        </ul>
                     </li>
 
                 </ul>
@@ -177,10 +245,10 @@
             <!-- Start Content Header (Page header) -->
             <section class="content-header">
                 <h1>
-                    aaaa
+
                 </h1>
                 <ol class="breadcrumb">
-                    aaaa
+
                 </ol>
             </section>
             <!-- End Content Header (Page header) -->
@@ -218,8 +286,7 @@
                                         Từ khóa tìm kiếm
                                     </div>
                                     <div class="form-group search_input">
-                                        <input class="form-control input-sm" type="text"
-                                            value="<?php echo isset($get['q']) ? $get['q'] : ''; ?>" maxlength="64"
+                                        <input class="form-control input-sm" type="text" value="" maxlength="64"
                                             name="q" placeholder="Từ khóa tìm kiếm">
                                     </div>
 
@@ -271,7 +338,7 @@
                                                 </td> -->
                                                 <td class="text-center">
                                                     <input style="width: 50px;" class="text-right form-control"
-                                                        name="order[]" type="text" value="<?php echo $row['order']; ?>">
+                                                        name="order[]" type="text" value="1">
                                                     <input class="text-right form-control" name="ids[]" type="hidden"
                                                         value="<?php echo $row['id']; ?>">
                                                 </td>
@@ -292,7 +359,7 @@
                                                         href="<?php echo get_admin_url($module_slug . '/delete?id=' . $row['id']); ?>"
                                                         class="delete_bootbox"><b>Xóa</b></a>
                                                 </td>
-                                            </tr>   
+                                            </tr>
                                             <tr>
                                                 <!-- <td class="text-center">
                                                     <input type="checkbox" class="flat-blue check"
@@ -300,7 +367,7 @@
                                                 </td> -->
                                                 <td class="text-center">
                                                     <input style="width: 50px;" class="text-right form-control"
-                                                        name="order[]" type="text" value="<?php echo $row['order']; ?>">
+                                                        name="order[]" type="text" value="1">
                                                     <input class="text-right form-control" name="ids[]" type="hidden"
                                                         value="<?php echo $row['id']; ?>">
                                                 </td>
@@ -321,14 +388,15 @@
                                                         href="<?php echo get_admin_url($module_slug . '/delete?id=' . $row['id']); ?>"
                                                         class="delete_bootbox"><b>Xóa</b></a>
                                                 </td>
-                                            </tr>   <tr>
+                                            </tr>
+                                            <tr>
                                                 <!-- <td class="text-center">
                                                     <input type="checkbox" class="flat-blue check"
                                                         value="<?php echo $row['id']; ?>" name="idcheck[]">
                                                 </td> -->
                                                 <td class="text-center">
                                                     <input style="width: 50px;" class="text-right form-control"
-                                                        name="order[]" type="text" value="<?php echo $row['order']; ?>">
+                                                        name="order[]" type="text" value="1">
                                                     <input class="text-right form-control" name="ids[]" type="hidden"
                                                         value="<?php echo $row['id']; ?>">
                                                 </td>
@@ -349,7 +417,7 @@
                                                         href="<?php echo get_admin_url($module_slug . '/delete?id=' . $row['id']); ?>"
                                                         class="delete_bootbox"><b>Xóa</b></a>
                                                 </td>
-                                            </tr>                                            
+                                            </tr>
                                         </tbody>
                                     </table>
 
@@ -395,11 +463,11 @@
         <footer class="main-footer">
             <!-- To the right -->
             <div class="pull-right hidden-xs">
-                <b>Thiết kế bởi <a href="http://ledu.vn" target="_blank">Thiết kế website uy tín</a></b>
+                <b>Thiết kế bởi <a href="http://ledu.vn" target="_blank">Grow up edu</a></b>
             </div>
             <!-- Default to the left -->
             <strong>Copyright &copy;
-                aaaa
+                growupedu
                 </a>.
             </strong> All rights reserved.
         </footer>
@@ -432,9 +500,12 @@
     <script>
         if (($(window).height() + 100) < $(document).height()) {
             $('#top-link-block').removeClass('hidden').affix({
-                offset: { top: 100 }
+                offset: {
+                    top: 100
+                }
             });
         }
+
         function get_slug(str) {
             str = str.toLowerCase();
             str = str.replace(/à|á|ạ|ả|ã|â|ầ|ấ|ậ|ẩ|ẫ|ă|ằ|ắ|ặ|ẳ|ẵ/g, "a");
@@ -449,11 +520,13 @@
             str = str.replace(/^\-+|\-+$/g, ""); //cắt bỏ ký tự - ở đầu và cuối chuỗi
             return str;
         }
+
         function render_meta_seo(el, text_max, bool = true) {
             if (el.length) {
                 var $this = el.closest('.form-group');
                 $this.find('label').append(' - Tối đa ' + text_max + ' ký tự');
-                $this.append('<span class="help-block"><strong class="count-characters">' + text_max + '</strong> ký tự còn lại</span>');
+                $this.append('<span class="help-block"><strong class="count-characters">' + text_max +
+                    '</strong> ký tự còn lại</span>');
                 var text_length = el.val().length;
                 if (text_length > text_max) {
                     $this.find('.count-characters').text(0);
@@ -469,7 +542,9 @@
         }
         $(document).ready(function () {
             $('#top-link-block').on('click', function () {
-                $('html,body').animate({ scrollTop: 0 }, 'slow');
+                $('html,body').animate({
+                    scrollTop: 0
+                }, 'slow');
                 return false;
             });
 

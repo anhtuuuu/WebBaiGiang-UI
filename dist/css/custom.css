@@ -174,3 +174,10 @@ overflow-y: scroll;
     background-color: var(--avocado);
     color: lightgoldenrodyellow;
 }
+.card-text{
+    font-size: 14px;
+}
+.pagination .active{
+    background-color: var(--avocado);
+    color: #fff;
+}

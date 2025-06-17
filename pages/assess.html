@@ -49,11 +49,27 @@
 
 <body>
 	<nav role="navigation" class="">
-		<!-- logo -->
-		<div class="d-flex justify-content-center">
-			<img src="../images/logo4.png" height="90" alt=""
-				style="padding-left:5px;padding-top:2px;padding-bottom:5px;">
-		</div>
+		<div class="row px-3 px-md-5 position-relative">
+            <!-- tìm kiếm -->
+            <div class="col-5 col-md-3 position-absolute search p-0">
+                <form method="post row p-0 position-relative">
+                    <input name="txtsearch" placeholder="Tìm kiếm..." class="textboxcss m-0 w-100" value=""
+                        list="subnames" required></input>
+                    <button type="submit" name="btnsearch"
+                        class="buttoncss m-0 text-lghtgoldyellow position-absolute end-0 "><i
+                            class="fa fa-search"></i></button>
+                </form>
+            </div>
+
+            <!-- logo -->
+
+            <div class="d-flex justify-content-end justify-content-md-center p-0">
+                <img class="p-0" src="../img/Nhat.png" height="90" alt=""
+                    style="padding-left:5px;padding-top:2px;padding-bottom:5px;">
+            </div>
+
+
+        </div>
 		<!-- main menu-->
 		<div class="topnav d-flex justify-content-between" id="myTopnav">
 			<div class="leftNav">
@@ -112,7 +128,7 @@
 					</div>
 					<!--panel-Body-->
 					<div class="panel-body">
-						<div class="content-row">
+						<div class="content-row px-4">
 							<h2>Đánh giá :</h2>
 							<div class="row">
 								<div class="col-md-6">
@@ -143,7 +159,8 @@
 											</textarea>
 										</div>
 										<div class="d-flex justify-content-center">
-											<button type="submit" class="btn btn-primary">Gửi</button>
+											<button class="btn px-4 py-2 btn-bgr"><b>Gửi</b></button>
+
 										</div>
 									</form>
 								</div>
@@ -161,55 +178,47 @@
 		<footer class="site-footer">
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-12 col-md-6">
-						<h6>About</h6>
-						<p class="text-justify">Study Glance provides Tutorials , Power point Presentations(ppts),
-							Lecture Notes, Important & previously asked questions, Objective Type questions, Laboratory
-							programs and we provide Syllabus of various subjects.</p>
-					</div>
-					<div class="col-xs-6 col-md-3" style="padding-left:100px;">
-						<h6>Categories</h6>
+					<div class="col-sm-12 col-md-4">
+						<h6>Thông tin liên hệ</h6>
 						<ul class="footer-links">
-							<li><a href="../Tutorialindex.html">Tutorials</a></li>
-							<li><a href="../ppts/index.html">PPTs</a></li>
-							<li><a href="../lecturenotes/index.html">Lecture Notes</a></li>
+							<li><b>Địa chỉ: </b>65 Huỳnh Thúc Kháng, P.Bến Nghé, Q.1, Tp.HCM.</li>
+							<li><b>SĐT: </b>028 38 212 868</li>
+							<li><b>Email: </b>0306221453@caothang.edu.vn</li>
+							<li><b>Website: </b><a href="">https://growup.edu.vn</a></li>
 						</ul>
 					</div>
 					<div class="col-xs-6 col-md-3" style="padding-left:100px;">
-						<h6></h6><br>
+						<h6>Lớp học phần</h6>
 						<ul class="footer-links">
-
-							<li><a href="../questions/index.html">Questions</a></li>
-							<li><a href="../labprograms/index.html">Lab Programs</a></li>
-							<li><a href="../syllabus/index.html">Syllabus</a></li>
+							<li><a href="c/index.html">
+									CĐTH22WEBC - Lập trình C#</a></li>
+							<li><a href="ds/index.html">
+									CĐTH22WEBC - Lập trình C++</a></li>
+							<li><a href="html/index.html">
+									CĐTH22WEBC - HTML cơ bản</a></li>
+							<li><a href="php/index.html">
+									CĐTH22WEBC - PHP cơ bản</a></li>
+							<li><a href="xml/index.html">
+									CĐTH22WEBC - PHP nâng cao</a></li>
 						</ul>
 					</div>
-
-
 				</div>
 				<hr>
 			</div>
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-sm-6 col-xs-12">
-						<p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by
-							<a href="#">StudyGlance</a>.
-						</p>
-						<p><!-- hitwebcounter Code START -->
-
-							<img src="https://hitwebcounter.com/counter/counter.php?page=7760160&amp;style=0007&amp;nbdigits=5&amp;type=ip&amp;initCount=0"
-								Alt="" border="0" />
-						</p>
+						<p class="copyright-text">Copyright &copy; 2025 <a href="#">GrowUpEdu</a>.</p>
 					</div>
 
-					<div class="col-md-4 col-sm-6 col-xs-12">
-						<ul class="social-icons">
-							<li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-							<li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-							<li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
-							<li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
-						</ul>
-					</div>
+					<!-- <div class="col-md-4 col-sm-6 col-xs-12">
+                    <ul class="social-icons">
+                        <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                        <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div> -->
 				</div>
 			</div>
 		</footer>
